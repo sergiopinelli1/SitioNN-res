@@ -132,7 +132,7 @@ body{
 }
 
 /* Logo */
-.logo {
+.logo, .close-menu{
     height: 1.8vh;
 }
 

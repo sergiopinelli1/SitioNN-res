@@ -132,7 +132,7 @@ body{
 }
 
 /* Logo */
-.logo, .close-menu{
+.logo{
     height: 1.8vh;
 }
 
@@ -235,7 +235,7 @@ body{
 
 #hero {
     display: flex;
-    background-image: url('/img_hero/video_inicio.mp4'); /* Cambia la ruta por la ubicación de tu imagen */
+    background-image: url('/copia_img_hero/Captura\ de\ pantalla\ 2024-11-01\ a\ la\(s\)\ 15.45.54.png'); /* Cambia la ruta por la ubicación de tu imagen */
     background-size: cover;         /* Ajusta la imagen para cubrir todo el área de la sección */
     background-position: center;    /* Centra la imagen */
     background-repeat: no-repeat;   /* Evita que la imagen se repita */

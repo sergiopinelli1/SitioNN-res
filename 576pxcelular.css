@@ -1,5 +1,5 @@
 :root {
-
+    /* Tipografía */
     --font-family: "Roboto", Arial;
 
     --font-weight-thin: 100;
@@ -9,17 +9,163 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
-  
-    --font-size-xs: 12px; /* Extra pequeño */
-    --font-size-sm: 14px; /* Pequeño */
-    --font-size-md: 16px; /* Mediano, cuerpo principal */
+
+    /* Tamaños de fuente */
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-md: 1rem;         /* 16px */
+    --font-size-mt: 1.125rem;     /* 18px */
+    --font-size-lg: 1.25rem;      /* 20px */
+    --font-size-mlg: 1.375rem;    /* 22px */
+    --font-size-xl: 1.5rem;       /* 24px */
+    --font-size-xltt:1.7rem;
+    --font-size-xlt: 1.875rem;    /* 30px */
+    --font-size-xxl: 2rem;        /* 32px */
+    --font-size-xxxl: 2.5rem;     /* 40px */
+    --font-size-3xl: 3rem;        /* 48px */
+    --font-size-4xl: 3.5rem;      /* 56px */
+
+    /* Colores */
+    --color-primary: black;
+    --color-secondary: white;
+    --color-three: rgb(0, 113, 227);
+    /* --color-dark: #2c3e50;
+    --color-light: #ecf0f1;
+    --color-grey: #bdc3c7;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-background: #fff;
+    --color-border: #ccc; */
+
+    /* Espaciado: gap y padding */
+
+    --padding-xs: 0.25rem;   /* 4px */
+    --padding-sm: 0.5rem;    /* 8px */
+    --padding-md: 1rem;      /* 16px */
+    --padding-lg: 1.5rem;    /* 24px */
+    --padding-xl: 2rem;      /* 32px */
+    --padding-xxl: 2.5rem;   /* 40px */
+    --padding-xxxl: 3rem;    /* 48px */
+    --padding-xxxxl: 4rem;   /* 64px */
+    
+    /* Variables de Gap */
+    --gap-xs: 0.25rem;       /* 4px */
+    --gap-sm: 0.5rem;        /* 8px */
+    --gap-md: 1rem;          /* 16px */
+    --gap-lg: 1.5rem;        /* 24px */
+    --gap-xl: 2rem;          /* 32px */
+    --gap-xxl: 2.5rem;       /* 40px */
+    --gap-xxxl: 3rem;        /* 48px */
+    --gap-xxxxl: 4rem;       /* 64px */
+
+      
+    
+    --font-weight-thin: 100;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    --border-radius-img-mov: 20px;
+
+    --height-img-mov: 40vh;
+    --height-img-mov: 60vw;
+
+    /* --nav-padding: 16px 32px;
+
+    --section-padding: 60px 0px;
+
+    --section-padding-top-conoce-panel-ideal: 40px;
+
+    --gap-titulo-conjunto-section-3: 30px;
+    --gap-titulo-conjunto-section-6: 60px;
+
+    --gap-logo-empresas: 120px;
+
+    --gap-item-img: 30px;
+
+    --gap-info-producto: 15px;
+
+    --gap-bottom-section: 30px;
+
+    --border-img: 20px;
+
+    --height-header: 66px;
+
+    --height-logo: 200px;
+
+    --gap-nav: 60px; */
+
+    --nav-padding: 1rem 2rem;                        /* 16px 32px to rem */
+    --section-padding: 3.75rem;               
+    --section-padding-top-conoce-panel-ideal: 2.5rem 0rem;/* 40px to rem */
+
+    --gap-titulo-conjunto-section-3: 2rem;       /* 30px to rem */
+    --gap-titulo-conjunto-section-6: 3.75rem;        /* 60px to rem */
+
+    --gap-logo-empresas: 7.5rem;                     /* 120px to rem */
+    --gap-item-img: 1.875rem;                        /* 30px to rem */
+
+    --gap-info-producto: 0.9375rem;                  /* 15px to rem */
+    --gap-bottom-section: 1.875rem;                  /* 30px to rem */
+
+    --border-img: 1.25rem;                           /* 20px to rem */
+
+    --height-header: 4.125rem;                       /* 66px to rem */
+    --height-logo: 12.5rem;                          /* 200px to rem */
+
+    --gap-nav: 3.75rem;                              /* 60px to rem */
+
+
+    --back-header: black;
+
+    --back-apple: rgb(0, 113, 227);
+    --border-apple: 1px solid rgb(0, 113, 227);
+    --color-apple: rgb(0, 113, 227);
+    --back-trans-apple: rgb(5, 121, 237);
+    --color-btn-mas-info: rgb(0, 113, 227);
+    --color-btn-compra: white; 
+
+    --text-deco: underline;
+
+    --letter-space1: 0.1px;
+    --letter-space2: 0.2px;
+    --letter-space3: 0.3px;
+    --letter-space4: 0.4px;
+    --letter-space5: 0.5px;
+    --letter-space6: 0.6px;
+    --letter-space7: 0.7px;
+    --letter-space8: 0.8px;
+    --letter-space10: 0.10px;
+    --letter-space-1:-0.374px;
+
+    /* --gap-btn-mas-compra: 30px; */
+
+    /* --border-radius-btn-mas-compra: 980px;
+    --padding-btn-mas-compra: 11px 21px;
+    --font-size-btn-mas-compra: 17px; */
+    --color-btn-compra: white; 
+
+    --gap-btn-mas-compra: 1.875rem;           /* 30px to rem */
+    --padding-btn-mas-compra: 0.6875rem 1.3125rem; /* 11px 21px to rem */
+    --font-size-btn-mas-compra: 1.0625rem;    /* 17px to rem */
+
+    --border-radius-btn-mas-compra: 980px;
+
+    --color-btn-mas-info: rgb(0, 113, 227);
+/*
+    --font-size-xs: 12px; 
+    --font-size-sm: 14px; 
+    --font-size-md: 16px; 
     --font-size-mt: 18px;
-    --font-size-lg: 20px; /* Grande, subtítulos */
+    --font-size-lg: 20px; 
     --font-size-mlg:22px;
-    --font-size-xl: 24px; /* Extra grande, encabezados */
+    --font-size-xl: 24px; 
     --font-size-xlt: 30px;
-    --font-size-xxl: 32px; /* Título principal */
-    --font-size-xxxl: 40px; /* Muy grande, para héroes o portadas */
+    --font-size-xxl: 32px; 
+    --font-size-xxxl: 40px; 
     --font-size-3xl: 48px;
     --font-size-4xl: 56px;
   
@@ -86,11 +232,11 @@
 
     --gap-btn-mas-compra: 30px;
 
-    --border-radius-btn-mas-compra: 980px;
+    border-radius-btn-mas-compra: 980px;
     --padding-btn-mas-compra: 11px 21px;
     --font-size-btn-mas-compra: 17px;
     --color-btn-mas-info: rgb(0, 113, 227);
-    --color-btn-compra: white;
+    --color-btn-compra: white; */
 }
 
 
@@ -101,7 +247,7 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--font-family);
-    /* border: 1px solid  rebeccapurple; */
+    border: 1px solid  rebeccapurple;
 }
 
 a{
@@ -128,12 +274,12 @@ body{
     padding: 1rem;
     background-color: black;
     color: #fff;
-    height: 6.6vh;
+    height: 8vh;
 }
 
 /* Logo */
 .logo{
-    height: 1.8vh;
+    height: 2.2vh;
 }
 
 /* Ícono del menú hamburguesa */
@@ -142,8 +288,8 @@ body{
 }
 
 .icono_menu {
-    width: 30px;
-    height: 30px;
+    width: 1.9rem;
+    height: 1.9rem;
 }
 
 /* Ocultar el checkbox */
@@ -161,7 +307,7 @@ body{
     height: 100vh;
     background-color: black;
     flex-direction: column;
-    /* padding: 1rem; */
+    padding: 30px 40px;
 }
 
 /* Mostrar el menú cuando el checkbox está activado */
@@ -174,7 +320,7 @@ body{
     display: block;
     width: 100%;
     text-align: right;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
 }
 
@@ -182,13 +328,14 @@ body{
 .navbar_list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     padding-top: 1rem;
     width: 100%;
 }
 
 .item_navbar_list {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-weight: var(--font-weight-regular);
     color: #ffffff;
 }
 
@@ -247,27 +394,37 @@ body{
     flex-direction: column;
     justify-content: left;
     align-items: start;
-    gap: 1.6rem;
+    gap: var(--gap-xl);
     padding: 3rem 1.3rem;
+    justify-content: space-between;
+    
 }
 
 .titulo_hero{
-    color: var(--color1);
-    font-size: var(--font-size-xl);
+    color: var(--color-secondary);
+    font-size: var(--font-size-xltt);
     width: 90%;
     font-weight: var(--font-weight-medium);
 }
 
+.conjunto_texto_hero{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xl);
+}
+
 .texto_hero{
-    color: var(--color1);
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-me);
+    color: var(--color-secondary);
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-regular);
     width: 90%;
 }
 
 .conjunto_btn_hero{
     display: flex;
-    gap: 1rem;
+    gap: var(--gap-md);
+    align-items: end;
+    margin: 0 auto;
 }
 
 .btn_hero{
@@ -300,7 +457,7 @@ body{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 30px 0px;
+    padding: var(--section-padding-top-conoce-panel-ideal);
     justify-content: center;
     flex-direction: column;
     gap: var(--gap-titulo-conjunto-section-3);
@@ -316,15 +473,14 @@ body{
   /* Carrusel de imágenes */
   .carousel-track {
     display: flex;
-    animation: slide 14s linear infinite alternate;
+    animation: slide 20s linear infinite alternate;
     width: calc(8vh * 10); 
-    gap: 5rem;
-    padding: 0px 100px;
+    gap: 4rem;
+    padding: 0px 3rem;
   }
   
   .carousel-track img {
     height: 8vh; 
-    /* width: 10vh; */
     object-fit: contain;
   }
   
@@ -334,7 +490,7 @@ body{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-8vh * 2)); /* Desplaza hasta la mitad del total para mostrar las 10 imágenes */
+      transform: translateX(calc(-8vh * 10)); /* Desplaza hasta la mitad del total para mostrar las 10 imágenes */
     }
   }
 
@@ -348,7 +504,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: var(--gap-titulo-conjunto-section-3);
-    padding: 40px 0px 60px 10px;
+    padding-top: var(--section-padding);
+    padding-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .titulo_seccion_pro {
@@ -368,10 +527,7 @@ body{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     width: 100%;
-    gap: 16px; 
-    padding: 0px 10px 0px 0px;
-    /* align-items: center;
-     scrollbar-width: none;  */
+    gap: var(--gap-md);
 } 
 
 .conjunto_pro::-webkit-scrollbar {
@@ -384,7 +540,7 @@ body{
 
 .item_pro {
     display: flex;
-    flex: 0 0 50%; /* Ocupa el 60% del ancho del contenedor */
+    flex: 0 0 50%;
     scroll-snap-align: start;
     flex-direction: column;
     align-items: center;
@@ -393,10 +549,10 @@ body{
 }
 
 .imagen_pro {
-    border-radius: 20px;
-    height: 40vh;
+    border-radius: var(--border-radius-img-mov);
+    height: var(--height-img-mov);
     object-fit: cover;
-    width: 60vw;
+    width: var(--widht-img-mov);
 }
 
 .info_imagen_pro {
@@ -423,7 +579,7 @@ body{
     border-radius: var(--border-radius-btn-mas-compra);
     padding: var(--padding-btn-mas-compra);
     color: var(--color-btn-compra);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-mt);
     font-weight: var(--font-weight-light);
     letter-spacing: var(--letter-space-1);
 }
@@ -449,10 +605,9 @@ body{
 /* ----- seccion comparar paneles------- */
 /* ------------------------------ */
 
-/* General Styles */
 .seccion_comparativo {
     text-align: center;
-    padding: 6px;
+    padding: 0.375rem; /* 6px to rem */
 }
 
 /* Ocultar el input de checkbox */
@@ -463,12 +618,12 @@ body{
 /* Estilo del botón para mostrar/ocultar la tabla */
 .btn_toggle {
     display: inline-block;
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem; /* 20px 30px to rem */
     background-color: white;
     color: black;
     border-radius: var(--border-radius-btn-mas-compra);
     font-size: var(--font-size-lg);
-    border: 2px solid black;
+    border: 0.125rem solid black; /* 2px to rem */
     /* margin-left: -26px; */
     letter-spacing: var(--letter-space4);
 }
@@ -480,7 +635,7 @@ body{
 /* Tabla oculta por defecto, se muestra cuando el checkbox está activado */
 .tabla_oculta {
     display: none;
-    padding-top: 20px;
+    padding-top: 1.25rem; /* 20px to rem */
 }
 
 .toggle_input:checked + .btn_toggle + .tabla_oculta {
@@ -491,27 +646,27 @@ body{
 .tabla_comparativa {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px to rem */
 }
 
 /* Estilos de las celdas de la tabla */
 .tabla_comparativa th,
 .tabla_comparativa td {
-    padding: 12px 5px;
-    font-size: 12px;
+    padding: 0.75rem 0.3125rem; /* 12px 5px to rem */
+    font-size: 0.75rem; /* 12px to rem */
     text-align: center;
     position: relative;
     width: 10%; /* Ajusta el ancho máximo que prefieras */
-    overflow-wrap: break-word; /* Permite que el texto se ajuste si excede el ancho */
+    overflow-wrap: break-word;
 }
 
 /* Estilo de la primera columna de atributos */
 .tabla_comparativa .atributo {
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px to rem */
     font-weight: bold;
     text-align: left;
     /* padding-left: 50px; */
-    border-bottom: none; /* Sin línea inferior en la columna de atributos */
+    border-bottom: none;
 }
 
 /* Estilo de los títulos de los paneles */
@@ -520,52 +675,50 @@ body{
     font-weight: bold;
     color: var(--color-apple);
     display: block;
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px to rem */
 }
 
 /* Estilo de las imágenes */
 .imagen_panel {
     width: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px to rem */
 }
 
 /* Línea entrecortada centrada y más corta para cada celda de datos (excepto la columna de atributos) */
 .tabla_comparativa td:not(.atributo)::after {
     content: "";
     display: block;
-    width: 48%; /* Ajusta el porcentaje para hacer la línea más corta o larga */
-    margin: 10px auto 0; /* Centra la línea y añade un pequeño espacio superior */
-    border-bottom: 0.8px solid #ccc;
+    width: 48%;
+    margin: 0.625rem auto 0; /* 10px auto 0 to rem */
+    border-bottom: 0.05rem solid #ccc; /* 0.8px to rem */
 }   
 
 .tabla_comparativa tbody tr:last-child td::after {
     content: none;
 }
 
-
-.btn_comprar{
-    border: 1px solid rgb(0, 113, 227);
+.btn_comprar {
+    border: 0.0625rem solid rgb(0, 113, 227); /* 1px to rem */
     background-color: rgb(0, 113, 227);
     border-radius: 980px;
-    padding: 11px 22px;
+    padding: 0.6875rem 1.375rem; /* 11px 22px to rem */
     color: white;
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px to rem */
     font-weight: var(--font-weight-light);
     letter-spacing: -0.374px;
 }
 
-
-
 /* ---------------------- */
 /* seccion_soluciones */
 /* ---------------------- */
+
 
 .seccion_sol {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--section-padding);
+    padding-top: var(--section-padding);
     gap: var(--gap-titulo-conjunto-section-3);
 }
 

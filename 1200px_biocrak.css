@@ -1,0 +1,38 @@
+@media (min-width: 1200px) {
+ 
+
+  :root{
+    --font-size-xxl: 3.5rem;
+  }
+
+  html{
+    font-size: 26px; 
+  }
+
+
+  /* seccion carrusel */
+
+  .carousel-track {
+    display: flex;
+    animation: slide 24s linear infinite alternate;
+    width: calc(120px * 1); 
+    gap: var(--gap-logo-empresas);
+    padding: 0px 100px;
+  }
+  
+  .carousel-track img {
+    height: 120px; 
+    width: 120px;
+    object-fit: contain;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-120px * 10));
+    }
+  }
+
+}

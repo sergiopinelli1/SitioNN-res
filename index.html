@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>CECLULAR</title>
+    <title>BIOCRAK</title>
 
     <link rel="stylesheet" href="576pxcelular.css">
+
+    <link rel="stylesheet" href="768px_biocrak.css">
+
+    <link rel="stylesheet" href="992px_biocrak.css">
+
+    <!-- <link rel="stylesheet" href="1200pxcelular.css"> -->
+
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
+
     <!-- ------------------------ -->
     <!-- Header -->
     <!-- ----------------------- -->
@@ -24,7 +35,7 @@
     
             <!-- Label y Input para el Menú Hamburguesa -->
             <label for="menu-toggle" class="menu-label">
-                <img class="icono_menu" src="copia_img_header/drag_handle_24dp_FFFFFF_FILL0_wght100_GRAD200_opsz20.png" alt="Icono de menú">
+                <img class="icono_menu" src="copia_de img_header/drag_handle_24dp_FFFFFF_FILL0_wght100_GRAD200_opsz20.png" alt="Icono de menú">
             </label>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
     
@@ -42,9 +53,16 @@
         </div>
     </header>
 
+    <!-- --------------- -->
     <!-- Menu -->
+     <!-- -------------- -->
+
     <main>
-        <!-- SeccionHero -->
+
+        <!-- ----------------- -->
+        <!-- Seccion Hero -->
+        <!-- ---------------- -->
+
          <section id="hero"> <!-- va la imagen de fondo en css -->
             <div class="hero_info">
                 <div class="conjunto_texto_hero">
@@ -59,9 +77,11 @@
             </div>
          </section>
 
-    <!-- ----------- -->
-        <!-- Seccion carrusel -->
-        <!-- -------- -->
+
+
+    <!-- -------------------------- -->
+    <!-- Seccion carrusel -->
+    <!-- --------------------------- -->
 
         <div class="carousel-container">
             <h2 class="titulo_carousel">Utilizado por organizaciones a nivel mundial</h2>
@@ -89,21 +109,30 @@
             </div>
             <!-- <p class="tiempo_uso_car">Unos minutos al dia. Recuperacion rapida. Mas energia. Cuerpo mas sano</p> -->
         </div>
+
+
+
+        <!-- --------------------- -->
+        <!-- seccion productos -->
+        <!-- --------------------- -->
     
-         <section class="seccion_productos">
-            <h2 class="titulo_seccion_pro">Conocé tu panel ideal</h2>
-            <p class="tiempo_uso_car">Unos minutos al día. Mas energia. Cuerpo revitalizado.</p>
+        <section class="seccion_productos">
+            <div class="top_pro">
+                <h2 class="titulo_seccion_pro">Conocé tu panel ideal</h2>
+                <p class="subtitulo_seccion_pro">Unos minutos al día. Mas energia. Cuerpo revitalizado.</p>
+            </div>
+            
             <article class="conjunto_pro">
                 <a class="link_pro" href="#">
                     <article class="item_pro">
                         <img class="imagen_pro" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" alt="">
                         <div class="info_imagen_pro">
                             <h2 class="texto_pro">BIO 60</h2>
-                            <!-- <h5 class="texto2_pro">60 LEDs</h5> -->
-                            <!-- <p class="texto3_pro">El más pequeño. Ideal para usar en zonas específicas del cuerpo.</p> -->
-                            <div class="llamado_pro">
-                                <!-- <span class="boton_pro btn1">Más información</span> -->
-                                <span class="boton_pro btn2">Comprar</span>
+                            <h5 class="texto2_pro desk">60 LEDs</h5>
+                            <p class="texto3_pro desk">El más pequeño. Ideal para usar en zonas específicas del cuerpo.</p>
+                            <div class="btn_action">
+                                <!-- <span class="boton_pro btn1_pro btn_action_solid">Más información</span> -->
+                                <span class="btn_action_solid">Comprar</span>
                             </div>
                         </div>
                     </article>
@@ -113,11 +142,11 @@
                         <img class="imagen_pro" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" alt="">
                         <div class="info_imagen_pro">
                             <h2 class="texto_pro">BIO 300</h2>
-                            <!-- <h5 class="texto2_pro">300 LEDs</h5> -->
-                            <!-- <p class="texto3_pro">Ideal para usar en zonas mas amplias y todo el cuerpo.</p> -->
-                            <div class="llamado_pro">
+                            <h5 class="texto2_pro desk">300 LEDs</h5>
+                            <p class="texto3_pro desk">Ideal para usar en zonas mas amplias y todo el cuerpo.</p>
+                            <div class="btn_action">
                                 <!-- <span class="boton_pro btn1">Más información</span> -->
-                                <span class="boton_pro btn2">Comprar</span>
+                                <span class="btn_action_solid">Comprar</span>
                             </div>
                         </div>
                     </article>
@@ -127,17 +156,22 @@
                         <img class="imagen_pro" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" alt="">
                         <div class="info_imagen_pro">
                             <h2 class="texto_pro">BIO 600</h2>
-                            <!-- <h5 class="texto2_pro">600 LEDs</h5> -->
-                            <!-- <p class="texto3_pro">El más grande. Ideal para cubrir todo el cuerpo y aplicar variedad de usos.</p> -->
-                            <div class="llamado_pro">
+                            <h5 class="texto2_pro desk">600 LEDs</h5>
+                            <p class="texto3_pro desk">El más grande. Cubrí todo el cuerpo y aplica variedad de usos.</p>
+                            <div class="btn_action">
                                 <!-- <span class="boton_pro btn1">Más información</span> -->
-                                <span class="boton_pro btn2">Comprar</span>
+                                <span class="btn_action_solid">Comprar</span>
                             </div>
                         </div>
                     </article>
                 </a>
             </article>
         </section>
+
+
+        <!-- -------------------------- -->
+        <!-- seccion tabla comparativa -->
+         <!-- ----------------------- -->
 
         <section class="seccion_comparativo">
             <!-- Botón para mostrar/ocultar el cuadro -->
@@ -231,45 +265,74 @@
         </section>
         
     
-         
+
+         <!-- ------------------- -->
+          <!-- seccion soluciones -->
+           <!-- ----------------- -->
 
         <section class="seccion_sol">
-            <h2 class="titulo_seccion_sol">Que necesidad te puede solucionar?</h2>
+            <h2 class="titulo_seccion_sol">¿Qué necesidad te soluciona?</h2>
             <article class="conjunto_sol">
                 <a class="link_sol" href="#">
-                    <img class="imagen_sol" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" alt="">
+                    <img class="imagen_sol" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" alt="">
                     <div class="item_sol">
                         <p class="texto_sol">Recuperate despues del</p>
                         <p class="texto2_sol">Entrenamiento</p>
-                        <span class="boton_sol btn2">Ver más</span>
+                        <!-- <span class="boton_sol btn2">Ver más</span> -->
+                        <span class="btn_action_solid btn_action_solid_sol">Ver más</span>
+                    </div>
+                </a>
+                <a class="link_sol" href="#">
+                    <img class="imagen_sol" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" alt="">
+                    <div class="item_sol">
+                        <p class="texto_sol">Apoyate durante una</p>
+                        <p class="texto2_sol">Lesión o Enfermedad</p>
+                        <span class="btn_action_solid btn_action_solid_sol">Ver más</span>
                     </div>
                 </a>
                 <a class="link_sol" href="#">
                     <img class="imagen_sol" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" alt="">
                     <div class="item_sol">
-                        <p class="texto_sol">Recuperate despues del</p>
-                        <p class="texto2_sol">Entrenamiento</p>
-                        <span class="boton_sol btn2">Ver más</span>
-                    </div>
-                </a>
-                <a class="link_sol" href="#">
-                    <img class="imagen_sol" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" alt="">
-                    <div class="item_sol">
-                        <p class="texto_sol">Recuperate despues del</p>
-                        <p class="texto2_sol">Entrenamiento</p>
-                        <span class="boton_sol">Ver más</span>
+                        <p class="texto_sol">Revitalizate con</p>
+                        <p class="texto2_sol">Cuidado Personal</p>
+                        <span class="btn_action_solid btn_action_solid_sol">Ver más</span>
                     </div>
                 </a>
             </article>
         </section>
 
+        <!-- <section class="seccion_productos1">
+            <h2 class="titulo_seccion_pro1">Conocé tu panel ideal</h2>
+            <article class="conjunto_pro1">
+                <a class="link_pro1 imagen_pro1" href="#">
+                    <div class="info_imagen_pro1">
+                        <h2 class="texto_pro1">BIO 300</h2>
+                        <span class="boton_pro btn2">Comprar</span>
+                    </div>
+                </a>
+                <a class="link_pro1 imagen_pro1" href="#">
+                    <div class="info_imagen_pro1">
+                        <h2 class="texto_pro1">BIO 300</h2>
+                        <span class="boton_pro btn2">Comprar</span>
+                    </div>
+                </a>
+                <a class="link_pro1 imagen_pro1" href="#">
+                    <div class="info_imagen_pro1">
+                        <h2 class="texto_pro1">BIO 300</h2>
+                        <span class="boton_pro btn2">Comprar</span>
+                    </div>
+                </a>
+            </article>
+        </section> -->
 
 
-              <!-- Beneficios -->
-    
+
+        <!-- ----------------- -->
+        <!-- seccion Beneficios -->
+        <!-- ------------------ -->
+
         <section class="seccion_beneficios">
             <article class="container_beneficios">
-
                 <div class="top_beneficios">
                     <h2 class="titulo_beneficios">Descubre todo</h2>
                     <p class="subtitulo_beneficios">Los beneficios de la luz roja</p>
@@ -279,177 +342,190 @@
                 
                 <div class="bottom_beneficios">
                     <h4 class="titulo_bottom_beneficios">Cómo la tecnología <span>Biocrak</span> cura tu cuerpo mas rápido</h4>
-                    <p class="texto_bottom_beneficios">La luz roja estimula naturalmente la producción de energía de tu cuerpo. Se ha identificado como una excelente manera de mejorar la función celular, la mejora del estado de animo, contrarrestar el envejecimiento, mejorar el rendimiento y mucho mas.</p>
-                    <div class="links_beneficios">
-                        <a class="link_beneficios link1_ben" href="">Más sobre luz roja</a>
-                        <a class="link_beneficios link2_ben" href="">Comprar</a>
+                    <p class="texto_bottom_beneficios">La luz roja estimula naturalmente la producción de energía de tu cuerpo. Es una excelente manera de mejorar la función celular, la mejora del estado de animo, contrarrestar el envejecimiento y mucho más.</p>
+                    <div class="btn_action">
+                        <a class="btn_action_solid" href="">Más sobre luz roja</a>
+                        <a class="btn_action_trans" href="">Comprar</a>
                     </div>
                 </div>    
             </article>
         </section>
 
-              <!-- famosos uso -->
+
+    
+        <!-- ---------------- -->
+        <!-- seccion famosos -->
+        <!-- ----------------- -->
     <!-- 
-              <section class="seccion_fam_uso">
-                <h2 class="titulo_fam">Expertos en salud y deporte lo utilizan</h2>
-                <article class="container_fam">
-                    <article class="fam">
-                            <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
-                            <div  class="info_fam">
-                                <h4 class="nombre_fam">Bryan Jhonson</h4>
-                                <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
-                            </div>
-                    </article>
-    
-                    <article class="fam">
+        <section class="seccion_fam_uso">
+            <h2 class="titulo_fam">Expertos en salud y deporte lo utilizan</h2>
+            <article class="container_fam">
+                <article class="fam">
                         <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
                         <div  class="info_fam">
                             <h4 class="nombre_fam">Bryan Jhonson</h4>
                             <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
                         </div>
-                    </article>
-    
-                    <article class="fam">
-                        <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
-                        <div  class="info_fam">
-                            <h4 class="nombre_fam">Bryan Jhonson</h4>
-                            <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
-                        </div>
-                    </article>
-    
-                    <article class="fam">
-                        <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
-                        <div  class="info_fam">
-                            <h4 class="nombre_fam">Bryan Jhonson</h4>
-                            <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
-                        </div>
-                    </article>
-    
-                    <article class="fam">
-                        <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
-                        <div  class="info_fam">
-                            <h4 class="nombre_fam">Bryan Jhonson</h4>
-                            <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
-                        </div>
-                    </article>
-    
                 </article>
-    
-              </section> -->
-    
-    
-              <!-- Como funciona -->
-              <section class="seccion_fun">
-                <article class="container_fun">
-    
-                    <div class="top_fun">
-                        <h2 class="titulo_fun">Conoce cómo funciona</h2>
-                        <!-- <h4 class="subtitulo_fun">Tecnología Biocrak</h4> -->
+
+                <article class="fam">
+                    <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
+                    <div  class="info_fam">
+                        <h4 class="nombre_fam">Bryan Jhonson</h4>
+                        <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
                     </div>
-    
-                    <img class="mid_fun" src="./copia_img_como_funciona_inicio/BucleONDA9992.mp4" alt="">
-                    
-                    <div class="bottom_fun">
-                        <p class="texto_bottom_fun">Nuestros paneles aprovechan longitudes específicas de la luz para penetrar en la piel, estimulando la reparación celular. Este proceso aumenta la potencia de las células, desencadenando múltiples beneficios en el cuerpo. </p>
-                        <h5 class="subtitulo_bottom_fun">Luz precisa = Mayores resultados</h5>
-                        <div class="links_fun">
-                            <a class="link1_fun" href="">Más sobre como funciona</a>
-                            <!-- <a class="link2_fun" href="">Comprar</a> -->
-                        </div>
-                    </div>    
                 </article>
-              </section>
-    
-    
-              <!-- higlights/preguntas frecuentes -->
-              <section class="faq-section">
-    
-                <h2 class="titulo_faq">Preguntas frecuentes</h2>
-    
-                <article class="conjunto_faq">
-                    <div class="faq-item">
-                        <input type="checkbox" class="faq-checkbox" id="faq1">
-                        <label for="faq1" class="faq-question">
-                        <span class="faq">¿Hacen ruido los paneles?</span>
-                        <span class="plus_faq">+</span>
-                        </label>
-                        <div class="faq-answer">
-                            <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
-                        </div>
+
+                <article class="fam">
+                    <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
+                    <div  class="info_fam">
+                        <h4 class="nombre_fam">Bryan Jhonson</h4>
+                        <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
                     </div>
-    
-                    <div class="faq-item">
-                        <input type="checkbox" class="faq-checkbox" id="faq2">
-                        <label for="faq2" class="faq-question">
-                        <span class="faq">¿Cual es la diferencia entre los dos tamaños de panel?</span>
-                        <span class="plus_faq">+</span>
-                        </label>
-                        <div class="faq-answer">
-                            <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
-                        </div>
-                    </div>
-                
-                    <div class="faq-item">
-                        <input type="checkbox" class="faq-checkbox" id="faq3">
-                        <label for="faq3" class="faq-question">
-                        <span class="faq">¿Consumen mucha electricidad?</span>
-                        <span class="plus_faq">+</span>
-                        </label>
-                        <div class="faq-answer">
-                            <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
-                        </div>
-                    </div>
-    
-                    <div class="faq-item">
-                        <input type="checkbox" class="faq-checkbox" id="faq4">
-                        <label for="faq4" class="faq-question">
-                        <span class="faq">¿Cuanto tiempo debo utilizar el panel al dia?</span>
-                        <span class="plus_faq">+</span>
-                        </label>
-                        <div class="faq-answer">
-                            <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
-                        </div>
-                    </div>
-    
-                    <div class="faq-item">
-                        <input type="checkbox" class="faq-checkbox" id="faq5">
-                        <label for="faq5" class="faq-question">
-                        <span class="faq">¿Los paneles son faciles de usar?</span>
-                        <span class="plus_faq">+</span>
-                        </label>
-                        <div class="faq-answer">
-                            <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
-                        </div>
-                    </div>
-    
-                    <div class="faq-item">
-                        <input type="checkbox" class="faq-checkbox" id="faq6">
-                        <label for="faq6" class="faq-question">
-                        <span class="faq">¿Son seguros de usar?</span>
-                        <span class="plus_faq">+</span>
-                        </label>
-                        <div class="faq-answer">
-                            <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
-                        </div>
-                    </div>
-    
                 </article>
-              </section>
-              
-              </body>
+
+                <article class="fam">
+                    <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
+                    <div  class="info_fam">
+                        <h4 class="nombre_fam">Bryan Jhonson</h4>
+                        <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
+                    </div>
+                </article>
+
+                <article class="fam">
+                    <img class="imagen_fam" src="./img_empresas/bryan.jpeg" alt="">
+                    <div  class="info_fam">
+                        <h4 class="nombre_fam">Bryan Jhonson</h4>
+                        <p class="rol_fam">Empresario centrado en el rejuvenecimiento</p>
+                    </div>
+                </article>
+
+            </article>
+        </section> -->
     
-        </main>
     
-        <footer>
-            <div class="footer_container">
-                <a class="active" href="#"><img class="logo_foot" src="./img_header/BIOCRAK-11.png" alt="Logo Biocrak"></a>
-                <ul class="redes_foot">
-                    <li class="btn_footer"><a href="#"><img class="tam_foot" src="./img_footer/instagram_logo_blanco.png" alt=""></a></li>
-                    <li class="btn_footer"><a href="#"><img class="tam_foot" src="./img_footer/whatsapp_logo_blanco.png" alt=""></a></li>
-                </ul>
-    
-            </div>
-        </footer>
         
-    </body>
-    </html>
+        <!-- ---------------------- -->
+        <!-- seccion como funciona -->
+        <!-- ---------------------- -->
+
+        <section class="seccion_fun">
+            <article class="container_fun">
+
+                <div class="top_fun">
+                    <h2 class="titulo_fun">Conoce cómo funciona</h2>
+                    <!-- <h4 class="subtitulo_fun">Tecnología Biocrak</h4> -->
+                </div>
+
+                <img class="mid_fun" src="./copia_img_como_funciona_inicio/Diseño111.gif" alt="">
+                
+                <div class="bottom_fun">
+                    <p class="texto_bottom_fun">Nuestros paneles aprovechan longitudes específicas de la luz para penetrar en la piel. Este proceso aumenta la potencia de las células, desencadenando múltiples beneficios en el cuerpo. </p>
+                    <h5 class="subtitulo_bottom_fun">Luz precisa = Mayores resultados</h5>
+                    <div class="btn_action">
+                        <a class="btn_action_solid" href="">Más sobre como funciona</a>
+                        <!-- <a class="link2_fun" href="">Comprar</a> -->
+                    </div>
+                </div>    
+            </article>
+        </section>
+
+        
+
+        <!-- ---------------------------------- -->
+        <!-- seccion preguntas frecuentes/faq -->
+        <!-- ---------------------------------- -->
+
+        <section class="faq-section">
+
+            <h2 class="titulo_faq">Preguntas frecuentes</h2>
+
+            <article class="conjunto_faq">
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq1">
+                    <label for="faq1" class="faq-question">
+                    <span class="faq">¿Hacen ruido los paneles?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq2">
+                    <label for="faq2" class="faq-question">
+                    <span class="faq">¿Cual es la diferencia entre los dos tamaños de panel?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
+                </div>
+            
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq3">
+                    <label for="faq3" class="faq-question">
+                    <span class="faq">¿Consumen mucha electricidad?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq4">
+                    <label for="faq4" class="faq-question">
+                    <span class="faq">¿Cuanto tiempo debo utilizar el panel al dia?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq5">
+                    <label for="faq5" class="faq-question">
+                    <span class="faq">¿Los paneles son faciles de usar?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq6">
+                    <label for="faq6" class="faq-question">
+                    <span class="faq">¿Son seguros de usar?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    
+
+
+    <!-- ---------------- -->
+    <!-- seccion footer -->
+    <!-- ---------------- -->
+
+    <footer>
+        <div class="footer_container">
+            <a class="active" href="#"><img class="logo_foot" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+            <ul class="redes_foot">
+                <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/instagram-8.png" alt=""></a></li>
+                <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/whatsapp-3.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+        
+</body>
+</html>

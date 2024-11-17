@@ -1,0 +1,218 @@
+@import url('global.css');
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-family);
+    /* border: 1px solid  rebeccapurple; */
+}
+
+a{
+    color: inherit;
+}
+
+body{
+    background: white;
+}
+
+
+
+
+/* ---------------------- */
+/* ------ nav ----------- */
+/* ---------------------- */
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    color: #fff;
+    height: 8vh;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo{
+    height: 2vh;
+}
+
+/* Ícono del menú hamburguesa */
+.menu-label {
+    display: inline-block;
+}
+
+.icono_menu {
+    /* width: 1.9rem; */
+    height: 1.9rem;
+}
+
+/* Ocultar el checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Navbar (menu) oculto por defecto */
+.navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+
+/* Mostrar el menú cuando el checkbox está activado */
+.menu-toggle:checked + .navbar {
+    display: flex;
+}
+
+/* Botón de cierre en el menú desplegable */
+.close-menu {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Lista de navegación */
+.navbar_list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 16px;
+    width: 100%;
+}
+
+.item_navbar_list {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-space1);
+    color: #ffffff;
+}
+
+
+section {
+  width: 100%;
+  height: 100%;
+  /* max-width: 800px; */
+  /* padding: 20px; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 80px 20px 20px 20px;
+
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 52vh;
+  overflow: hidden;
+
+}
+
+.carousel-image {
+  display: none;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px; 
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* padding: 20px; */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+}
+
+/* .model-selection {
+  
+} */
+
+.model-button {
+  /* margin: 5px 5px 5px 0; */
+  /* padding: 10px 15px; */
+  background-color: #d3d3d3;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.model-button:hover {
+  background-color: #b0b0b0;
+}
+
+.price-section {
+  font-size: 24px;
+  color: cornflowerblue;
+  /* margin-top: 20px; */
+}
+
+.add-to-cart {
+  display: inline-block;
+  /* margin-top: 10px; */
+  /* padding: 12px 20px; */
+  background-color: cornflowerblue;
+  color: white;
+  /* text-align: center; */
+  /* border-radius: 5px; */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #cc0000;
+}

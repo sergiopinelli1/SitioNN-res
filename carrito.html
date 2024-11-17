@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Light Therapy Panel</title>
+  <link rel="stylesheet" href="576px_carrito.css">
+</head>
+<body>
+
+    <header class="header_head">
+        <div class="header_container">
+            <!-- Logo -->
+            <a class="active" href="#"><img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+    
+            <!-- Label y Input para el Menú Hamburguesa -->
+            <label for="menu-toggle" class="menu-label">
+                <img class="icono_menu" src="copia_de img_header/drag_handle_24dp_FFFFFF_FILL0_wght100_GRAD200_opsz20.png" alt="Icono de menú">
+            </label>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+            <!-- Navegación con botón de cierre -->
+            <nav class="navbar">
+                <span class="close-menu" onclick="document.getElementById('menu-toggle').checked = false;">&times;</span>
+                <ul class="navbar_list">
+                    <li class="item_navbar_list"><a href="carrito.html">Productos</a></li>
+                    <li class="item_navbar_list"><a href="entrenamiento.html">Beneficios</a></li>
+                    <li class="item_navbar_list"><a href="como_funciona.html">¿Cómo funciona?</a></li>
+                    <li class="item_navbar_list"><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li class="item_navbar_list"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="seccion_carrito">
+
+        <div class="container">
+
+            <div class="carousel" id="carousel">
+                <img src="./img_carrito/biomax-rlt_BIOMAX-300_grande.png" class="carousel-image active" alt="Biomax 300 Image 1">
+                <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="Biomax 300 Image 2">
+                <img src="./img_carrito/biomax-rlt_BIOMAX-300_grande.png" class="carousel-image" alt="Biomax 450 Image 1">
+                <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" class="carousel-image" alt="Biomax 450 Image 2">
+                <img src="./img_carrito/WallMountBracket_CloseUp_BIOMAX900-v3_blueandredlightson_0728fbe9-fcc7-47f0-99e1-4df4b4fbd8c8_1000x1000.jpg" class="carousel-image" alt="Biomax 600 Image 1">
+                <img src="copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" class="carousel-image" alt="Biomax 600 Image 2">
+                <button class="carousel-btn prev" onclick="prevImage()">&#10094;</button>
+                <button class="carousel-btn next" onclick="nextImage()">&#10095;</button>
+            </div>
+
+            <!-- Detalles del producto -->
+            <div class="details">
+                <h2 class="title">Terapia de luz</h2>
+
+                <h3 class="subtitle">Serie BIO</h3>
+
+                <p>Modelo:</p>
+                <div class="model-selection">
+                    <button class="model-button" onclick="changeModel('300', '$659')">BIOMAX 300</button>
+                    <button class="model-button" onclick="changeModel('450', '$999')">BIOMAX 450</button>
+                    <button class="model-button" onclick="changeModel('600', '$1299')">BIOMAX 600</button>
+                </div>
+
+                <div class="model_accesories">
+                    <h4 class="titulo_accesorie">Productos incluidos</h4>
+                    <ul class="lista_accesorie">
+                        <li class="item_accesorie">Panel de luz</li> 
+                        <li class="item_accesorie">Control remoto</li>
+                        <li class="item_accesorie">Pie de apoyo</li>
+                        <li class="item_accesorie">Gafas con filtro de luz</li>
+                    </ul>
+                </div>
+
+                <div class="facilidades">
+                    <h4 class="titulo_accesorie">Beneficios</h4>
+                    <ul class="lista_accesorie">
+                        <li class="item_accesorie">Envio gratis</li> 
+                        <li class="item_accesorie">3 años de garantia</li>
+                        <li class="item_accesorie">Servicio tecnico</li>
+                    </ul>
+                </div>
+
+                <div class="price-section" id="price">$659</div>
+                <a href="#" class="add-to-cart">Comprar por Whatsapp</a>
+
+                <div class="model_features">
+                    <h4 class="titulo_accesorie">Caracteristicas Tecnicas</h4>
+                    <ul class="lista_accesorie">
+                        <li class="item_accesorie">0 EMF</li> 
+                        <li class="item_accesorie">Certificado FDA</li>
+                        <li class="item_accesorie">60 Leds</li>
+                        <li class="item_accesorie">Panel de control tactil</li>
+                        <li class="item_accesorie">500 W de potencia</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -102,88 +102,6 @@
     --gap-btn-mas-compra: 30px;           
     /* --padding-btn-mas-compra: 0.6875rem 1.3125rem;  */
     /* --font-size-btn-mas-compra: 1.0625rem;     */
-/*
-    --font-size-xs: 12px; 
-    --font-size-sm: 14px; 
-    --font-size-md: 16px; 
-    --font-size-mt: 18px;
-    --font-size-lg: 20px; 
-    --font-size-mlg:22px;
-    --font-size-xl: 24px; 
-    --font-size-xlt: 30px;
-    --font-size-xxl: 32px; 
-    --font-size-xxxl: 40px; 
-    --font-size-3xl: 48px;
-    --font-size-4xl: 56px;
-  
-    --line-height-xs: 1.2;
-    --line-height-sm: 1.4;
-    --line-height-md: 1.5;
-    --line-height-lg: 1.6;
-
-    --max-width-8: 800px;
-    --max-width-9: 900px;
-    --max-width-1: 1000px;
-    --max-width-11: 1100px;
-    --max-width-12: 1200px;
-    --max-width-14: 1400px;
-    ---max-width-16: 1600px;
-    --max-width-15: 1500px;
-
-    --nav-padding: 16px 32px;
-
-    --section-padding: 60px 0px;
-
-    --section-padding-top-conoce-panel-ideal: 40px;
-
-    --gap-titulo-conjunto-section-3: 30px;
-    --gap-titulo-conjunto-section-6: 60px;
-
-    --gap-logo-empresas: 120px;
-
-    --gap-item-img: 30px;
-
-    --gap-info-producto: 15px;
-
-    --gap-bottom-section: 30px;
-
-    --border-img: 20px;
-
-    --height-header: 66px;
-
-    --height-logo: 200px;
-
-    --color1: white;
-
-    --gap-nav: 60px;
-
-    --back-header: black;
-
-    --back-apple: rgb(0, 113, 227);
-    --border-apple: 1px solid rgb(0, 113, 227);
-    --color-apple: rgb(0, 113, 227);
-    --back-trans-apple: rgb(5, 121, 237);
-
-    --text-deco: underline;
-
-    --letter-space1: 0.1px;
-    --letter-space2: 0.2px;
-    --letter-space3: 0.3px;
-    --letter-space4: 0.4px;
-    --letter-space5: 0.5px;
-    --letter-space6: 0.6px;
-    --letter-space7: 0.7px;
-    --letter-space8: 0.8px;
-    --letter-space10: 0.10px;
-    --letter-space-1:-0.374px;
-
-    --gap-btn-mas-compra: 30px;
-
-    border-radius-btn-mas-compra: 980px;
-    --padding-btn-mas-compra: 11px 21px;
-    --font-size-btn-mas-compra: 17px;
-    --color-btn-mas-info: rgb(0, 113, 227);
-    --color-btn-compra: white; */
 }
 
 
@@ -204,7 +122,6 @@ a{
 body{
     background: white;
 }
-
 
 
 
@@ -283,17 +200,11 @@ body{
 }
 
 .item_navbar_list {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-md);
     font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-space1);
     color: #ffffff;
 }
-
-
-
-
-
-
-
 
 /* ---------------------- */
 /* -------- hero -------- */
@@ -443,6 +354,7 @@ body{
     padding-bottom: var(--section-padding);
     padding-left: 10px;
     padding-right: 10px;
+
 }
 
 .top_pro{
@@ -483,8 +395,8 @@ body{
 
 .item_pro {
     display: flex;
-    flex: 0 0 50%;
-    scroll-snap-align: start;
+    flex: unset;
+    scroll-snap-align: unset;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -505,7 +417,6 @@ body{
     align-items: center;
     gap: var(--gap-info-producto);
     width: 100%;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -532,7 +443,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--gap-btn-mas-compra);
+    /* gap: var(--gap-btn-mas-comprsa); */
 }
 
 .btn_action_solid {
@@ -573,9 +484,11 @@ body{
 
 .seccion_comparativo {
     text-align: center;
-    padding: 0px 10px; /* 6px to rem */
+    padding: 0px 10px;
     padding-top: var(--section-padding_xs);
     padding-bottom: var(--section-padding);
+    align-items: center;
+    justify-content: center;
 }
 
 /* Ocultar el input de checkbox */
@@ -586,12 +499,12 @@ body{
 /* Estilo del botón para mostrar/ocultar la tabla */
 .btn_toggle {
     display: inline-block;
-    padding: 1.25rem 1.875rem; /* 20px 30px to rem */
+    padding: 1.25rem 1.875rem;
     background-color: white;
     color: black;
     border-radius: var(--border-radius-btn-mas-compra);
     font-size: var(--font-size-lg);
-    border: 0.125rem solid black; /* 2px to rem */
+    border: 0.125rem solid black;
     font-weight: var(--font-weight-regular);
     letter-spacing: var(--letter-space-1);
 }
@@ -603,7 +516,7 @@ body{
 /* Tabla oculta por defecto, se muestra cuando el checkbox está activado */
 .tabla_oculta {
     display: none;
-    padding-top: 20px; /* 20px to rem */
+    padding-top: 20px;
 }
 
 .toggle_input:checked + .btn_toggle + .tabla_oculta {
@@ -615,26 +528,30 @@ body{
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    table-layout: fixed; /* Hace que cada columna tenga el mismo ancho */
 }
 
 /* Estilos de las celdas de la tabla */
 .tabla_comparativa th,
 .tabla_comparativa td {
-    padding: 0.75rem 0.3125rem; /* 12px 5px to rem */
+    padding: 0.75rem 0.3125rem;
     font-size: var(--font-size-xs);
     text-align: center;
-    position: relative;
-    width: 12%; /* Ajusta el ancho máximo que prefieras */
     overflow-wrap: break-word;
 }
 
-/* Estilo de la primera columna de atributos */
+/* Ancho específico para la primera columna */
 .tabla_comparativa .atributo {
     font-size: var(--font-size-sm);
     font-weight: bold;
     text-align: left;
-    /* padding-left: 50px; */
-    border-bottom: none;
+    width: 25%; /* Ancho específico para la columna de características */
+}
+
+/* Asigna el mismo ancho a las columnas de los paneles */
+.tabla_comparativa th:not(.atributo),
+.tabla_comparativa td:not(.atributo) {
+    width: 25%; /* El resto de las columnas comparten el mismo ancho */
 }
 
 /* Estilo de los títulos de los paneles */
@@ -646,36 +563,32 @@ body{
     margin-top: 10px;
 }
 
-/* Estilo de las imágenes */
-.imagen_panel {
-    width: 50%;
-    margin-bottom: 10px;
+/* Alternar colores en las filas de la tabla */
+.tabla_comparativa tbody tr:nth-child(odd) {
+    background-color: #f5f5f5; /* Color gris claro */
 }
 
-/* Línea entrecortada centrada y más corta para cada celda de datos (excepto la columna de atributos) */
-.tabla_comparativa td:not(.atributo)::after {
-    content: "";
-    display: block;
-    width: 48%;
-    margin: 10px 0px;
-    /* border-bottom: 0.8px solid #0a0a0a; */
-}   
-
-.tabla_comparativa tbody tr:last-child td::after {
-    content: none;
+.tabla_comparativa tbody tr:nth-child(even) {
+    background-color: white; /* Color blanco */
 }
 
+/* Estilo para las celdas con colspan de 3 */
+.tabla_comparativa td[colspan="3"] {
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Estilo del botón de compra */
 .btn_comprar {
-    border: 0.0625rem solid rgb(0, 113, 227); /* 1px to rem */
+    border: 0.0625rem solid rgb(0, 113, 227);
     background-color: rgb(0, 113, 227);
     border-radius: 980px;
-    padding: 0.6875rem 1.375rem; /* 11px 22px to rem */
+    padding: 0.6875rem 1.375rem;
     color: white;
-    font-size: 1.0625rem; /* 17px to rem */
+    font-size: 1.0625rem;
     font-weight: var(--font-weight-light);
     letter-spacing: -0.374px;
 }
-
 
 
 

@@ -325,7 +325,7 @@
 
 .model-selection {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   gap: 5px;
   width: 100%;
 }

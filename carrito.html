@@ -34,70 +34,240 @@
     </header>
 
 
+    <!-- seccion hero carrito -->
+
     <section class="seccion_carrito">
-
         <div class="container">
+          <div class="carousel" id="carousel">
+            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image active" alt="BIO 60 Image 1">
+            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="BIO 60 Image 2">
+            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" class="carousel-image" alt="BIO 300 Image 1">
+            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" class="carousel-image" alt="BIO 300 Image 2">
+            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" class="carousel-image" alt="BIO 600 Image 1">
+            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" class="carousel-image" alt="BIO 600 Image 2">
+            <button class="carousel-btn prev" onclick="prevImage()">&#10094;</button>
+            <button class="carousel-btn next" onclick="nextImage()">&#10095;</button>
+          </div>
+          
+          <div class="details">
 
-            <div class="carousel" id="carousel">
-                <img src="./img_carrito/biomax-rlt_BIOMAX-300_grande.png" class="carousel-image active" alt="Biomax 300 Image 1">
-                <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="Biomax 300 Image 2">
-                <img src="./img_carrito/biomax-rlt_BIOMAX-300_grande.png" class="carousel-image" alt="Biomax 450 Image 1">
-                <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" class="carousel-image" alt="Biomax 450 Image 2">
-                <img src="./img_carrito/WallMountBracket_CloseUp_BIOMAX900-v3_blueandredlightson_0728fbe9-fcc7-47f0-99e1-4df4b4fbd8c8_1000x1000.jpg" class="carousel-image" alt="Biomax 600 Image 1">
-                <img src="copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" class="carousel-image" alt="Biomax 600 Image 2">
-                <button class="carousel-btn prev" onclick="prevImage()">&#10094;</button>
-                <button class="carousel-btn next" onclick="nextImage()">&#10095;</button>
+            <div class="conjunto_titulo_carrito">
+              <h3 class="title_carrito">BIO 60</h3>
+              <p class="texto_carrito1">Es el panel más pequeño, pensado para usar en zonas específicas del cuerpo. Es apto para personas de todos los tamaños</p>
             </div>
 
-            <!-- Detalles del producto -->
-            <div class="details">
-                <h2 class="title">Terapia de luz</h2>
+            <div class="select_model">
+              <p>Modelo:</p>
+              <div class="model-selection">
+                <button class="model-button" onclick="changeModel('60')">BIO 60</button>
+                <button class="model-button" onclick="changeModel('300')">BIO 300</button>
+                <button class="model-button" onclick="changeModel('600')">BIO 600</button>
+              </div>
+            </div>
 
-                <h3 class="subtitle">Serie BIO</h3>
+            <div class="model_accesorie">
+                <h4 class="titulo_accesorie">Productos incluidos</h4>
+                <ul class="lista_accesorie">
+                    <li class="item_accesorie">Panel de luz</li> 
+                    <li class="item_accesorie">Pie de apoyo</li>
+                    <li class="item_accesorie">Control remoto</li>
+                    <li class="item_accesorie">Gafas con filtro de luz</li>
+                </ul>
+            </div>
 
-                <p>Modelo:</p>
-                <div class="model-selection">
-                    <button class="model-button" onclick="changeModel('300', '$659')">BIOMAX 300</button>
-                    <button class="model-button" onclick="changeModel('450', '$999')">BIOMAX 450</button>
-                    <button class="model-button" onclick="changeModel('600', '$1299')">BIOMAX 600</button>
-                </div>
 
-                <div class="model_accesories">
-                    <h4 class="titulo_accesorie">Productos incluidos</h4>
-                    <ul class="lista_accesorie">
-                        <li class="item_accesorie">Panel de luz</li> 
-                        <li class="item_accesorie">Control remoto</li>
-                        <li class="item_accesorie">Pie de apoyo</li>
-                        <li class="item_accesorie">Gafas con filtro de luz</li>
-                    </ul>
-                </div>
-
-                <div class="facilidades">
-                    <h4 class="titulo_accesorie">Beneficios</h4>
-                    <ul class="lista_accesorie">
-                        <li class="item_accesorie">Envio gratis</li> 
-                        <li class="item_accesorie">3 años de garantia</li>
-                        <li class="item_accesorie">Servicio tecnico</li>
-                    </ul>
-                </div>
-
-                <div class="price-section" id="price">$659</div>
+            <div class="price-section">
+                <div class="price" id="price">$750.000 o U$S750</div>
                 <a href="#" class="add-to-cart">Comprar por Whatsapp</a>
+            </div>
 
-                <div class="model_features">
-                    <h4 class="titulo_accesorie">Caracteristicas Tecnicas</h4>
-                    <ul class="lista_accesorie">
-                        <li class="item_accesorie">0 EMF</li> 
-                        <li class="item_accesorie">Certificado FDA</li>
-                        <li class="item_accesorie">60 Leds</li>
-                        <li class="item_accesorie">Panel de control tactil</li>
-                        <li class="item_accesorie">500 W de potencia</li>
-                    </ul>
-                </div>
+            <div class="facilidades">
+                <h4 class="titulo_fal">Beneficios</h4>
+                <ul class="lista_fal">
+                    <li class="item_fal"><img class="icono_ben_carrito" src="./copia_img_facil_uso/musculo.png" alt="">Envio gratis Envio gratis</li> 
+                    <li class="item_fal"><img class="icono_ben_carrito" src="./copia_img_facil_uso/musculo.png" alt="">3 años de garantia</li>
+                    <li class="item_fal"><img class="icono_ben_carrito" src="./copia_img_facil_uso/musculo.png" alt="">Servicio tecnico</li>
+                </ul>
+            </div>
+
 
             </div>
         </div>
     </section>
+
+
+    <!-- seccion caracteristicas tecnicas -->
+
+    <section class="seccion_comparativo">
+        <div id="tabla_comparativo" class="tabla_oculta">
+            <h4 class="titulo_carac">Caracteristicas Tecnicas</h4>
+            <table class="tabla_comparativa">
+                <thead>
+                    <tr>
+                        <th class="celda_vacia"></th>
+                        <th>
+                            <label class="titulo_panel">BIO 60</label>
+                        </th>
+                        <th>
+                            <label class="titulo_panel">BIO 300</label>
+                        </th>
+                        <th>
+                            <label class="titulo_panel">BIO 600</label>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td class="atributo titulo">N longitudes de onda</td>
+                        <td colspan="3">5</td>
+                    </tr> -->
+                    <tr>
+                        <td class="atributo titulo">Cantidad de LEDs</td>
+                        <td>60</td>
+                        <td>300</td>
+                        <td>600</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="atributo titulo">Tamaño</td>
+                        <td>60x20x20 cm</td>
+                        <td>100x20x20 cm</td>
+                        <td>200x20x20 cm</td>
+                    </tr>
+                    <tr>
+                        <td class="atributo titulo">Peso</td>
+                        <td>4 kgs</td>
+                        <td>10 kgs</td>
+                        <td>20 kgs</td>
+                    </tr>
+                    <tr>
+                        <td class="atributo titulo">Potencia</td>
+                        <td>180w</td>
+                        <td>260w</td>
+                        <td>260w</td>
+                    </tr>
+                    <tr>
+                        <td class="atributo titulo">Consumo</td>
+                        <td>A 110V: 1.6A / A 220V: 0.8A</td>
+                        <td>A 110V: 2.3A / A 220V: 1.2A</td>
+                        <td>A 110V: 2.3A / A 220V: 1.2A</td>
+                    </tr>
+                    <tr>
+                        <td class="atributo titulo">Longitudes de onda</td>
+                        <td colspan="3">660, 630, 810, 850 nm</td>
+                    </tr>    
+                    <tr>
+                        <td class="atributo titulo">Tª de trabajo</td>
+                        <td colspan="3">130 F / 55 C</td>
+                    </tr>
+                    <tr>
+                        <td class="atributo titulo">Garantía</td>
+                        <td colspan="3">2 Años</td>
+                    </tr>
+                    <tr>
+                        <td class="atributo titulo">Vida util LEDs</td>
+                        <td colspan="3">100,000 hrs</td>
+                    </tr>
+                    <tr>
+                        <td class="atributo titulo">Uso ideal</td>
+                        <td>Uso para zona específica del cuerpo o facial</td>
+                        <td>Uso para medio o todo el cuerpo</td>
+                        <td>Uso para todo el cuerpo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+
+
+
+    <section class="faq-section">
+
+        <h2 class="titulo_faq">Preguntas frecuentes</h2>
+
+        <article class="conjunto_faq">
+            <div class="faq-item">
+                <input type="checkbox" class="faq-checkbox" id="faq1">
+                <label for="faq1" class="faq-question">
+                <span class="faq">¿Hacen ruido los paneles?</span>
+                <span class="plus_faq">+</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" class="faq-checkbox" id="faq2">
+                <label for="faq2" class="faq-question">
+                <span class="faq">¿Cual es la diferencia entre los dos tamaños de panel?</span>
+                <span class="plus_faq">+</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <input type="checkbox" class="faq-checkbox" id="faq3">
+                <label for="faq3" class="faq-question">
+                <span class="faq">¿Consumen mucha electricidad?</span>
+                <span class="plus_faq">+</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" class="faq-checkbox" id="faq4">
+                <label for="faq4" class="faq-question">
+                <span class="faq">¿Cuanto tiempo debo utilizar el panel al dia?</span>
+                <span class="plus_faq">+</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" class="faq-checkbox" id="faq5">
+                <label for="faq5" class="faq-question">
+                <span class="faq">¿Los paneles son faciles de usar?</span>
+                <span class="plus_faq">+</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" class="faq-checkbox" id="faq6">
+                <label for="faq6" class="faq-question">
+                <span class="faq">¿Son seguros de usar?</span>
+                <span class="plus_faq">+</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                </div>
+            </div>
+
+        </article>
+    </section>
+</main>
+
+
+    
+    <footer>
+        <div class="footer_container">
+            <a class="active" href="#"><img class="logo_foot" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+            <ul class="redes_foot">
+                <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/instagram-8.png" alt=""></a></li>
+                <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/whatsapp-3.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
 
   <script src="script.js"></script>
 </body>

@@ -442,7 +442,108 @@ body{
     padding-top: 10px;
     padding-bottom: 30px;
 }
+
+
+
+
   
+/* comparativo / caractersiticas tecnicas */
+
+.seccion_comparativo {
+    text-align: center;
+    padding: 0px 10px;
+    padding-top: var(--section-padding_xs);
+    padding-bottom: var(--section-padding);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ocultar el input de checkbox */
+/* .toggle_input {
+    display: none;
+} */
+
+.btn_toggle:hover {
+    background-color: #dfdfdf;
+}
+
+/* Tabla oculta por defecto, se muestra cuando el checkbox está activado */
+.tabla_oculta {
+    /* display: none; */
+    padding-top: 20px;
+}
+
+.toggle_input:checked + .btn_toggle + .tabla_oculta {
+    display: block; 
+}
+
+/* Estilos de la tabla */
+.tabla_comparativa {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Hace que cada columna tenga el mismo ancho */
+}
+
+/* Estilos de las celdas de la tabla */
+.tabla_comparativa th,
+.tabla_comparativa td {
+    padding: 0.75rem 0.3125rem;
+    font-size: var(--font-size-xs);
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+/* Ancho específico para la primera columna */
+.tabla_comparativa .atributo {
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+    text-align: left;
+    width: 25%; /* Ancho específico para la columna de características */
+}
+
+/* Asigna el mismo ancho a las columnas de los paneles */
+.tabla_comparativa th:not(.atributo),
+.tabla_comparativa td:not(.atributo) {
+    width: 25%; /* El resto de las columnas comparten el mismo ancho */
+}
+
+/* Estilo de los títulos de los paneles */
+.titulo_panel {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-apple);
+    display: block;
+    margin-top: 10px;
+}
+
+/* Alternar colores en las filas de la tabla */
+.tabla_comparativa tbody tr:nth-child(odd) {
+    background-color: #f5f5f5; /* Color gris claro */
+}
+
+.tabla_comparativa tbody tr:nth-child(even) {
+    background-color: white; /* Color blanco */
+}
+
+/* Estilo para las celdas con colspan de 3 */
+.tabla_comparativa td[colspan="3"] {
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Estilo del botón de compra */
+.btn_comprar {
+    border: 0.0625rem solid rgb(0, 113, 227);
+    background-color: rgb(0, 113, 227);
+    border-radius: 980px;
+    padding: 0.6875rem 1.375rem;
+    color: white;
+    font-size: 1.0625rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.374px;
+}
+
 
 
 /* footer */

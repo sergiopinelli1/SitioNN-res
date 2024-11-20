@@ -439,11 +439,11 @@ body{
     font-weight: var(--font-weight-light);
 }
 
-.btn_action {
+.btn_action{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: var(--gap-btn-mas-comprsa); */
+    gap: var(--gap-btn-mas-compra);
 }
 
 .btn_action_solid {
@@ -690,6 +690,10 @@ body{
 /* Ocultar barra de desplazamiento */
 .conjunto_sol::-webkit-scrollbar {
     display: none;
+}
+
+.btn_action_solid_sol:hover{
+        background-color: transparent;
 }
 
 

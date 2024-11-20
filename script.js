@@ -1,64 +1,70 @@
-// Variables para manejar el estado del carrusel
+// Variables globales
 let currentImageIndex = 0;
-let currentModel = '300';
+let currentModel = '60';
 
-// Imágenes de cada modelo
+// Imágenes por modelo
 const modelImages = {
-  '300': [
-    "./img_carrito/biomax-rlt_BIOMAX-300_grande.png",
+  '60': [
+    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png",
     "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png"
   ],
-  '450': [
-    "./img_carrito/biomax-rlt_BIOMAX-300_grande.png",
+  '300': [
+    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png",
     "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png"
   ],
   '600': [
-    "./img_carrito/WallMountBracket_CloseUp_BIOMAX900-v3_blueandredlightson_0728fbe9-fcc7-47f0-99e1-4df4b4fbd8c8_1000x1000.jpg",
-    "copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png"
+    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png",
+    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png"
   ]
 };
 
-// Precios de cada modelo
+// Precios por modelo
 const modelPrices = {
-  '300': "$659",
-  '450': "$999",
-  '600': "$1299",
-  '900': "$1599"
+  '60': "$750.000 o U$S750",
+  '300': "$1.300.000 o U$S1300",
+  '600': "$2.500.000 o U$S2500"
 };
 
-// Función para cambiar el modelo
-function changeModel(model, price) {
+// Cambiar modelo
+function changeModel(model) {
   currentModel = model;
-  currentImageIndex = 0; // Reiniciar índice de imagen al cambiar de modelo
+  currentImageIndex = 0; // Reiniciar índice
   updateCarousel();
-  updatePrice(price);
+  updatePrice();
 }
 
-// Función para actualizar el precio en el DOM
-function updatePrice(price) {
-  document.getElementById("price").textContent = price;
+// Actualizar precio
+function updatePrice() {
+  const priceElement = document.getElementById("price");
+  priceElement.textContent = modelPrices[currentModel];
 }
 
-// Función para actualizar el carrusel de imágenes
+// Actualizar carrusel
 function updateCarousel() {
-  const carouselImage = document.querySelector(".carousel-image");
-  carouselImage.src = modelImages[currentModel][currentImageIndex];
+  const images = document.querySelectorAll(".carousel-image");
+  images.forEach((img, index) => {
+    img.src = modelImages[currentModel][index % modelImages[currentModel].length];
+    img.classList.remove("active");
+  });
+  images[currentImageIndex].classList.add("active");
 }
 
-// Función para mostrar la imagen anterior en el carrusel
+// Imagen anterior
 function prevImage() {
-  currentImageIndex = (currentImageIndex - 1 + modelImages[currentModel].length) % modelImages[currentModel].length;
+  const totalImages = modelImages[currentModel].length;
+  currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
   updateCarousel();
 }
 
-// Función para mostrar la siguiente imagen en el carrusel
+// Imagen siguiente
 function nextImage() {
-  currentImageIndex = (currentImageIndex + 1) % modelImages[currentModel].length;
+  const totalImages = modelImages[currentModel].length;
+  currentImageIndex = (currentImageIndex + 1) % totalImages;
   updateCarousel();
 }
 
-// Inicializar el carrusel al cargar la página
+// Inicializar al cargar
 document.addEventListener("DOMContentLoaded", () => {
   updateCarousel();
+  updatePrice();
 });
-

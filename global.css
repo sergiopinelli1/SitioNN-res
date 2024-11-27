@@ -364,7 +364,7 @@ body{
 /* ------------------------------------------- */
 
 .faq-section {
-    /* max-width: va r(--max-width); */
+    /* max-width: var(--max-width); */
     display: flex;
     flex-direction: column;
     padding-top: var(--section-padding);
@@ -385,7 +385,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 90%;
-    align-items: center;
 }
 
 .faq_item{
@@ -394,8 +393,9 @@ body{
 
 .faq-question {
     cursor: pointer;
-    padding: 32px;
+    padding: 32px 6px;
     display: flex;
+    /* align-items: start; */
     justify-content: space-between; /* Coloca el texto y el icono a los lados */
     align-items: center;
     background-color: white;
@@ -405,6 +405,7 @@ body{
 .faq{
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
+    width: 90%;
 }
   
   /* Ocultar el checkbox */
@@ -429,22 +430,35 @@ body{
     max-height: 0;
     overflow: hidden;
     /* transition: max-height 0.3s ease; */
-    padding: 0 34px;
+    padding: 0px 8px;
     border-bottom: 0.6px solid rgb(0, 113, 227); /* Agregar borde debajo de la respuesta */
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     font-weight: var(--font-weight-regular);
+    /* align-items: center; */
   
 }
-  
-  /* Mostrar respuesta cuando el checkbox está marcado */
+
 .faq-checkbox:checked + .faq-question + .faq-answer {
-    max-height: 200px; /* Ajusta la altura máxima según el contenido */
+    max-height: 100vh;
+    overflow: visible; 
     padding-top: 10px;
     padding-bottom: 30px;
 }
 
 
+.container_table_faq{
+    width: 100%;
+    /* align-items: center; */
+}
 
+
+.titulo_faq2{
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-bold);
+    text-align: left;                                                                                                                                                       ;
+  }
+  
+  
 
   
 /* comparativo / caractersiticas tecnicas */

@@ -1,0 +1,50 @@
+@import url(global.css);
+
+.seccion_nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--section-padding);
+    padding-bottom: 80px;
+}
+
+.container_nos{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 40px;
+    /* padding: 0px 20px 0px 20px; */
+    gap: 30px;
+    width: 92%;
+}
+
+.img_nos{
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    margin: 0 auto;
+    /* order: 1; */
+}
+
+.info_nos{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 20px;
+    /* order: 2; */
+}
+
+.titulo_nos{
+    font-size: var(  --font-size-xxxl);
+    font-weight: var(--font-weight-medium);
+}
+
+.texto_nos{
+    font-size: var(  --font-size-mt);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-hei);
+}

@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Red Light Therapy Panel</title>
-  <link rel="stylesheet" href="576px_carrito.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>COMO FUNCIONA</title>
+
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="stylesheet" href="576px_carrito.css">
+
+    <link rel="stylesheet" href="medias_biocrak.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- ------------------------ -->
+    <!-- Header ----------------- -->
+    <!-- ------------------------ -->
 
     <header class="header_head">
         <div class="header_container">
@@ -33,391 +48,426 @@
         </div>
     </header>
 
+    <!-- ---------------- -->
+    <!-- ---- Menu ------ -->
+    <!-- ---------------- -->
 
-    <!-- seccion hero carrito -->
+    <main>
+        <!-- -------------------------------- -->
+        <!-- ---- seccion hero carrito ------ -->
+        <!-- -------------------------------- -->
 
-    <section class="seccion_carrito">
-        <div class="container">
-          <div class="carousel" id="carousel">
-            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image active" alt="BIO 60 Image 1">
-            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="BIO 60 Image 2">
-            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" class="carousel-image" alt="BIO 300 Image 1">
-            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" class="carousel-image" alt="BIO 300 Image 2">
-            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" class="carousel-image" alt="BIO 600 Image 1">
-            <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" class="carousel-image" alt="BIO 600 Image 2">
-            <button class="carousel-btn prev" onclick="prevImage()">&#10094;</button>
-            <button class="carousel-btn next" onclick="nextImage()">&#10095;</button>
-          </div>
-          
-          <div class="details">
+        <section class="seccion_carrito">
+            <div class="container">
+                <div class="carousel" id="carousel">
+                    <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image active" alt="BIO 60 Image 1">
+                    <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="BIO 60 Image 2">
+                    <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="BIO 300 Image 1">
+                    <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="BIO 300 Image 2">
+                    <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="BIO 600 Image 1">
+                    <img src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" class="carousel-image" alt="BIO 600 Image 2">
+                    <!-- <button class="carousel-btn prev" onclick="prevImage()">&#10094;</button> -->
+                    <!-- <button class="carousel-btn next" onclick="nextImage()">&#10095;</button> -->
+                </div>
+                
+                <div class="details">
 
-            <div class="conjunto_titulo_carrito">
-              <h3 class="title_carrito">BIO 60</h3>
-              <p class="texto_carrito1">Es el panel más pequeño, pensado para usar en zonas específicas del cuerpo. Es apto para personas de todos los tamaños</p>
+                    <div class="conjunto_titulo_carrito">
+                        <h3 class="title_carrito">BIO 60</h3>
+                        <p class="texto_carrito1">Es el panel más pequeño, pensado para usar en zonas específicas del cuerpo como terapia facial, lesiones, entre otros. Es apto para personas de todos los tamaños.</p>
+                    </div>
+
+                    <div class="select_model">
+                        <p class="titulo_select">Modelo:</p>
+                        <div class="model-selection">
+                            <button class="model-button" onclick="changeModel('60')">BIO 60</button>
+                            <button class="model-button" onclick="changeModel('300')">BIO 300</button>
+                            <button class="model-button" onclick="changeModel('600')">BIO 600</button>
+                        </div>
+                    </div>
+
+                    <div class="model_accesorie">
+                        <h4 class="titulo_accesorie">Productos incluidos</h4>
+                        <ol class="lista_accesorie">
+                            <li class="item_accesorie"><span>1</span>Panel de luz</li> 
+                            <li class="item_accesorie"><span>2</span>Pie de apoyo</li>
+                            <li class="item_accesorie"><span>3</span>Control remoto</li>
+                            <li class="item_accesorie"><span>4</span>Gafas con filtro de luz</li>
+                            <li class="item_accesorie"><span>5</span>Soporte pared</li>
+                            <li class="item_accesorie"><span>6</span>Cables de conexión</li>
+                        </ol>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price" id="price">$750.000 o U$S750</div>
+                        <a href="#" class="add-to-cart">Comprar por Whatsapp</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="select_model">
-              <p>Modelo:</p>
-              <div class="model-selection">
-                <button class="model-button" onclick="changeModel('60')">BIO 60</button>
-                <button class="model-button" onclick="changeModel('300')">BIO 300</button>
-                <button class="model-button" onclick="changeModel('600')">BIO 600</button>
-              </div>
-            </div>
-
-            <div class="model_accesorie">
-                <h4 class="titulo_accesorie">¿Que hay en la caja?</h4>
-                <ol class="lista_accesorie">
-                    <li class="item_accesorie"><span>1</span>Panel de luz</li> 
-                    <li class="item_accesorie"><span>2</span>Pie de apoyo</li>
-                    <li class="item_accesorie"><span>3</span>Control remoto</li>
-                    <li class="item_accesorie"><span>4</span>Gafas con filtro de luz</li>
-                    <li class="item_accesorie"><span>5</span>Soporte para colgar</li>
-                    <li class="item_accesorie"><span>6</span>Cables de conexión</li>
-                </ol>
-            </div>
+        </section>
 
 
-            <div class="price-section">
-                <div class="price" id="price">$750.000 o U$S750</div>
-                <a href="#" class="add-to-cart">Comprar por Whatsapp</a>
-            </div>
+        <!-- -------------------------------- -->
+        <!-- ------ seccion facilidades ----- -->
+        <!-- -------------------------------- -->
 
+        <section class="seccion_facil">
             <div class="facilidades">
                 <h4 class="titulo_fal">Facilidades</h4>
                 <ul class="lista_fal">
                     <li class="item_fal"><img class="icono_ben_carrito" src="./img_carrito/envio-gratis-4.png" alt="">Envio gratis a nivel nacional</li> 
                     <li class="item_fal"><img class="icono_ben_carrito" src="./img_carrito/garantia.png" alt="">2 años de garantia</li>
-                    <li class="item_fal"><img class="icono_ben_carrito" src="./img_carrito/comunidad.png" alt="">Soporte personzalizado</li>
+                    <li class="item_fal"><img class="icono_ben_carrito" src="./img_carrito/comunidad.png" alt="">Soporte personalizado</li>
                     <li class="item_fal"><img class="icono_ben_carrito" src="./img_carrito/gestion-de-productos.png" alt="">Prueba de 20 días</li>
-                </ul>
-            </div>
-
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- seccion caracteristicas tecnicas -->
-
-    <section class="seccion_comparativo">
-        <div id="tabla_comparativo" class="tabla_oculta">
-            <h4 class="titulo_carac">Caracteristicas Tecnicas</h4>
-            <table class="tabla_comparativa">
-                <thead>
-                    <tr>
-                        <th class="celda_vacia"></th>
-                        <th>
-                            <label class="titulo_panel">BIO 60</label>
-                        </th>
-                        <th>
-                            <label class="titulo_panel">BIO 300</label>
-                        </th>
-                        <th>
-                            <label class="titulo_panel">BIO 600</label>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- <tr>
-                        <td class="atributo titulo">N longitudes de onda</td>
-                        <td colspan="3">5</td>
-                    </tr> -->
-                    <tr>
-                        <td class="atributo titulo">Cantidad de LEDs</td>
-                        <td>60</td>
-                        <td>300</td>
-                        <td>600</td>
-                    </tr>
+                    <li class="item_fal"><img class="icono_ben_carrito" src="./img_carrito/certificado.png" alt="">FDA, Rohs, CE</li>
                     
-                    <tr>
-                        <td class="atributo titulo">Tamaño</td>
-                        <td>60x20x20cm</td>
-                        <td>100x20x20cm</td>
-                        <td>200x20x20cm</td>
-                    </tr>
-                    <tr>
-                        <td class="atributo titulo">Peso</td>
-                        <td>4 kgs</td>
-                        <td>10 kgs</td>
-                        <td>20 kgs</td>
-                    </tr>
-                    <tr>
-                        <td class="atributo titulo">Potencia</td>
-                        <td>180w</td>
-                        <td>260w</td>
-                        <td>260w</td>
-                    </tr>
-                    <tr>
-                        <td class="atributo titulo">Consumo</td>
-                        <td>110V:1.6A/ 220V:0.8A</td>
-                        <td>110V:2.3A/ 220V:1.2A</td>
-                        <td>110V:2.3A/ 220V:1.2A</td>
-                    </tr>
-                    <tr>
-                        <td class="atributo titulo">Longitudes de onda</td>
-                        <td colspan="3">660, 630, 810, 850 nm</td>
-                    </tr>    
-                    <tr>
-                        <td class="atributo titulo">Tª de trabajo</td>
-                        <td colspan="3">130 F / 55 C</td>
-                    </tr>
-                    <tr>
-                        <td class="atributo titulo">Garantía</td>
-                        <td colspan="3">2 Años</td>
-                    </tr>
-                    <tr>
-                        <td class="atributo titulo">EMF</td>
-                        <td colspan="3">0.0t</td>
-                    </tr>
-                    <tr>
-                        <td class="atributo titulo">Vida util LEDs</td>
-                        <td colspan="3">100,000 hrs</td>
-                    </tr>
-                    <tr>
-                        <td class="atributo titulo">Uso ideal</td>
-                        <td>Zona específica</td>
-                        <td>Medio o todo el cuerpo</td>
-                        <td>Todo el cuerpo</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-
-    <section class="faq-section">
-
-        <h2 class="titulo_faq2">Especifcaciones sobre emision de luz</h2>
-
-        <article class="conjunto_faq">
-
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq1">
-                <label for="faq1" class="faq-question">
-                <span class="faq">¿Que es la irradiancia?</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <p>La irradiación, o densidad de potencia, es una medida de la cantidad de energía de luz que golpea un área de superficie determinada. Para la terapia de luz roja, esto a menudo se expresa como mW/cm². La terapia de luz roja es eficaz dentro de una ventana en particular. Muy poca luz, y los efectos no estarán ahí, o no serán óptimos, demasiada luz, y los efectos también disminuyen. Los buenos dispositivos de terapia de luz tienen una irradiancia que permite suministrar la cantidad correcta de energía de luz en un tiempo de tratamiento razonable.</p>
-                </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq2">
-                <label for="faq2" class="faq-question">
-                <span class="faq">Ver tabla de irradiancia</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <div class="container_table_faq">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Distancia (cm)</th>
-                                    <th>660nm</th>
-                                    <th>850nm</th>
-                                    <th>Mezcla</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>51.92</td>
-                                    <td>39.6</td>
-                                    <td>46.64</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>46.98</td>
-                                    <td>37.54</td>
-                                    <td>43.79</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>42.18</td>
-                                    <td>31.68</td>
-                                    <td>37.96</td>
-                                </tr>
-                                <tr>
-                                    <td>20</td>
-                                    <td>33.74</td>
-                                    <td>26.47</td>
-                                    <td>36.67</td>
-                                </tr>
-                                <tr>
-                                    <td>30</td>
-                                    <td>27.2</td>
-                                    <td>21.59</td>
-                                    <td>34.98</td>
-                                </tr>
-                                <tr>
-                                    <td>40</td>
-                                    <td>25.45</td>
-                                    <td>19.2</td>
-                                    <td>32.91</td>
-                                </tr>
-                                <tr>
-                                    <td>50</td>
-                                    <td>22.85</td>
-                                    <td>15.62</td>
-                                    <td>31.74</td>
-                                </tr>
-                                <tr>
-                                    <td>60</td>
-                                    <td>17.16</td>
-                                    <td>12.69</td>
-                                    <td>30.06</td>
-                                </tr>
-                                <tr>
-                                    <td>70</td>
-                                    <td>17.74</td>
-                                    <td>11.93</td>
-                                    <td>24.88</td>
-                                </tr>
-                                <tr>
-                                    <td>80</td>
-                                    <td>16</td>
-                                    <td>11.5</td>
-                                    <td>23.58</td>
-                                </tr>
-                                <tr>
-                                    <td>90</td>
-                                    <td>13.38</td>
-                                    <td>9.76</td>
-                                    <td>22.28</td>
-                                </tr>
-                                <tr>
-                                    <td>100</td>
-                                    <td>11.78</td>
-                                    <td>7.27</td>
-                                    <td>18.53</td>
-                                </tr>
-                                <tr>
-                                    <td>125</td>
-                                    <td>7.42</td>
-                                    <td>6.73</td>
-                                    <td>15.68</td>
-                                </tr>
-                                <tr>
-                                    <td>150</td>
-                                    <td>6.69</td>
-                                    <td>5.1</td>
-                                    <td>12.31</td>
-                                </tr>
-                            </tbody>
-                        </table>
+
+        <!-- -------------------------------- -->
+        <!-- seccion caracteristicas tecnicas -->
+        <!-- -------------------------------- -->
+
+        <section class="seccion_comparativo">
+            <div id="tabla_comparativo" class="tabla_oculta">
+                <h4 class="titulo_carac">Caracteristicas Tecnicas</h4>
+                <table class="tabla_comparativa">
+                    <thead>
+                        <tr>
+                            <th class="celda_vacia"></th>
+                            <th>
+                                <label class="titulo_panel">BIO 60</label>
+                            </th>
+                            <th>
+                                <label class="titulo_panel">BIO 300</label>
+                            </th>
+                            <th>
+                                <label class="titulo_panel">BIO 600</label>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td class="atributo titulo">N longitudes de onda</td>
+                            <td colspan="3">5</td>
+                        </tr> -->
+                        <tr>
+                            <td class="atributo titulo">Cantidad de LEDs</td>
+                            <td>60</td>
+                            <td>300</td>
+                            <td>600</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="atributo titulo">Tamaño</td>
+                            <td>60x20x20cm</td>
+                            <td>100x20x20cm</td>
+                            <td>200x20x20cm</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Peso</td>
+                            <td>4 kgs</td>
+                            <td>10 kgs</td>
+                            <td>20 kgs</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Potencia</td>
+                            <td>180w</td>
+                            <td>260w</td>
+                            <td>260w</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Consumo</td>
+                            <td>110V:1.6A/ 220V:0.8A</td>
+                            <td>110V:2.3A/ 220V:1.2A</td>
+                            <td>110V:2.3A/ 220V:1.2A</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Longitudes de onda</td>
+                            <td colspan="3">660, 630, 810, 850 nm</td>
+                        </tr>    
+                        <tr>
+                            <td class="atributo titulo">Tª de trabajo</td>
+                            <td colspan="3">130 F / 55 C</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Garantía</td>
+                            <td colspan="3">2 Años</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">EMF</td>
+                            <td colspan="3">0.0 µT</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Flicker</td>
+                            <td colspan="3">No</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Vida util LEDs</td>
+                            <td colspan="3">100,000 hrs</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Uso ideal</td>
+                            <td>Zona específica</td>
+                            <td>Medio o todo el cuerpo</td>
+                            <td>Todo el cuerpo</td>
+                        </tr>
+                        <tr>
+                            <td class="atributo titulo">Precio</td>
+                            <td>U$S 750</td>
+                            <td>U$S 1300</td>
+                            <td>U$S 2500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- -------------------------------- -->
+        <!-- -- seccion irradiancia --------- -->
+        <!-- -------------------------------- -->
+
+        <section class="faq-section">
+
+            <h2 class="titulo_faq2">Especificaciones sobre emisión de luz</h2>
+
+            <article class="conjunto_faq">
+
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq1">
+                    <label for="faq1" class="faq-question">
+                    <span class="faq">¿Que es la irradiancia?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>La irradiación, o densidad de potencia, es una medida de la cantidad de energía de luz que golpea un área de superficie determinada. Para la terapia de luz roja, esto a menudo se expresa como mW/cm². La terapia de luz roja es eficaz dentro de una ventana en particular. Muy poca luz, y los efectos no estarán ahí, o no serán óptimos, demasiada luz, y los efectos también disminuyen. Los buenos dispositivos de terapia de luz tienen una irradiancia que permite suministrar la cantidad correcta de energía de luz en un tiempo de tratamiento razonable.</p>
                     </div>
                 </div>
-            </div>
-        
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq3">
-                <label for="faq3" class="faq-question">
-                <span class="faq">¿Que es la energia de luz total y como se relaciona con la irradiacion?</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <p>La irradiación expresa una cantidad dada de energía lumásica para un área de superficie determinada. La cantidad total de energía de luz tiene en cuenta el tiempo de tratamiento, el área de superficie y la irradiación. Según varios expertos, cuando se utilizan luces rojas y de infrarrojo cercano para el beneficio de todo el cuerpo, una energía total de varios cientos de miles de julios es apropiada y efectiva.</p>
+
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq2">
+                    <label for="faq2" class="faq-question">
+                    <span class="faq">Ver tabla de irradiancia</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <div class="container_table_faq">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Distancia (cm)</th>
+                                        <th>660nm</th>
+                                        <th>850nm</th>
+                                        <th>Mezcla</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>51.92</td>
+                                        <td>39.6</td>
+                                        <td>46.64</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>46.98</td>
+                                        <td>37.54</td>
+                                        <td>43.79</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>42.18</td>
+                                        <td>31.68</td>
+                                        <td>37.96</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>33.74</td>
+                                        <td>26.47</td>
+                                        <td>36.67</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>27.2</td>
+                                        <td>21.59</td>
+                                        <td>34.98</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>25.45</td>
+                                        <td>19.2</td>
+                                        <td>32.91</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>22.85</td>
+                                        <td>15.62</td>
+                                        <td>31.74</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60</td>
+                                        <td>17.16</td>
+                                        <td>12.69</td>
+                                        <td>30.06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>70</td>
+                                        <td>17.74</td>
+                                        <td>11.93</td>
+                                        <td>24.88</td>
+                                    </tr>
+                                    <tr>
+                                        <td>80</td>
+                                        <td>16</td>
+                                        <td>11.5</td>
+                                        <td>23.58</td>
+                                    </tr>
+                                    <tr>
+                                        <td>90</td>
+                                        <td>13.38</td>
+                                        <td>9.76</td>
+                                        <td>22.28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100</td>
+                                        <td>11.78</td>
+                                        <td>7.27</td>
+                                        <td>18.53</td>
+                                    </tr>
+                                    <tr>
+                                        <td>125</td>
+                                        <td>7.42</td>
+                                        <td>6.73</td>
+                                        <td>15.68</td>
+                                    </tr>
+                                    <tr>
+                                        <td>150</td>
+                                        <td>6.69</td>
+                                        <td>5.1</td>
+                                        <td>12.31</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq3">
+                    <label for="faq3" class="faq-question">
+                    <span class="faq">¿Que es la energia de luz total y como se relaciona con la irradiacion?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>La irradiación expresa una cantidad dada de energía lumásica para un área de superficie determinada. La cantidad total de energía de luz tiene en cuenta el tiempo de tratamiento, el área de superficie y la irradiación. Según varios expertos, cuando se utilizan luces rojas y de infrarrojo cercano para el beneficio de todo el cuerpo, una energía total de varios cientos de miles de julios es apropiada y efectiva.</p>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+
+        <!-- ------------------------------------- -->
+        <!-- -- seccion panel de control --------- -->
+        <!-- ------------------------------------- -->
+
+        <section class="seccion_panelc">
+            <div class="container_panelc">
+                <img class="img_panelc" src="./img_carrito/Captura de pantalla 2024-11-27 a la(s) 3.47.50 p. m..png" alt="">
+                <div class="conjunto_texto_panelc">
+                    <span class="texto_panelc"> Acá comienza la acción.</span>
+                    <p class="texto_panelc clarito">El panel de control te da acceso inmediato a una gran variedad de funciones. Podés personalizarlo para elegir frecuencias de luz específicas para diferentes usos, marcar el tiempo e iniciar una sesión. Presiónalo para poner a prueba su potencial. Y el tuyo.</p>
                 </div>
             </div>
-
-        </article>
-    </section>
+        </section>
 
 
-    <section class="seccion_panelc">
-        <div class="container_panelc">
-            <img class="img_panelc" src="./img_carrito/Captura de pantalla 2024-11-27 a la(s) 3.47.50 p. m..png" alt="">
-            <div class="conjunto_texto_panelc">
-                <span class="texto_panelc"> Acá comienza la acción.</span>
-                <p class="texto_panelc clarito">El panel de control te da acceso inmediato a una gran variedad de funciones. Puedes personalizarlo para elegir frecuencias de luz específicas para diferentes usos, marcar el tiempo e iniciar una sesión. Presiónalo para poner a prueba tu potencial. Y el tuyo.</p>
-            </div>
-        </div>
-    </section>
+        <!-- ----------------------------------------- -->
+        <!-- -- seccion preguntas frecuentes --------- -->
+        <!-- ----------------------------------------- -->
 
+        <section class="faq-section">
 
-    
+            <h2 class="titulo_faq">Preguntas frecuentes</h2>
 
-
-
-    <section class="faq-section">
-
-        <h2 class="titulo_faq">Preguntas frecuentes</h2>
-
-        <article class="conjunto_faq">
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq1">
-                <label for="faq1" class="faq-question">
-                <span class="faq">¿Hacen ruido los paneles?</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+            <article class="conjunto_faq">
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq1">
+                    <label for="faq1" class="faq-question">
+                    <span class="faq">¿Que tamaño de panel elijo?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>La principal diferencia entre los productos paneles y los sistemas de luces múltiples es la cantidad de LED en cada panel. Al aumentar el tamaño de las luces o crear un sistema con varias luces, se incrementa la cobertura, el rendimiento y los resultados. El espectro abarca todas las aplicaciones deseadas gracias a sus múltiples longitudes de onda. Todos los modelos BIO son adecuados para cualquier aplicación, y las diferencias entre ellos radican únicamente en el tamaño, la potencia y el área de cobertura. La elección del modelo depende de tus necesidades, presupuesto y nivel de rendimiento deseado.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq2">
-                <label for="faq2" class="faq-question">
-                <span class="faq">¿Cual es la diferencia entre los dos tamaños de panel?</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq2">
+                    <label for="faq2" class="faq-question">
+                    <span class="faq">¿Cual es la diferencia entre los dos tamaños de panel?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
                 </div>
-            </div>
-        
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq3">
-                <label for="faq3" class="faq-question">
-                <span class="faq">¿Consumen mucha electricidad?</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+            
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq3">
+                    <label for="faq3" class="faq-question">
+                    <span class="faq">¿Consumen mucha electricidad?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq4">
-                <label for="faq4" class="faq-question">
-                <span class="faq">¿Cuanto tiempo debo utilizar el panel al dia?</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq4">
+                    <label for="faq4" class="faq-question">
+                    <span class="faq">¿Cuanto tiempo debo utilizar el panel al dia?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq5">
-                <label for="faq5" class="faq-question">
-                <span class="faq">¿Los paneles son faciles de usar?</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq5">
+                    <label for="faq5" class="faq-question">
+                    <span class="faq">¿Los paneles son faciles de usar?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <input type="checkbox" class="faq-checkbox" id="faq6">
-                <label for="faq6" class="faq-question">
-                <span class="faq">¿Son seguros de usar?</span>
-                <span class="plus_faq">+</span>
-                </label>
-                <div class="faq-answer">
-                    <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                <div class="faq-item">
+                    <input type="checkbox" class="faq-checkbox" id="faq6">
+                    <label for="faq6" class="faq-question">
+                    <span class="faq">¿Son seguros de usar?</span>
+                    <span class="plus_faq">+</span>
+                    </label>
+                    <div class="faq-answer">
+                        <p>Los paneles tienen ventiladores para bajar la temperatura de los LEDs. El ruido es muy bajo. Para escucharlo, tienes que estar en la misma habitación.</p>
+                    </div>
                 </div>
-            </div>
 
-        </article>
-    </section>
-</main>
+            </article>
+        </section>
+
+    </main>
 
 
+    <!-- ------------------------------ -->
+    <!-- seccion footer -------------- -->
+    <!-- ------------------------------ -->
     
     <footer>
         <div class="footer_container">
@@ -429,7 +479,11 @@
         </div>
     </footer>
 
-  <script src="script.js"></script>
+    <!-- ------------------------------ -->
+    <!-- ----- script js -------------- -->
+    <!-- ------------------------------ -->
+    
+    <script src="script3.js"></script>
 </body>
 </html>
 

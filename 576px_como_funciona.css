@@ -1,120 +1,13 @@
 @import url('global.css');
 
-:root {
-    --font-family: "Roboto", Arial;
-
-    --font-size-xs: 0.75rem;      /* 12px */
-    --font-size-sm: 0.875rem;     /* 14px */
-    --font-size-md: 1rem;         /* 16px */
-    --font-size-mt: 1.125rem;     /* 18px */
-    --font-size-lg: 1.25rem;      /* 20px */
-    --font-size-mlg: 1.375rem;    /* 22px */
-    --font-size-xl: 1.5rem;       /* 24px */
-    --font-size-xltt:1.7rem;
-    --font-size-xlt: 1.875rem;    /* 30px */
-    --font-size-xxl: 2rem;        /* 32px */
-    --font-size-xxxl: 2.5rem;     /* 40px */
-    --font-size-3xl: 3rem;        /* 48px */
-    --font-size-4xl: 3.5rem;      /* 56px */
-
-    --color-primary: black;
-    --color-secondary: white;
-    --color-three: rgb(0, 113, 227);
-    
-    --font-weight-thin: 100;
-    --font-weight-light: 300;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-black: 900;
-
-    --border-radius-img-mov: 20px;
-
-    --height-img-mov: 40vh;
-
-    --nav-padding: 16px 32px;
-
-    --section-padding: 36px;
-    --section-padding_xs: 20px;
-
-    --section-padding-top-conoce-panel-ideal: 38px;
-
-    --gap-titulo-conjunto-section-3: 30px;
-    --gap-titulo-conjunto-section-6: 60px;   
-    --gap-titulo-conjunto-section-x: 40px;   
-    --gap-nav: 60px; 
-
-    --gap-logo-empresas: 120px;
-
-    --gap-item-img: 30px;
-
-    --gap-info-producto: 15px;
-
-    --gap-bottom-section: 30px;
-
-    --border-img: 20px;
-
-    --height-header: 66px;
-
-    --height-logo: 200px;
-
-    --gap-logo-empresas: 7.5rem;                     /* 120px to rem */
-    --gap-item-img: 1.875rem;                        /* 30px to rem */
-
-    --gap-info-producto: 0.9375rem;                  /* 15px to rem */
-    --gap-bottom-section: 1.875rem;                  /* 30px to rem */
-
-    --border-img: 20px;
-
-    --height-header: 4.125rem;                       /* 66px to rem */
-    --height-logo: 12.5rem;                          /* 200px to rem */
-
-    --gap-nav: 3.75rem;                              /* 60px to rem */
-
-    --back-header: black;
-
-    --back-apple: rgb(0, 113, 227);
-    --border-apple: 1px solid rgb(0, 113, 227);
-    --color-apple: rgb(0, 113, 227);
-    --back-trans-apple: rgb(5, 121, 237);
-    --color-btn-mas-info: rgb(0, 113, 227);
-    --color-btn-compra: white; 
-
-    --text-deco: underline;
-
-    --letter-space1: 0.1px;
-    --letter-space2: 0.2px;
-    --letter-space3: 0.3px;
-    --letter-space4: 0.4px;
-    --letter-space5: 0.5px;
-    --letter-space6: 0.6px;
-    --letter-space7: 0.7px;
-    --letter-space8: 0.8px;
-    --letter-space10: 0.10px;
-    --letter-space-1:-0.374px;
-
-    /* --gap-btn-mas-compra: 30px; */
-
-    --border-radius-btn-mas-compra: 980px;
-    --padding-btn-mas-compra: 11px 21px;
-    --font-size-btn-mas-compra: 17px;
-    --color-btn-compra: white; 
-
-    --gap-btn-mas-compra: 30px;           
-    /* --padding-btn-mas-compra: 0.6875rem 1.3125rem;  */
-    /* --font-size-btn-mas-compra: 1.0625rem;     */
-}
-
-
-/* ---------------------- */
-/* -------- hero -------- */
-/* ---------------------- */
+/* --------------------------- */
+/* -------- hero ------------- */
+/* --------------------------- */
 
 .hero_fun {
     display: flex; 
-    height: 100%;          
-    /* padding-bottom: ; */
+    /* height: 100%; */
+    padding: 110px 0px 0px 0px;          
 }
 
 .container_hero_fun{
@@ -123,12 +16,11 @@
     justify-content: center;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    padding: 100px 0px 0px 0px;
+    width: 92%;
+    /* padding: 100px 0px 0px 0px; */
     gap: 30px;
     margin: 0 auto;      
 }
-
 
 .titulo_hero_fun_1{
     color: var(--color-primary);
@@ -138,6 +30,7 @@
 
 .titulo_hero_fun_1 span{
     font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xxxl);
 }
 
 .cont_img{
@@ -152,6 +45,7 @@
     width: 100%;
     height: 100%;
     /* border-radius: var(--border-radius-img-mov); */
+    object-fit: contain;
 }
 
 .conjunto_texto_hero_fun{
@@ -176,9 +70,9 @@
 
 .texto_hero_fun {
     font-size: var(--font-size-mt);
-    font-weight: var(--font-weight-bold);
-    line-height: 28px;
-    text-align: left;
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-hei);
+    text-align: center;
 }
 
 .texto_hero_fun span{
@@ -186,28 +80,30 @@
 }
 
 
+/* -------------------------------- */
+/* ----- seccion historia --------- */
+/* ------------------------ ------- */
 
-/* seccion historia */
 
 .historia_fun {
     padding-top: var(--section-padding);
-    padding-bottom: 80px;
-    display: flex;
+    padding-bottom: 60px;
+    /* display: flex; */
 }
 
-/* Contenedor de la imagen y el texto */
 .container_his_fun {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
     gap: 30px;
 }
 
 .img_his{
     height: 100%;
     width: 100%;
+    object-fit: cover;   
 }
 
 .conjunto_texto_fun{
@@ -221,17 +117,15 @@
 .texto_his_fun{
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
-    line-height: 28px;
+    line-height: var(--line-hei);
 }
 
 
-
-
-
-/* celula proceso */
+/* -------------------------------- */
+/* ----- seccion celula ----------- */
+/* -------------------------------- */
 
 .celula{
-    display: flex;
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
@@ -242,7 +136,7 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    gap: 44px;
+    gap: 50px;
 }
 
 .titulo_cel{
@@ -251,15 +145,16 @@
     color: var(--color-primary);
     font-size: var(--font-size-xltt);
     font-weight: var(--font-weight-medium);
+    padding-bottom: 10px;
 }
 
 .item_cel{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding-left: 18px;
     padding-right: 18px;
-    line-height: 28px;
+    line-height: var(--line-hei);
 }
 
 .titulo_item_cel{
@@ -279,8 +174,9 @@
 }
 
 
-
-/* seccion wave */
+/* -------------------------------- */
+/* ----- seccion wave ------------- */
+/* -------------------------------- */
 
 .wave{
     padding-top: var(--section-padding);
@@ -292,13 +188,13 @@
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    padding: 0px 20px;
     align-items: center;
-    width: 94%;
+    width: 92%;
+    margin: 0 auto;
 }
 
 .titulo_wave{
-    width: 80%;
+    width: 75%;
     text-align: center;
     color: var(--color-primary);
     font-size: var(--font-size-xltt);
@@ -307,7 +203,7 @@
 
 .sub_wave{
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-size: var(--font-size-mlg);
     font-weight: var(--font-weight-bold);
 }
@@ -327,8 +223,8 @@
     align-items: start;
     text-align: left;
     width: 100%;
-    gap: 24px;
-    line-height: 26px;
+    gap: 10px;
+    line-height: var(--line-hei);
 }
 
 .usos{
@@ -364,50 +260,48 @@
 }
 
 
-
-
-
-
-
-
-/* seccion panel de control */
-
+/* ---------------------------------------- */
+/* ----- seccion panel de control --------- */
+/* ---------------------------------------- */
 
 .seccion_panelc{
     display: flex;
     padding-top: var(--section-padding);
-    padding-bottom: 100px;
-    width: 100%;
+    padding-bottom: 70px;
+    width: 100vw;
   }
   
   .container_panelc{
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    width: 90%;
+    justify-content: flex-start;
+    width: 92%;
     margin: 0 auto;
     gap: 20px;
+    height: auto;
   }
   
   .img_panelc{
     height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: var(--border-radius-img-mov);
   }
   
   .conjunto_texto_panelc{
     display: flex;
-    justify-content: center;
+    /* height: 80%; */
+    justify-content: flex-start;
     align-items: start;
     flex-direction: column;
-    line-height: 28px;
-    width: 96%;
+    line-height: var(--line-hei);
+    width: 92%;
   }
   
   .texto_panelc{
     font-size: var(--font-size-mt);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
   }
   
   .clarito {

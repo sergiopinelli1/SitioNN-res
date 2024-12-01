@@ -1,130 +1,12 @@
-:root {
-    --font-family: "Roboto", Arial;
+@import url(global.css);
 
-    --font-size-xs: 0.75rem;      /* 12px */
-    --font-size-sm: 0.875rem;     /* 14px */
-    --font-size-md: 1rem;         /* 16px */
-    --font-size-mt: 1.125rem;     /* 18px */
-    --font-size-lg: 1.25rem;      /* 20px */
-    --font-size-mlg: 1.375rem;    /* 22px */
-    --font-size-xl: 1.5rem;       /* 24px */
-    --font-size-xltt:1.7rem;
-    --font-size-xlt: 1.875rem;    /* 30px */
-    --font-size-xxl: 2rem;        /* 32px */
-    --font-size-xxxl: 2.5rem;     /* 40px */
-    --font-size-3xl: 3rem;        /* 48px */
-    --font-size-4xl: 3.5rem;      /* 56px */
+/* ------------------------------------------------------------------ */
+/* -------- body ---------------------------------------------------- */
+/* ------------------------------------------------------------------ */
 
-    --color-primary: black;
-    --color-secondary: white;
-    --color-three: rgb(0, 113, 227);
-    
-    --font-weight-thin: 100;
-    --font-weight-light: 300;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-black: 900;
-
-    --border-radius-img-mov: 20px;
-
-    --height-img-mov: 40vh;
-
-    --nav-padding: 16px 32px;
-
-    --section-padding: 36px;
-    --section-padding_xs: 20px;
-
-    --section-padding-top-conoce-panel-ideal: 38px;
-
-    --gap-titulo-conjunto-section-3: 30px;
-    --gap-titulo-conjunto-section-6: 60px;   
-    --gap-titulo-conjunto-section-x: 40px;   
-    --gap-nav: 60px; 
-
-    --gap-logo-empresas: 120px;
-
-    --gap-item-img: 30px;
-
-    --gap-info-producto: 15px;
-
-    --gap-bottom-section: 30px;
-
-    --border-img: 20px;
-
-    --height-header: 66px;
-
-    --height-logo: 200px;
-
-    --gap-logo-empresas: 7.5rem;                     /* 120px to rem */
-    --gap-item-img: 1.875rem;                        /* 30px to rem */
-
-    --gap-info-producto: 0.9375rem;                  /* 15px to rem */
-    --gap-bottom-section: 1.875rem;                  /* 30px to rem */
-
-    --border-img: 20px;
-
-    --height-header: 4.125rem;                       /* 66px to rem */
-    --height-logo: 12.5rem;                          /* 200px to rem */
-
-    --gap-nav: 3.75rem;                              /* 60px to rem */
-
-    --back-header: black;
-
-    --back-apple: rgb(0, 113, 227);
-    --border-apple: 1px solid rgb(0, 113, 227);
-    --color-apple: rgb(0, 113, 227);
-    --back-trans-apple: rgb(5, 121, 237);
-    --color-btn-mas-info: rgb(0, 113, 227);
-    --color-btn-compra: white; 
-
-    --text-deco: underline;
-
-    --letter-space1: 0.1px;
-    --letter-space2: 0.2px;
-    --letter-space3: 0.3px;
-    --letter-space4: 0.4px;
-    --letter-space5: 0.5px;
-    --letter-space6: 0.6px;
-    --letter-space7: 0.7px;
-    --letter-space8: 0.8px;
-    --letter-space10: 0.10px;
-    --letter-space-1:-0.374px;
-
-    /* --gap-btn-mas-compra: 30px; */
-
-    --border-radius-btn-mas-compra: 980px;
-    --padding-btn-mas-compra: 11px 21px;
-    --font-size-btn-mas-compra: 17px;
-    --color-btn-compra: white; 
-
-    --gap-btn-mas-compra: 30px;           
-    /* --padding-btn-mas-compra: 0.6875rem 1.3125rem;  */
-    /* --font-size-btn-mas-compra: 1.0625rem;     */
-}
-
-
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: var(--font-family);
-    /* border: 1px solid  rebeccapurple; */
-}
-
-a{
-    color: inherit;
-}
-
-body{
-    background: white;
-}
-
-
-
+/* ------------------------------------------------------------------ */
+/* -------- header -------------------------------------------------- */
+/* ------------------------------------------------------------------ */
 
 /* ---------------------- */
 /* ------ nav ----------- */
@@ -206,6 +88,18 @@ body{
     color: #ffffff;
 }
 
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/* -------- menu ---------------------------------------------------- */
+/* ------------------------------------------------------------------ */
+
 /* ---------------------- */
 /* -------- hero -------- */
 /* ---------------------- */
@@ -275,6 +169,8 @@ body{
 /* .btn_hero:hover{
     background-color: var(--back-trans-apple);
 } */
+
+
 
 
 
@@ -354,7 +250,6 @@ body{
     padding-bottom: var(--section-padding);
     padding-left: 10px;
     padding-right: 10px;
-
 }
 
 .top_pro{
@@ -430,12 +325,12 @@ body{
 }
 
 .texto2_pro{
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-mt);
     font-weight: var(--font-weight-medium);
 }
 
 .texto3_pro{
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-mt);
     font-weight: var(--font-weight-light);
 }
 
@@ -467,7 +362,6 @@ body{
     font-weight: var(--font-weight-light);
     letter-spacing: var(--letter-space-1);
 }
-
 
 .btn_action_trans:hover {
     text-decoration: var(--text-deco);
@@ -596,11 +490,12 @@ body{
 
 
 
+
 /* --------------------------------------------- */
 /* ----------- seccion_soluciones -------------- */
 /* --------------------------------------------- */
 
-.seccion_sol {
+#seccion_sol {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -706,7 +601,6 @@ body{
 
 
 
-
 /* ------------------------------------------ */
 /* ------------- seccion_beneficios --------- */
 /* ------------------------------------------ */
@@ -786,6 +680,10 @@ body{
 
 
 
+
+
+
+
 /* ------------------------------------------- */
 /* ------------ seccion_ funciona ------------ */
 /* ------------------------------------------- */
@@ -850,6 +748,10 @@ body{
     text-align: center;
     font-weight: var(--font-weight-medium);
 }
+
+
+
+
 
 
 
@@ -928,7 +830,7 @@ body{
     /* transition: max-height 0.3s ease; */
     padding: 0 34px;
     border-bottom: 0.6px solid rgb(0, 113, 227); /* Agregar borde debajo de la respuesta */
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
   
 }
@@ -945,42 +847,12 @@ body{
 
 
 
-/* -------------------------------------------------- */
-/* ------------ facil y seguro de usar -------------- */
-/* -------------------------------------------------- */
 
-/* .seccion_uso{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--gap-titulo-conjunto-section);
-    padding: var(--section-padding);
-}
 
-.titulo_seccion_uso{
-    font-size: 40px;
-}
 
-.conjunto_uso{
-    display: flex;
-    gap: 10px;
-    max-width: var(--max-width);
-    height: 50vh;
-}
-
-.item_uso{
-    background-image: url(./img_facil_uso/336342941_926611245038363_5024300013961332235_n.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-} */
-
-/* --------------------- */
-/* --------footer ------- */
-/* ----------------------- */
+/* ---------------------------------------------- */
+/* --------footer ------------------------------- */
+/* ---------------------------------------------- */
 
 footer{
     background-color: black;
@@ -1015,87 +887,3 @@ footer{
 .logo_foot{
     height: 20px;
 }
-
-
-/* .les{
-    background-image: url('/copia_img_hero/Captura\ de\ pantalla\ 2024-11-01\ a\ la\(s\)\ 15.45.54.png'); 
-}
-
-.ent{
-    background-image: url('/copia_img_hero/Captura\ de\ pantalla\ 2024-11-01\ a\ la\(s\)\ 15.45.54.png'); 
-}
-
-.{
-    background-image: url('/copia_img_hero/Captura\ de\ pantalla\ 2024-11-01\ a\ la\(s\)\ 15.45.54.png'); 
-} */
-
-
-/* .seccion_productos1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-titulo-conjunto-section-3);
-    padding-top: var(--section-padding);
-    padding-bottom: 1rem;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.titulo_seccion_pro1 {
-    font-size: var(--font-size-xxl);
-    font-weight: var(--font-weight-medium);
-}
-
-
-.conjunto_pro1 {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    gap: var(--gap-md);
-} 
-
-.conjunto_pro1::-webkit-scrollbar {
-    display: none;
-} 
-
-.link_pro1 {
-    display: flex;
-    flex: 0 0 70%;
-    scroll-snap-align: start;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.info_imagen_pro1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-info-producto);
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.llamado_pro1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-btn-mas-compra);
-} 
-
-.imagen_pro1{
-    display: flex;
-    background-image: url('/copia_img_hero/Captura\ de\ pantalla\ 2024-11-01\ a\ la\(s\)\ 15.45.54.png'); 
-    background-position: center;   
-    background-repeat: no-repeat;  
-    background-size: cover; 
-    border-radius: var(--border-radius-img-mov);
-    height: var(--height-img-mov);
-} */
-

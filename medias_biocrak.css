@@ -1,18 +1,28 @@
-@media (min-width: 700px) {
+@import url('global.css');
+
+/* ----------------------------------------- */
+/* -- media 720px / tablets en vertical ---- */
+/* ----------------------------------------- */
+
+@media (min-width: 720px) {
     html {
-        font-size: 24px; 
+        font-size: 22px; 
     }
 
     :root{
+        --section-size-xxl: 2.4rem;
         --section-padding: 60px;
         --padding-btn-mas-compra: 12px 24px;
-        --font-size-mt: 1rem;
-        --font-weight-regular: 300;
+        --font-size-mt: 0.8rem;
+        --font-weight-regular: 400;
     }
 
+    /* --------------------------------------- */
+    /* ---- pagina inicio -------------------- */
+    /* --------------------------------------- */
 
-    /* seccion hero */
-
+    /* ---------- seccion hero --------------- */
+   
     
     .hero_info{
         padding-top: 160px;
@@ -33,16 +43,14 @@
         width: 80%;
     }
     
+    /* ---------- seccion beneficios --------------- */
 
-    
-    /* seccion beneficios */
 
     .titulo_bottom_beneficios{
         width: 80%;
     }
 
-
-     /* seccion footer */
+    /* ---------- seccion footer ------------------- */
 
      .footer_container{
         display: flex;
@@ -63,28 +71,154 @@
         gap: 40px;
     }
 
+
+    /* ----------------------------------------------- */
+    /* ------- pagina como funciona ------------------ */
+    /* ----------------------------------------------- */
+
+    /* ---------- seccion hero ------------ */
+
+    .container_hero_fun{
+        max-width: var(--max-width8);
+    }
+
+    /* ----------- seccion celula ------------ */
+
+    .item_cel:nth-child(odd) {
+        padding-left: 102px;
+      }
+
+    /* ------------ seccion panelc ------------ */
+
+    .container_panelc{
+        flex-direction: row;
+        align-items: start;
+        justify-content: flex-start;
+        max-width: var(ma);
+        gap: 30px;
+    }
+
+    .img_panelc{
+        /* height: auto; */
+        width:50%;
+        border-radius: var(--border-radius-img-mov);
+    }
+
+
+    /* ------------------------------------------ */
+    /* ------- pagina entrenamiento ------------- */
+    /* ------------------------------------------ */
+
+    /* --------- hero ----------- */
+
+    .container_uso2{
+        width: 70%;
+    }
+
+    /* --------- discover --------- */
+
+    .container_discoverben{
+        align-items: start;
+    }
+
+    .item_discoverben{
+        width: 40%;
+    }
+
+
+    /* ------------------------------------------ */
+    /* ------- pagina carrito ------------------- */
+    /* ------------------------------------------ */
+
+    .container {
+        margin-top: 130px;
+    }
+
+    .seccion_facil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+  
+    .facilidades{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        width: 96%;
+        margin: 0 auto;
+    }
+  
+    .titulo_fal{
+        font-size: var(--font-size-mt);
+        font-weight: var(--font-weight-semibold);
+    }
+    
+    .lista_fal{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap:0px;
+        align-items: start;
+        justify-content: space-around;
+        padding: 34px 10px;
+        border: 1px solid #e4e1fc;
+        box-shadow: 4px 4px 8px rgba(60, 76, 116, 0.16); 
+        border-radius: 10px; 
+        width: 100%;
+    }
+    
+    .item_fal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 15%;
+        gap: 16px;
+        font-size: var(--font-size-mt);
+    }
+
 }
 
-/* ------------------ */
-/* media 992px */
-/* ---------------- */
+
+/* ------------------------------------------------------------- */
+/* ------- media 992px / tablet acostada ----------------------- */
+/* ------------------------------------------------------------- */
 
 @media (min-width: 992px) {
 
     html{
-        font-size: 26px; 
+        font-size: 23px; 
+    }
+
+    .desk{
+        display: block;
+    }
+
+    .fuera{
+        display: none;
     }
 
     :root{
-        --font-size-btn-mas-compra: 19px;   
+        --font-size-btn-mas-compra: 19px;  
+        --font-size-mt: 0.875rem; 
+        --font-size-xxl: 2.3rem;
       } 
+
+    /* --------------------------------- */
+    /* ----  inicio -------------------- */
+    /* --------------------------------- */
+
+    /* --------- seccion nav ------------ */
 
     #hero{
         height: 100vh;
     }
 
     .header_container{
-
         position: fixed;
         height: 7vh;
     }
@@ -102,12 +236,8 @@
         padding: 12px;
     }
 
-    .menu-label {
-        display: none; /* Ocultar ícono de menú en pantallas grandes */
-    }
-
-    .close-menu {
-        display: none; /* Ocultar botón de cierre en pantallas grandes */
+    .menu-label, .close-menu {
+        display: none; /* Ocultar ícono de menú ybotón de cierre en pantallas grandes */
     }
 
     .navbar_list {
@@ -123,8 +253,7 @@
         font-size: 20px;
     }
 
-
-    /* seccion hero */
+    /* ------------ seccion hero ------------ */
 
     .hero_info{
         /* display: flex; */
@@ -156,10 +285,7 @@
     }
 
 
-
-
-
-    /* seccion carrusel */
+    /* --------- seccion carrusel ------------ */
 
     .carousel-container {
         gap: 40px;
@@ -169,8 +295,6 @@
         height: 10vh; 
         object-fit: contain;
       }
-
-    /* seccion carrusel */
 
     .carousel-track {
         display: flex;
@@ -195,12 +319,7 @@
         }
     }
 
-
-
-
-    
-
-    /* Seccion productos */
+    /* ---------- Seccion productos ------------ */
 
    .seccion_productos{
     display: flex;
@@ -208,7 +327,7 @@
     justify-content: center;
     align-items: center;
     gap: var(--gap-titulo-conjunto-section-6);
-    padding: 40px 0px 60px 0px;
+    padding: 40px 10px 60px 0px;
     }
 
     .conjunto_pro{
@@ -221,8 +340,8 @@
         overflow-x: unset;
         scroll-snap-type: unset;
         height: 100%;
+        padding: 0px;
     }
-
 
     .link_pro{
         flex-direction: column;
@@ -233,11 +352,10 @@
         gap: 12px;
     }
 
-
     .imagen_pro{
         border-radius: var(--border-img);
         height: 46vh;
-        width: 30vw;
+        width: 100%;
     }
 
     .info_imagen_pro{
@@ -248,38 +366,35 @@
         width: 70%;
     } 
 
-    .desk{
-        display: block;
+    .gap{
+        gap: 0px;
     }
 
-
-    /* seccion tabla comparativa */
+    /* ----- seccion tabla comparativa ---------- */
 
     .btn_toggle {
         padding: 1rem 1.7rem; /* 20px 30px to rem */
         font-weight: 300;
-        font-size: var(--font-size-mt);
+        font-size: var(--font-size-md);
     }
 
-
-
-
-
-    /* seccion soluciones */
+    /* -------- seccion soluciones ------------ */
     
-    .conjunto_sol {
+    .conjunto_sol{
         overflow-x: none;
         scroll-snap-type: none;
+        justify-content: space-around;
     }
     
-    .link_sol {
-        height: 46vh;
+    .link_sol{
+        height: 50vh;
         width: 32%;
         flex: none;
         scroll-snap-align: none;
         overflow: hidden;
+        align-items: center;
     }
-    
+
     .link_sol:hover .imagen_sol {
         filter: brightness(0.8); 
     }
@@ -301,8 +416,7 @@
     }
     
     
-    
-    /* Seccion beneficios */
+    /* ---------- Seccion beneficios ------------- */
 
     .subtitulo_beneficios{
         font-size: var(--font-size-xxl);
@@ -312,16 +426,398 @@
         font-size: var(--font-size-xxl);
     }
 
+
+    /* ------------------------------------------ */
+    /* ------- pagina como funciona ------------- */
+    /* ------------------------------------------ */
+
+    /* ---------- seccion hero ------------------ */
+
+    .hero_fun {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .container_hero_fun{
+        max-width: var(--max-width8);
+    }
+
+    /* -------- seccion historia ----------------- */
+
+    .historia_fun{
+        padding-top: 0px;
+        padding-bottom: var(--section-padding);
+    }
+
+    .container_his_fun{
+        height: auto;
+        margin: 0 auto;
+        max-width: var(--max-width8);
+    }
+
+    .img_his{
+        height: 100vh;
+        width: 50%;
+        border-radius: var(--border-img);
+    }
+
+    .container_his_fun{
+        flex-direction: row;
+    }
+
+    /* -------- seccion celula ---------------- */
+
+    .container_cel{
+        padding-top: var(--section-padding);
+        gap: 80px;
+        max-width: var(--max-width8);
+        margin: 0 auto;
+    }
+
+    .titulo_cel{
+        padding-bottom: 0px;
+        width: 70%;
+    }
+
+    .item_cel:nth-child(odd) {
+        padding-left: 104px; /* Impares */
+    }
+
+    .item_cel:nth-child(even){
+        padding-right: 160px;
+    }
+
+
+    /* ---------- seccion wave -------------- */
+
+    .container_wave{
+        gap: 50px;
+        max-width: var(--max-width8); 
+    }
+
+    /* ----------- section panelc ------------- */
+
+    .container_panelc{
+        flex-direction: row;
+        max-width: var(--max-width8);
+      }
+
+    .img_panelc{
+        /* height: auto; */
+        width:60%;
+        border-radius: var(--border-radius-img-mov);
+    }
+              
+
+    /* ----------------------------------------- */
+    /* ---- pagina entrenamiento --------------- */
+    /* ----------------------------------------- */
+
+    /* ----------- hero ------------------ */
+
+    /* ----- seccion discover ------------ */
+
+    .item_discoverben{
+        width: 29%;
+    }
+
+    /* .desk{
+        display: none;
+    } */
+
+    /* --- facil y seguro de usar ------------ */
+
+    .conjunto_sol2 {    
+        overflow-x: unset;
+        scroll-snap-type: unset;
+    }
+
+    .item_sol2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        flex: unset;
+        scroll-snap-align: start;
+        overflow: hidden;
+    }
+
+    .texto_sol2{
+        font-size: var(--font-size-mt);
+    }
+
+    /* ------------------------------------------- */
+    /* ------- pagina sobre nosotros ------------- */
+    /* ------------------------------------------- */
+
+    .container_nos{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    .img_nos{
+        height: 60vh;
+        width: 100%;
+        margin: 0 auto;
+        /* order: 2; */
+    }
+
+
+    /* ------------------------------------------- */
+    /* ------- pagina carrito -------------------- */
+    /* ------------------------------------------- */
+    
+    .seccion_carrito {
+        padding-bottom: 0px;
+      }
+
+    .container {
+        flex-direction: row;
+        align-items: start;
+        width: 96%;
+        margin-top: 98px;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 70vh;
+
+    }
+
+    .carousel-image {
+        max-width: 100%; 
+        width: 100%;
+        /* height: 100%; */
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    /* ----- seleccion de modelos ----------- */
+
+    .select_model{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* ------------ Detalles -------------- */
+
+    
+    .details {
+        display: flex;
+        flex-direction: column;
+        width: 76%;
+        gap: 34px;
+    }   
+
+    .select_model{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .model-selection {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        width: 100%;
+      }
+
+      .texto_carrito1{
+        font-size: var(--font-size-xs);
+      }
+
+    /* ----- seleccion de modelos ----------- */
+    
+    .titulo_select{
+        font-size: var(--font-size-xs);
+    }
+        
+
+    /* ----- productos incluidos ----------- */
+
+    .titulo_accesorie{
+        font-size: var(--font-size-xs);
+      }
+      
+    .lista_accesorie{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: flex-start;
+        text-align: left;
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-regular);
+        line-height: 26px;
+        padding-left: 4px;
+        gap: 14px;
+      }
+
+    /* -------------------------------- */
+    /* ------ seccion facilidades ----- */
+    /* -------------------------------- */
+
+    .titulo_fal{
+        display: none;
+    }
+
+    .item_fal{
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: start; */
+        /* width: 30%; */
+        align-items: center;
+        gap: 10px;
+        font-size: var(--font-size-xs);
+      }
+
+
+    .icono_ben_carrito{
+        height: 50px;
+    }
 }
 
 
-/* ------------------ */
-/* media 1200px */
-/* ---------------- */
+/* --------------------------------------------------- */
+/* ---- media 1200px / notebooks y más --------------- */
+/* --------------------------------------------------- */
 
 @media (min-width: 1200px) {
 
-  html{
-    font-size: 26px; 
-  } 
+    html{
+        font-size: 24px; 
+    } 
+
+    .fuera{
+        display: block;
+    }
+
+    .out{
+        display: none;
+    }
+    /* --------------------------------- */
+    /* ----  inicio -------------------- */
+    /* --------------------------------- */
+
+
+    /* ---------------------------------------------- */
+    /* ---- pagina como funciona -------------------- */
+    /* ---------------------------------------------- */
+
+    /* ---- seccion historia */
+
+    .img_his{
+        height: 68vh;
+    }
+
+
+    /* ---------------------------------------------- */
+    /* ---- pagina entrenamiento -------------------- */
+    /* ---------------------------------------------- */
+
+    /* ---- hero entrenamiento -------------- */
+
+    .hero_uso2 {
+        align-items: start;
+        height: 140vh;
+    }
+
+    .container_uso2{
+        flex-direction: row;
+        gap: 90px;
+        align-items: start;
+        margin-top: 220px;
+        /* justify-content: flex-start; */
+        width: 100%;
+    }
+
+    .container_uso2, .texto_hero2{
+        align-items: end;
+    }
+
+    .conjunto_texto_uso2{
+        width: 50%;
+        gap: 80px;
+    }
+
+    .texto_hero2{
+        color: var(--color-secondary);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-regular);
+        width: 80%;
+    }
+
+    .lista_ben{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-regular);
+        margin-bottom: -60px;
+        gap: 10px;
+    }
+
+    .item_ben{
+        list-style: inside;
+    }
+
+    .experimenta2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        bottom: 160px;
+        color: var(--color-secondary);
+        gap: 20px;
+    }
+    
+    .experimenta2 h5{
+        font-size: var(--font-size-xlt);
+        font-weight: var(--font-weight-light);
+    }
+    
+    .experimenta2 span{
+        color: orange;
+    }
+
+    .experimenta2 p{
+        font-size: var(--font-size-lg);
+    }
+
+
+
+    /* ---------- seccion facil y seguro ---------- */
+
+    .item_sol2{
+        justify-content: flex-start;
+    }
+
+    .conjunto_texto_sol2{
+        margin-top: 30%;
+    }
+}
+
+
+
+@media (min-width: 1900px){
+    
+    .lista_accesorie{
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        align-items: start;
+        justify-content: flex-start;
+        text-align: left;
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-regular);
+        line-height: 26px;
+        padding-left: 4px;
+        gap: 14px;
+      }
+
 }

@@ -1,7 +1,11 @@
 :root {
+    --max-width8: 80%;
+
+    --max-width7: 70%;
+
     --font-family: "Roboto", Arial;
 
-    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-xs: 0.8rem;      /* 12px */
     --font-size-sm: 0.875rem;     /* 14px */
     --font-size-md: 1rem;         /* 16px */
     --font-size-mt: 1.125rem;     /* 18px */
@@ -102,6 +106,10 @@
     --gap-btn-mas-compra: 30px;           
     /* --padding-btn-mas-compra: 0.6875rem 1.3125rem;  */
     /* --font-size-btn-mas-compra: 1.0625rem;     */
+
+
+    --line-hei: 28px; 
+    --max-width8: 80%;
 /*
     --font-size-xs: 12px; 
     --font-size-sm: 14px; 
@@ -187,6 +195,10 @@
 }
 
 
+/* -------------------------------- */
+/* --- Estilos globales ----------- */
+/* -------------------------------- */
+
 * { 
     margin: 0;
     padding: 0;
@@ -194,7 +206,7 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--font-family);
-    /* border: 1px solid  rebeccapurple; */
+    /* border: 1px solid rebeccapurple; */
 }
 
 a{
@@ -206,11 +218,9 @@ body{
 }
 
 
-
-
-/* ---------------------- */
-/* ------ nav ----------- */
-/* ---------------------- */
+/* ------------------------------ */
+/* ------ nav ------------------- */
+/* ------------------------------ */
 
 .header_container {
     display: flex;
@@ -223,7 +233,7 @@ body{
     position: fixed;
     margin: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
 }
 
 .logo{
@@ -282,15 +292,15 @@ body{
 }
 
 .item_navbar_list {
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-medium);
     letter-spacing: var(--letter-space1);
     color: #ffffff;
 }
 
 
 /* ------------------------------------------- */
-/* ------------ seccion_ funciona ------------ */
+/* -------- seccion como funciona ------------ */
 /* ------------------------------------------- */
 
 .seccion_fun{
@@ -355,10 +365,6 @@ body{
 }
 
 
-
-
-
-
 /* ------------------------------------------- */
 /* --------- preguntas frecuentes ------------ */
 /* ------------------------------------------- */
@@ -373,12 +379,17 @@ body{
     padding-right: 10px;
     align-items: center;
     gap: var(--gap-titulo-conjunto-section-3);
-    
 }
 
 .titulo_faq{
     font-size: var(--font-size-xxl);
     font-weight: var(--font-weight-medium);
+}
+
+.titulo_faq2{
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-semibold);
+    width: 90%;
 }
 
 .conjunto_faq{
@@ -395,8 +406,7 @@ body{
     cursor: pointer;
     padding: 32px 6px;
     display: flex;
-    /* align-items: start; */
-    justify-content: space-between; /* Coloca el texto y el icono a los lados */
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     margin: 0 auto;
@@ -408,34 +418,28 @@ body{
     width: 90%;
 }
   
-  /* Ocultar el checkbox */
 .faq-checkbox {
     display: none;
 }
   
-  /* Estilos para el icono "+" en FAQ */
 .plus_faq {
     color: black;
     transition: transform 0.3s;
     font-weight: var(--font-weight-medium);
 }
   
-  /* Rotación del ícono al abrir la pregunta */
 .faq-checkbox:checked + .faq-question .plus_faq {
     transform: rotate(45deg); /* Cambia de "+" a "x" al abrir */
 }
-  
-  /* Estilos para la respuesta en FAQ (oculta por defecto) */
+
 .faq-answer {
     max-height: 0;
     overflow: hidden;
     /* transition: max-height 0.3s ease; */
     padding: 0px 8px;
     border-bottom: 0.6px solid rgb(0, 113, 227); /* Agregar borde debajo de la respuesta */
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
-    /* align-items: center; */
-  
 }
 
 .faq-checkbox:checked + .faq-question + .faq-answer {
@@ -445,12 +449,10 @@ body{
     padding-bottom: 30px;
 }
 
-
 .container_table_faq{
     width: 100%;
     /* align-items: center; */
 }
-
 
 .titulo_faq2{
     font-size: var(--font-size-mt);
@@ -460,8 +462,9 @@ body{
   
   
 
-  
-/* comparativo / caractersiticas tecnicas */
+/* -------------------------------------------------- */
+/* ------ comparativo / caractersiticas tecnicas ---- */
+/* -------------------------------------------------- */
 
 .seccion_comparativo {
     text-align: center;
@@ -559,8 +562,57 @@ body{
 }
 
 
+.seccion_panelc{
+    display: flex;
+    padding-top: var(--section-padding);
+    padding-bottom: 100px;
+    width: 100%;
+  }
+  
+  .container_panelc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+  }
 
-/* footer */
+
+/* ------------------------------------------------------------ */
+/* ------ panel de control ------------------------------------ */
+/* ------------------------------------------------------------ */
+  
+  .img_panelc{
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-img-mov);
+  }
+  
+  .conjunto_texto_panelc{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    line-height: 26px;
+    width: 96%;
+  }
+  
+  .texto_panelc{
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .clarito {
+    color: rgb(121, 121, 121);
+  }
+  
+
+
+/* -------------------------------------------------- */
+/* ------ footer ------------------------------------ */
+/* -------------------------------------------------- */
 
 footer{
     background-color: black;

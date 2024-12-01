@@ -6,14 +6,13 @@
     
     <title>ENTRENAMIENTO</title>
 
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="global.css">
 
-    <link rel="stylesheet" href="576px_biocrak.css">
+    <!-- <link rel="stylesheet" href="576px_biocrak.css"> -->
 
     <link rel="stylesheet" href="576px_uso.css">
 
-
-
+    <link rel="stylesheet" href="medias_biocrak.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +20,14 @@
 </head>
 <body>
 
+    <!-- ------------------------ -->
+    <!-- Header ----------------- -->
+    <!-- ------------------------ -->
+
     <header class="header_head">
         <div class="header_container">
             <!-- Logo -->
-            <a class="active" href="#"><img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+            <a class="active" href="index.html"><img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
     
             <!-- Label y Input para el Menú Hamburguesa -->
             <label for="menu-toggle" class="menu-label">
@@ -36,95 +39,116 @@
             <nav class="navbar">
                 <span class="close-menu" onclick="document.getElementById('menu-toggle').checked = false;">&times;</span>
                 <ul class="navbar_list">
-                    <li class="item_navbar_list"><a href="#productos">Productos</a></li>
-                    <li class="item_navbar_list"><a href="#beneficios">Beneficios</a></li>
+                    <li class="item_navbar_list"><a href="carrito.html">Productos</a></li>
+                    <li class="item_navbar_list"><a href="entrenamiento.html">Beneficios</a></li>
                     <li class="item_navbar_list"><a href="como_funciona.html">¿Cómo funciona?</a></li>
-                    <li class="item_navbar_list"><a href="#sobre-nosotros">Sobre nosotros</a></li>
-                    <li class="item_navbar_list"><a href="#contacto">Contacto</a></li>
+                    <li class="item_navbar_list"><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <!-- <li class="item_navbar_list"><a href="#contacto">Contacto</a></li> -->
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- ---------------- -->
+    <!-- ---- Menu ------ -->
+    <!-- ---------------- -->
 
     <main>
 
+        <!-- -------------------------- -->
+        <!-- Seccion Hero ------------- -->
+        <!-- -------------------------- -->
 
-        <section class="hero_uso"> <!-- va la imagen de fondo en css -->
-            <div class="container_uso">
-                <div class="conjunto_texto_uso">
-                    <h1 class="titulo_hero">Recuperación rápida, mejores entrenamientos</h1>
-                    <p class="texto_hero">Una ventaja para el tiempo de inactividad y mejora de la reparación muscular</p>
+        <section class="hero_uso2"> <!-- va la imagen de fondo en css -->
+            <div class="container_uso2">
+                <div class="conjunto_texto_uso2">
+                    <h1 class="titulo_hero2">Recuperación rápida, mejores entrenamientos</h1>
+                    <p class="texto_hero2">Una ventaja para el tiempo de inactividad y mejora de la reparación muscular</p>
                 </div>
 
-                <ol class="lista_ben desk">
+                <ul class="lista_ben desk">
                     <li class="item_ben">Fortalece el tejido muscular.</li>
                     <li class="item_ben">Fortalece el tejido muscular.</li>
                     <li class="item_ben">Fortalece el tejido muscular.</li>
                     <li class="item_ben">Fortalece el tejido muscular.</li>
                     <li class="item_ben">Fortalece el tejido muscular.</li>
-                </ol>
+                </ul>
+            </div>
+
+            <div class="experimenta2">
+                <h5 class="desk fuera">Entrenamiento a <span>otro nivel</span></h5>
+                <p class="desk fuera">Experimentá la diferencia con la serie BIO y transforma tu viaje de fitness</p>
             </div>
 
             <div class="caja_blanca"></div>
              
-         </section>
+        </section>
+
+        <!-- <section class="section_caja_blanca">
+            <div class="caja_blanca"></div>
+        </section> -->
 
 
-        <!-- --------------------------------- -->
+        <!-- ---------------------------------------- -->
         <!-- ------ seccion discover beneficios ----- -->
-        <!-- --------------------------------- -->
+        <!-- ---------------------------------------- -->
 
         <section class="discoverben">
+
+            <div class="experimenta out">
+                <h5>Entrenamiento a <span>otro nivel</span></h5>
+                <!-- <p class="">Experimentá la diferencia con la serie BIO y transforma tu viaje de fitness</p> -->
+            </div> 
+
             <div class="container_discoverben">
                 <div class="item_discoverben">
-                    <img class="img_ben" src="./copia_img_facil_uso/musculo.png" alt="">
+                    <img class="img_ben" src="./img_entrenamiento/musculo.png" alt="Icono Musculo">
                     <h4 class="titulo_ben">Músculos mejorados</h4>
-                    <p class="texto_ben">BioLED fomenta la revitalización y restauración celular, esencial para la reparación de los tejidos musculares que sufren daños durante las sesiones de entrenamiento</p>
+                    <p class="texto_ben">Fomenta la restauración celular, esencial para la reparación de los tejidos musculares que sufren daños durante las sesiones de entrenamiento.</p>
                 </div>
 
                 <div class="item_discoverben">
-                    <img class="img_ben" src="./copia_img_facil_uso/musculo.png" alt="">
-                    <h4 class="titulo_ben">Músculos mejorados</h4>
-                    <p class="texto_ben">BioLED fomenta la revitalización y restauración celular, esencial para la reparación de los tejidos musculares que sufren daños durante las sesiones de entrenamiento</p>
+                    <img class="img_ben" src="./img_entrenamiento/tirita.png" alt="Icono Vendaje">
+                    <h4 class="titulo_ben">Reducción del dolor muscular</h4>
+                    <p class="texto_ben">Ayuda a aliviar el malestar al incrementar la circulación sanguínea y mitigar la inflamación muscular.</p>
                 </div>
 
                 <div class="item_discoverben">
-                    <img class="img_ben" src="./copia_img_facil_uso/musculo.png" alt="">
-                    <h4 class="titulo_ben">Músculos mejorados</h4>
-                    <p class="texto_ben">BioLED fomenta la revitalización y restauración celular, esencial para la reparación de los tejidos musculares que sufren daños durante las sesiones de entrenamiento</p>
+                    <img class="img_ben" src="./img_entrenamiento/peso.png" alt="Icono Pesa">
+                    <h4 class="titulo_ben">Aumento de la fuerza</h4>
+                    <p class="texto_ben">Promueve la generación de ATP, lo que impulsa el desarrollo muscular y mejora la fuerza tras la actividad física.</p>
                 </div>
 
                 <div class="item_discoverben">
-                    <img class="img_ben" src="./copia_img_facil_uso/musculo.png" alt="">
-                    <h4 class="titulo_ben">Músculos mejorados</h4>
-                    <p class="texto_ben">BioLED fomenta la revitalización y restauración celular, esencial para la reparación de los tejidos musculares que sufren daños durante las sesiones de entrenamiento</p>
+                    <img class="img_ben" src="./img_entrenamiento/ejercicio-2.png" alt="Icono Persona Corriendo">
+                    <h4 class="titulo_ben">Mejora de la resistencia</h4>
+                    <p class="texto_ben">El aumento de producción de energía celular colaboran en el fortalecimiento y la resistencia del organismo.</p>
                 </div>
 
                 <div class="item_discoverben">
-                    <img class="img_ben" src="./copia_img_facil_uso/musculo.png" alt="">
-                    <h4 class="titulo_ben">Músculos mejorados</h4>
-                    <p class="texto_ben">BioLED fomenta la revitalización y restauración celular, esencial para la reparación de los tejidos musculares que sufren daños durante las sesiones de entrenamiento</p>
+                    <img class="img_ben" src="./img_entrenamiento/hospital.png" alt="Icono Hospital">
+                    <h4 class="titulo_ben">
+                        Recuperación</h4>
+                    <p class="texto_ben"> Acelera los procesos de curación a nivel celular, disminuyendo significativamente el tiempo de recuperación de las lesiones deportivas.</p>
                 </div>
 
                 <div class="item_discoverben">
-                    <img class="img_ben" src="./copia_img_facil_uso/musculo.png" alt="">
-                    <h4 class="titulo_ben">Músculos mejorados</h4>
-                    <p class="texto_ben">BioLED fomenta la revitalización y restauración celular, esencial para la reparación de los tejidos musculares que sufren daños durante las sesiones de entrenamiento</p>
+                    <img class="img_ben" src="./img_entrenamiento/extendido.png" alt="Icono Persona Estirando">
+                    <h4 class="titulo_ben">Mejora de la flexibilidad</h4>
+                    <p class="texto_ben">Utilizar esta terapia de forma regular contribuye a preservar la elasticidad muscular, disminuir la probabilidad de lesiones y potenciar la movilidad corporal.</p>
                 </div>
             </div>
 
         </section>
 
 
-
-        <!-- --------------------------------- -->
-        <!-- ------ seccion investigacion ----- -->
-        <!-- --------------------------------- -->
+        <!-- ---------------------------------------- -->
+        <!-- ------ seccion investigacion ----------- -->
+        <!-- ---------------------------------------- -->
 
         <section class="seccion_investigacion">
 
-            <img class="img_ben_mid" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" alt="">
+            <img class="img_ben_mid" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" alt="Imagen Uso">
 
             <div class="container_inv">
 
@@ -179,32 +203,35 @@
         </section>
 
 
+        <!-- ---------------------------------------- -->
+        <!-- ------ seccion facil y seguro ---------- -->
+        <!-- ---------------------------------------- -->
 
-        <section class="seccion_sol">
-            <h2 class="titulo_seccion_sol">Fácil y seguro de usar</h2>
-            <article class="conjunto_sol">
-                <div class="item_sol" href="entrenamiento.html">
-                    <img class="imagen_sol" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" alt="">
-                    <div class="conjunto_texto_sol">
-                        <p class="texto_sol">Eficiencia respaldada por la investigación</p>
-                        <p class="texto2_sol">La luz roja e infrarroja Biocrak estimula las mitocondrias celulares, estimulando y mejorando la producción de energía crucial para reparar y rejuvenecer los tejidos corporales. Estas estructuras son las centrales de energía de cada una de las células de tu cuerpo.</p>
+        <section class="seccion_sol2">
+            <h2 class="titulo_seccion_sol2">Fácil y seguro de usar</h2>
+            <article class="conjunto_sol2">
+                <div class="item_sol2" href="entrenamiento.html">
+                    <img class="imagen_sol2" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png" alt="Imagen PersonaUsando el Panel">
+                    <div class="conjunto_texto_sol2">
+                        <p class="texto_sol2">Eficiencia respaldada por la investigación</p>
+                        <p class="texto2_sol2">La luz roja e infrarroja Biocrak estimula las mitocondrias celulares, estimulando y mejorando la producción de energía crucial para reparar y rejuvenecer los tejidos corporales. Estas estructuras son las centrales de energía de cada una de las células de tu cuerpo.</p>
                         <!-- <span class="boton_sol btn2">Ver más</span> -->
                         <!-- <span class="btn_action_solid btn_action_solid_sol">Ver más</span> -->
                     </div>
                 </div>
-                <div class="item_sol" href="entrenamiento.html">
-                    <img class="imagen_sol" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" alt="">
-                    <div class="conjunto_texto_sol">
-                        <p class="texto_sol">Tecnología de longitud de onda de precisión</p>
-                        <p class="texto2_sol">Los paneles BioLED utilizan iluminación dirigida, con longitudes de ondas específicas de rojo e infrarrojo. Elegidas científicamente para una penetración óptima en el tejido muscular. Este enfoque promueve una recuperación más rápida.</p>
+                <div class="item_sol2" href="entrenamiento.html">
+                    <img class="imagen_sol2" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png" alt="Imagen PersonaUsando el Panel">
+                    <div class="conjunto_texto_sol2">
+                        <p class="texto_sol2">Tecnología de longitud de onda de precisión</p>
+                        <p class="texto2_sol2">Los paneles BioLED utilizan iluminación dirigida, con longitudes de ondas específicas de rojo e infrarrojo. Elegidas científicamente para una penetración óptima en el tejido muscular. Este enfoque promueve una recuperación más rápida.</p>
                         <!-- <span class="btn_action_solid btn_action_solid_sol">Ver más</span> -->
                     </div>
                 </div>
-                <div class="item_sol" href="entrenamiento.html">
-                    <img class="imagen_sol" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" alt="">
-                    <div class="conjunto_texto_sol">
-                        <p class="texto_sol">Recuperación a nivel celular</p>
-                        <p class="texto2_sol">La terapia de luz roja e infrarroja ha sido respaldada por una amplia gama de investigaciones que confirman su eficacia en la aceleración de la recuperación muscular y en mejorar las capacidades de recuperación del cuerpo después del ejercicio.</p>
+                <div class="item_sol2" href="entrenamiento.html">
+                    <img class="imagen_sol2" src="./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png" alt="Imagen PersonaUsando el Panel">
+                    <div class="conjunto_texto_sol2">
+                        <p class="texto_sol2">Recuperación a nivel celular</p>
+                        <p class="texto2_sol2">La terapia de luz roja e infrarroja ha sido respaldada por una amplia gama de investigaciones que confirman su eficacia en la aceleración de la recuperación muscular y en mejorar las capacidades de recuperación del cuerpo después del ejercicio.</p>
                         <!-- <span class="btn_action_solid btn_action_solid_sol">Ver más</span> -->
                     </div>
                 </div>
@@ -212,14 +239,18 @@
         </section>
 
 
+        <!-- ----------------------------------- -->
+        <!-- footer ---------------------------- -->
+        <!-- ----------------------------------- -->
+
         <footer>
             <div class="footer_container">
-                <a class="active" href="#"><img class="logo_foot" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+                <a class="active" href="#hero"><img class="logo_foot" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
                 <ul class="redes_foot">
-                    <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/instagram-8.png" alt=""></a></li>
-                    <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/whatsapp-3.png" alt=""></a></li>
+                    <li class="btn_footer"><a href="https://www.instagram.com/biocrak_?igsh=MWRzbGgzdnZuZzZvbg==" target="_blank" rel="noopener noreferrer"><img class="tam_foot" src="./Copia de img_footer/instagram-8.png" alt="Botón Instagram"></a></li>
+                    <li class="btn_footer"><a href="https://wa.me/5491168638508text=Hola!%20Queria%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer"><img class="tam_foot" src="./Copia de img_footer/whatsapp-3.png" alt="Botón Whatsapp"></a></li>
                 </ul>
             </div>
-            </footer>                                                                                                             
+        </footer>                                                                                                       
 
     </main>

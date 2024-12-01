@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="576px_como_funciona.css">
 
+    <link rel="stylesheet" href="medias_biocrak.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +19,14 @@
 </head>
 <body>
 
+    <!-- ------------------------ -->
+    <!-- Header ----------------- -->
+    <!-- ------------------------ -->
+
     <header class="header_head">
         <div class="header_container">
             <!-- Logo -->
-            <a class="active" href="#"><img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+            <a class="active" href="index.html"><img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
     
             <!-- Label y Input para el Menú Hamburguesa -->
             <label for="menu-toggle" class="menu-label">
@@ -32,28 +38,31 @@
             <nav class="navbar">
                 <span class="close-menu" onclick="document.getElementById('menu-toggle').checked = false;">&times;</span>
                 <ul class="navbar_list">
-                    <li class="item_navbar_list"><a href="#productos">Productos</a></li>
-                    <li class="item_navbar_list"><a href="#beneficios">Beneficios</a></li>
+                    <li class="item_navbar_list"><a href="carrito.html">Productos</a></li>
+                    <li class="item_navbar_list"><a href="entrenamiento.html">Beneficios</a></li>
                     <li class="item_navbar_list"><a href="como_funciona.html">¿Cómo funciona?</a></li>
-                    <li class="item_navbar_list"><a href="#sobre-nosotros">Sobre nosotros</a></li>
-                    <li class="item_navbar_list"><a href="#contacto">Contacto</a></li>
+                    <li class="item_navbar_list"><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <!-- <li class="item_navbar_list"><a href="#contacto">Contacto</a></li> -->
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- ---------------- -->
+    <!-- ---- Menu ------ -->
+    <!-- ---------------- -->
 
     <main>
 
-        <!-- ------------------------- -->
-        <!-- Seccion Hero como funciona -->
-        <!-- -------------------------- -->
+        <!-- ------------------------------ -->
+        <!-- Seccion Hero como funciona --- -->
+        <!-- ------------------------------ -->
 
-        <section class="hero_fun"> <!-- va la imagen de fondo en css -->
+        <section class="hero_fun">
             <div class="container_hero_fun">
                 <h1 class="titulo_hero_fun_1">Serie <span>BIO</span></h1>
                 <div class="cont_img">
-                    <img class="img_hero_fun" src="./img_pagina_como_funciona/Captura de pantalla 2024-11-14 a la(s) 11.55.38 p. m..png" alt="">
+                    <img class="img_hero_fun" src="./img_pagina_como_funciona/Captura de pantalla 2024-11-14 a la(s) 11.55.38 p. m..png" alt="Modelos serie BIO">
                 </div>
                 <div class="conjunto_texto_hero_fun">
                     <h2 class="titulo_hero_fun">¿Cómo funciona la <span>fotobiomodulación</span>?</h2>
@@ -63,16 +72,16 @@
          </section>
 
 
-        <!-- ------------------------- -->
-        <!-- ---- seccion historia --- -->
-        <!-- ------------------------- -->
+        <!-- ------------------------------- -->
+        <!-- ---- seccion historia --------- -->
+        <!-- ------------------------------- -->
 
         <section class="historia_fun">
             <div class="container_his_fun">
-                <img class="img_his" src="./copia_img_productos/Captura de pantalla 2024-11-15 a la(s) 2.17.14 a. m..png" alt="">
+                <img class="img_his" src="./copia_img_productos/Captura de pantalla 2024-11-15 a la(s) 2.17.14 a. m..png" alt="Imagen Uso">
                 <div class="conjunto_texto_fun">
                     <p class="texto_his_fun">Esta terapia se sustenta en una extensa base de descubrimientos científicos que indican que la luz en el rango de 600 a 1000 nanómetros puede afectar los tejidos irradiados a través de diversos mecanismos. Se han documentado más de cinco mil artículos de investigación sobre esta terapia, y cada año se incrementa la cantidad de nuevos estudios en este campo. Su uso se remonta a tiempos pasados.</p>
-                    <p class="texto_his_fun">Esta terapia se sustenta en una extensa base de descubrimientos científicos que indican que la luz en el rango de 600 a 1000 nanómetros puede afectar los tejidos irradiados a través de diversos mecanismos. Se han documentado más de cinco mil artículos de investigación sobre esta terapia, y cada año se incrementa la cantidad de nuevos estudios en este campo. Su uso se remonta a tiempos pasados.</p>
+                    <p class="texto_his_fun">Ha demostrado ser efectiva en una amplia gama de aplicaciones médicas y estéticas. Además de estimular la producción de ATP y mejorar la función celular, se ha utilizado con éxito en el tratamiento de afecciones como la artritis, la neuropatía periférica, las lesiones deportivas, la cicatrización de heridas y el cuidado de la piel. Además, se ha observado que la luz roja tiene propiedades antiinflamatorias y analgésicas, lo que la convierte en una opción terapéutica atractiva para aliviar el dolor y mejorar la calidad de vida de las personas.</p>
                 </div>
             </div>
         </section>
@@ -120,7 +129,7 @@
 
 
         <!-- ------------------------------- -->
-        <!-- ---- wave --- -->
+        <!-- ---- wave --------------------- -->
         <!-- ------------------------------- -->
 
         <section class="wave">
@@ -136,7 +145,7 @@
                         <p class="texto_wave">La longitud de onda de 630 nm penetra las capas superficiales de la piel, estimulando la producción de colágeno y elastina. Mejora la apariencia de cicatrices, líneas de expresión y arrugas, favoreciendo también la cicatrización de heridas superficiales.</p>
                     </div>
                     <div class="usos">
-                        <h4 class="titulo_usos">Usos</h4>
+                        <!-- <h4 class="titulo_usos">Usos</h4> -->
                         <ul>
                             <li class="item_uso"><span>Cuidado personal:</span> Mejora la textura y el tono de la piel, ideal para rejuvenecimiento facial, reducción de arrugas y manchas.</li>
                             <li class="item_uso"><span>Lesiones:</span> Ayuda en la regeneración de heridas superficiales y cicatrices.</li>
@@ -150,7 +159,7 @@
                         <p class="texto_wave">La luz de 660 nm penetra más profundamente en los tejidos, alcanzando capas musculares y dérmicas. Incrementa el flujo sanguíneo y la oxigenación celular, estimulando la reparación y regeneración de tejidos dañados.</p>
                     </div>
                     <div class="usos">
-                        <h4 class="titulo_usos">Usos</h4>
+                        <!-- <h4 class="titulo_usos">Usos</h4> -->
                         <ul>
                             <li class="item_uso"><span>Deporte:</span> Mejora la recuperación muscular al reducir la inflamación después del ejercicio intenso.</li>
                             <li class="item_uso"><span>Lesiones:</span> Acelera la curación de tejidos blandos, como tendones y músculos.</li>
@@ -167,7 +176,7 @@
                         <p class="texto_wave">Con una penetración más profunda, la luz de 810 nm actúa sobre tejidos, huesos y articulaciones. Mejora la función mitocondrial y aumenta la producción de energía celular (ATP). También estimula la regeneración del sistema nervioso.</p>
                     </div>
                     <div class="usos">
-                        <h4 class="titulo_usos">Usos</h4>
+                        <!-- <h4 class="titulo_usos">Usos</h4> -->
                         <ul>
                             <li class="item_uso"><span>Deporte:</span> Optimiza la recuperación postentrenamiento y mejora el rendimiento al reducir la fatiga muscular.</li>
                             <li class="item_uso"><span>Lesiones:</span> Promueve la regeneración ósea y de tejidos profundos, como tendones y articulaciones.</li>
@@ -182,7 +191,7 @@
                         <p class="texto_wave">La longitud de onda de 830 nm penetra profundamente en tejidos, mejorando la circulación sanguínea y el transporte de oxígeno. Es ideal para la regeneración celular en tejidos dañados.</p>
                     </div>
                     <div class="usos">
-                        <h4 class="titulo_usos">Usos</h4>
+                        <!-- <h4 class="titulo_usos">Usos</h4> -->
                         <ul>
                             <li class="item_uso"><span>Lesiones:</span> Excelente para tratar lesiones profundas, como desgarros musculares y daño articular.</li>
                             <li class="item_uso"><span>Deporte:</span> Ayuda a prevenir lesiones recurrentes y acelera la recuperación muscular.</li>
@@ -197,7 +206,7 @@
                         <p class="texto_wave">La longitud de onda más potente para penetrar profundamente en tejidos musculares, nerviosos y óseos. Estimula la función mitocondrial, mejorando la energía celular y reduciendo la inflamación crónica.</p>
                     </div>
                     <div class="usos">
-                        <h4 class="titulo_usos">Usos</h4>
+                        <!-- <h4 class="titulo_usos">Usos</h4> -->
                         <ul>
                             <li class="item_uso"><span>Deporte:</span> Mejora la resistencia muscular, acelera la recuperación y reduce la fatiga postentrenamiento.</li>
                             <li class="item_uso"><span>Lesiones:</span> Favorece la recuperación de daños profundos y alivia el dolor persistente, como en el síndrome miofascial.</li>
@@ -211,154 +220,15 @@
         
 
         <!-- ------------------------------- -->
-        <!-- ---- irradiancia --- -->
+        <!-- - seccion panel de control ---- -->
         <!-- ------------------------------- -->
-
-        <section class="faq-section">
-
-            <h2 class="titulo_faq2">Especifcaciones sobre emision de luz</h2>
-    
-            <article class="conjunto_faq">
-    
-                <div class="faq-item">
-                    <input type="checkbox" class="faq-checkbox" id="faq1">
-                    <label for="faq1" class="faq-question">
-                    <span class="faq">¿Que es la irradiancia?</span>
-                    <span class="plus_faq">+</span>
-                    </label>
-                    <div class="faq-answer">
-                        <p>La irradiación, o densidad de potencia, es una medida de la cantidad de energía de luz que golpea un área de superficie determinada. Para la terapia de luz roja, esto a menudo se expresa como mW/cm². La terapia de luz roja es eficaz dentro de una ventana en particular. Muy poca luz, y los efectos no estarán ahí, o no serán óptimos, demasiada luz, y los efectos también disminuyen. Los buenos dispositivos de terapia de luz tienen una irradiancia que permite suministrar la cantidad correcta de energía de luz en un tiempo de tratamiento razonable.</p>
-                    </div>
-                </div>
-    
-                <div class="faq-item">
-                    <input type="checkbox" class="faq-checkbox" id="faq2">
-                    <label for="faq2" class="faq-question">
-                    <span class="faq">Ver tabla de irradiancia</span>
-                    <span class="plus_faq">+</span>
-                    </label>
-                    <div class="faq-answer">
-                        <div class="container_table_faq">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Distancia (cm)</th>
-                                        <th>660nm</th>
-                                        <th>850nm</th>
-                                        <th>Mezcla</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>51.92</td>
-                                        <td>39.6</td>
-                                        <td>46.64</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>46.98</td>
-                                        <td>37.54</td>
-                                        <td>43.79</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>42.18</td>
-                                        <td>31.68</td>
-                                        <td>37.96</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td>33.74</td>
-                                        <td>26.47</td>
-                                        <td>36.67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>30</td>
-                                        <td>27.2</td>
-                                        <td>21.59</td>
-                                        <td>34.98</td>
-                                    </tr>
-                                    <tr>
-                                        <td>40</td>
-                                        <td>25.45</td>
-                                        <td>19.2</td>
-                                        <td>32.91</td>
-                                    </tr>
-                                    <tr>
-                                        <td>50</td>
-                                        <td>22.85</td>
-                                        <td>15.62</td>
-                                        <td>31.74</td>
-                                    </tr>
-                                    <tr>
-                                        <td>60</td>
-                                        <td>17.16</td>
-                                        <td>12.69</td>
-                                        <td>30.06</td>
-                                    </tr>
-                                    <tr>
-                                        <td>70</td>
-                                        <td>17.74</td>
-                                        <td>11.93</td>
-                                        <td>24.88</td>
-                                    </tr>
-                                    <tr>
-                                        <td>80</td>
-                                        <td>16</td>
-                                        <td>11.5</td>
-                                        <td>23.58</td>
-                                    </tr>
-                                    <tr>
-                                        <td>90</td>
-                                        <td>13.38</td>
-                                        <td>9.76</td>
-                                        <td>22.28</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100</td>
-                                        <td>11.78</td>
-                                        <td>7.27</td>
-                                        <td>18.53</td>
-                                    </tr>
-                                    <tr>
-                                        <td>125</td>
-                                        <td>7.42</td>
-                                        <td>6.73</td>
-                                        <td>15.68</td>
-                                    </tr>
-                                    <tr>
-                                        <td>150</td>
-                                        <td>6.69</td>
-                                        <td>5.1</td>
-                                        <td>12.31</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="faq-item">
-                    <input type="checkbox" class="faq-checkbox" id="faq3">
-                    <label for="faq3" class="faq-question">
-                    <span class="faq">¿Que es la energia de luz total y como se relaciona con la irradiacion?</span>
-                    <span class="plus_faq">+</span>
-                    </label>
-                    <div class="faq-answer">
-                        <p>La irradiación expresa una cantidad dada de energía lumásica para un área de superficie determinada. La cantidad total de energía de luz tiene en cuenta el tiempo de tratamiento, el área de superficie y la irradiación. Según varios expertos, cuando se utilizan luces rojas y de infrarrojo cercano para el beneficio de todo el cuerpo, una energía total de varios cientos de miles de julios es apropiada y efectiva.</p>
-                    </div>
-                </div>
-    
-            </article>
-        </section>
 
         <section class="seccion_panelc">
             <div class="container_panelc">
-                <img class="img_panelc" src="./img_carrito/Captura de pantalla 2024-11-27 a la(s) 3.47.50 p. m..png" alt="">
+                <img class="img_panelc" src="./img_carrito/Captura de pantalla 2024-11-27 a la(s) 3.47.50 p. m..png" alt="Imagen Panel De Control">
                 <div class="conjunto_texto_panelc">
                     <span class="texto_panelc"> Acá comienza la acción.</span>
-                    <p class="texto_panelc clarito">El panel de control te da acceso inmediato a una gran variedad de funciones. Puedes personalizarlo para elegir frecuencias de luz específicas para diferentes usos, marcar el tiempo e iniciar una sesión. Presiónalo para poner a prueba tu potencial. Y el tuyo.</p>
+                    <p class="texto_panelc clarito">El panel de control te da acceso inmediato a una gran variedad de funciones. Podés personalizarlo para elegir frecuencias de luz específicas para diferentes usos, marcar el tiempo e iniciar una sesión. Presiónalo para poner a prueba su potencial. Y el tuyo.</p>
                 </div>
             </div>
         </section>
@@ -445,16 +315,16 @@
     </main>
     
 
-    <!-- -------------------- -->
-    <!-- seccion footter ---- -->
-    <!-- -------------------- -->
+    <!-- ------------------------------ -->
+    <!-- seccion footter -------------- -->
+    <!-- ------------------------------ -->
 
     <footer>
         <div class="footer_container">
-            <a class="active" href="#"><img class="logo_foot" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+            <a class="active" href="index.html"><img class="logo_foot" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
             <ul class="redes_foot">
-                <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/instagram-8.png" alt=""></a></li>
-                <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/whatsapp-3.png" alt=""></a></li>
+                <li class="btn_footer"><a href="https://www.instagram.com/biocrak_?igsh=MWRzbGgzdnZuZzZvbg==" target="_blank" rel="noopener noreferrer"><img class="tam_foot" src="./Copia de img_footer/instagram-8.png" alt="Botón Instagram"></a></li>
+                <li class="btn_footer"><a href="https://wa.me/5491168638508text=Hola!%20Queria%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer"><img class="tam_foot" src="./Copia de img_footer/whatsapp-3.png" alt="Botón Whatsapp"></a></li>
             </ul>
         </div>
     </footer>

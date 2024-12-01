@@ -104,112 +104,29 @@
   --gap-btn-mas-compra: 30px;     
 }
 
-/* ---------------------- */
-/* ------ nav ----------- */
-/* ---------------------- */
-
-.header_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: black;
-    color: #fff;
-    height: 8vh;
-    position: fixed;
-    margin: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.logo{
-    height: 2vh;
-}
-
-/* Ícono del menú hamburguesa */
-.menu-label {
-    display: inline-block;
-}
-
-.icono_menu {
-    /* width: 1.9rem; */
-    height: 1.9rem;
-}
-
-/* Ocultar el checkbox */
-.menu-toggle {
-    display: none;
-}
-
-/* Navbar (menu) oculto por defecto */
-.navbar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    flex-direction: column;
-    padding: 30px 40px;
-}
-
-/* Mostrar el menú cuando el checkbox está activado */
-.menu-toggle:checked + .navbar {
-    display: flex;
-}
-
-/* Botón de cierre en el menú desplegable */
-.close-menu {
-    display: block;
-    width: 100%;
-    text-align: right;
-    font-size: 30px;
-    color: #fff;
-}
-
-/* Lista de navegación */
-.navbar_list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding-top: 16px;
-    width: 100%;
-}
-
-.item_navbar_list {
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-regular);
-    letter-spacing: var(--letter-space1);
-    color: #ffffff;
-}
-
-
-
-
-/* seccion carrito */
+/* ----------------------------------- */
+/* ------ seccion carrito ------------ */
+/* ----------------------------------- */
 
 .seccion_carrito {
   width: 100%;
-  /* padding: 20px 0; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: var(--section-padding);
 }
 
-/* Contenedor */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  margin-top: 80px;
 }
 
-/* Carrusel */
-.carousel {
+/* .carousel {
   position: relative;
-  margin-top: 80px;
   width: 86%;
   height: 56vh;
   display: flex;
@@ -254,15 +171,65 @@
 
 .carousel-btn.next {
   right: 10px;
+} */
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 5px; 
+  width: 92%;
 }
 
-/* Detalles */
+.carousel-image {
+  max-width: 100%; 
+  width: 90%;
+  /* height: 100%; */
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px; 
+} 
+
+.carousel::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 5px; 
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Color del scroll (thumb) */
+  border-radius: 5px; /* Bordes redondeados */
+  /* border: 2px solid #f1f1f1;  */
+  color: white;
+  background-color: white;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; /* Color del scroll al pasar el mouse */
+}
+
+/* @media (min-width: 768px) {
+  .carousel {
+      overflow: hidden; 
+      justify-content: center;
+  }
+  .carousel .carousel-image {
+      display: none;
+  }
+  .carousel img.active {
+      display: block; /
+  }
+} */
+
+
+/* ------------ Detalles -------------- */
+
 .details {
   display: flex;
   flex-direction: column;
   width: 86%;
   gap: 34px;
-  
 }
 
 .conjunto_titulo_carrito{
@@ -274,29 +241,94 @@
 
 .title_carrito{
   font-size: var(--font-size-xxl);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
 }
 
 .texto_carrito1{
   font-size: var(--font-size-mt);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
+  width: 98%;
+}
+
+/* Para una transición suave */
+.carousel-image {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-image.active {
+  display: block;
+  opacity: 1;
+}
+
+/* ----- seleccion de modelos ----------- */
+
+.select_model{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titulo_select{
+  font-size: var(--font-size-mt);
+  font-weight: var(--font-weight-regular);
 }
 
 .model-selection {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
 }
 
 .model-button {
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  border: var(--border-apple);
+  background-color: white;
+  border-radius: var(--border-radius-btn-mas-compra);
+  padding: var(--padding-btn-mas-compra);
+  color: black;
+  font-size: var(--font-size-btn-mas-compra);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-space-1);
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
-.model-button:hover {
-  background-color: #ddd;
+.model-button {
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.model-button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* .model-button:hover {
+  background-color: var(--color-apple);
+  color: var(--color-secondary);
+} */
+
+/* .model-button.active {
+  background-color: #ff4c4c; 
+  color: #fff; 
+  border: 2px solid #ff4c4c; 
+  transition: background-color 0.3s ease;
+} */
+
+/* .model-button.active {
+  background-color: #ff4c4c;
+  color: #fff;
+  border: 2px solid #ff4c4c;
+  transition: background-color 0.3s ease;
+} */
+
+
+
+/* ----- productos incluidos ----------- */
 
 .model_accesorie{
   display: flex;
@@ -306,7 +338,7 @@
 
 .titulo_accesorie{
   font-size: var(--font-size-mt);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
 }
 
 .lista_accesorie{
@@ -316,7 +348,7 @@
   justify-content: center;
   text-align: left;
   font-size: var(--font-size-mt);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   line-height: 26px;
   padding-left: 4px;
   gap: 14px;
@@ -343,39 +375,7 @@
   font-weight: var(--font-weight-bold);
 }
 
-
-
-.select_model{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.model-selection {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-}
-
-.model-button {
-  border: var(--border-apple);
-  background-color: white;
-  border-radius: var(--border-radius-btn-mas-compra);
-  padding: var(--padding-btn-mas-compra);
-  color: black;
-  font-size: var(--font-size-btn-mas-compra);
-  font-weight: var(--font-weight-light);
-  letter-spacing: var(--letter-space-1);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 100%;
-}
-
-.model-button:hover {
-  background-color: var(--color-apple);
-}
-
+/* ----- precios / boton a whatsapp ----------- */
 
 .price-section {
   display: flex;
@@ -398,62 +398,62 @@
   font-weight: bold;
   letter-spacing: var(--letter-space2);
   cursor: pointer;
-  transition: background-color 0.3s ease;
   /* width: 100%; */
   text-align: center;
+  font-weight: var(--font-weight-semibold);
 }
 
 
+/* -------------------------------- */
+/* ------ seccion facilidades ----- */
+/* -------------------------------- */
 
+
+.seccion_facil{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
 
 .facilidades{
-  padding-top: 30px;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
   gap: 30px;
-  width: 100%;
+  width: 86%;
+  margin: 0 auto;
 }
 
 .titulo_fal{
   font-size: var(--font-size-mt);
+  font-weight: var(--font-weight-semibold);
 }
 
 .lista_fal{
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: column;
-  /* gap: 16px; */
-  /* text-align: center; */
-  /* align-items: center; */
+  gap: 16px;
+  align-items: start;
   justify-content: center;
-  /* justify-content: flex-start; */
   /* padding: 34px 10px; */
   /* border: 1px solid #e4e1fc; */
   /* box-shadow: 4px 4px 8px rgba(60, 76, 116, 0.16);  */
   /* border-radius: 10px;  */
-  /* flex-direction: column; */
   width: 100%;
-  margin: 0 auto;
 }
 
 .item_fal{
   display: flex;
   /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* gap: 12px; */
+  /* align-items: start; */
   /* width: 30%; */
-  /* font-size: var(--font-size-md); */
-  display: flex; /* Alinea el ícono y el texto horizontalmente */
   align-items: center;
-  /* justify-content: center; */
-  padding: 18px 10px; 
-  text-align: left;
-  position: relative;
+  gap: 16px;
   font-size: var(--font-size-mt);
-  gap: 20px;
 }
 
 /* .item_fal::after {
@@ -466,28 +466,29 @@
   border-bottom: 1px solid var(--color-three); 
 } */
 
-
 .icono_ben_carrito{
-  height: 48px;
+  height: 60px;
 }
 
 
-
-
+/* -------------------------------- */
+/* seccion caracteristicas tecnicas */
+/* -------------------------------- */
 
 .seccion_comparativo{
-  padding-top: 60px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .tabla_oculta{
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 18px;
+  /* gap: 10px; */
 }
 
 .titulo_carac{
-  padding-left: 20px;
+  padding-left: 16px;
   text-align: left;
   font-size: var(--font-size-mt);
 }
@@ -496,46 +497,8 @@
   margin: 0;
 }
 
-/* seccion panel de control */
 
-.seccion_panelc{
-  display: flex;
-  padding-top: var(--section-padding);
-  padding-bottom: 100px;
-  width: 100%;
-}
-
-.container_panelc{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  width: 90%;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-.img_panelc{
-  height: 100%;
-  width: 100%;
-  border-radius: var(--border-radius-img-mov);
-}
-
-.conjunto_texto_panelc{
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  line-height: 26px;
-  width: 96%;
-}
-
-.texto_panelc{
-  font-size: var(--font-size-mt);
-  font-weight: var(--font-weight-bold);
-}
-
-.clarito {
-  color: rgb(121, 121, 121);
-}
+/* -------------------------------- */
+/* --- seccion faq irradiancia --- */
+/* -------------------------------- */
 

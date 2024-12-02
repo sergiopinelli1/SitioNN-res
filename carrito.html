@@ -26,7 +26,7 @@
     <header class="header_head">
         <div class="header_container">
             <!-- Logo -->
-            <a class="active" href="#"><img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+            <a class="active" href="index.html"><img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
     
             <!-- Label y Input para el Menú Hamburguesa -->
             <label for="menu-toggle" class="menu-label">
@@ -234,7 +234,6 @@
             <h2 class="titulo_faq2">Especificaciones sobre emisión de luz</h2>
 
             <article class="conjunto_faq">
-
                 <div class="faq-item">
                     <input type="checkbox" class="faq-checkbox" id="faq1">
                     <label for="faq1" class="faq-question">
@@ -253,103 +252,326 @@
                     <span class="plus_faq">+</span>
                     </label>
                     <div class="faq-answer">
-                        <div class="container_table_faq">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Distancia (cm)</th>
-                                        <th>660nm</th>
-                                        <th>850nm</th>
-                                        <th>Mezcla</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>51.92</td>
-                                        <td>39.6</td>
-                                        <td>46.64</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>46.98</td>
-                                        <td>37.54</td>
-                                        <td>43.79</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>42.18</td>
-                                        <td>31.68</td>
-                                        <td>37.96</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td>33.74</td>
-                                        <td>26.47</td>
-                                        <td>36.67</td>
-                                    </tr>
-                                    <tr>
-                                        <td>30</td>
-                                        <td>27.2</td>
-                                        <td>21.59</td>
-                                        <td>34.98</td>
-                                    </tr>
-                                    <tr>
-                                        <td>40</td>
-                                        <td>25.45</td>
-                                        <td>19.2</td>
-                                        <td>32.91</td>
-                                    </tr>
-                                    <tr>
-                                        <td>50</td>
-                                        <td>22.85</td>
-                                        <td>15.62</td>
-                                        <td>31.74</td>
-                                    </tr>
-                                    <tr>
-                                        <td>60</td>
-                                        <td>17.16</td>
-                                        <td>12.69</td>
-                                        <td>30.06</td>
-                                    </tr>
-                                    <tr>
-                                        <td>70</td>
-                                        <td>17.74</td>
-                                        <td>11.93</td>
-                                        <td>24.88</td>
-                                    </tr>
-                                    <tr>
-                                        <td>80</td>
-                                        <td>16</td>
-                                        <td>11.5</td>
-                                        <td>23.58</td>
-                                    </tr>
-                                    <tr>
-                                        <td>90</td>
-                                        <td>13.38</td>
-                                        <td>9.76</td>
-                                        <td>22.28</td>
-                                    </tr>
-                                    <tr>
-                                        <td>100</td>
-                                        <td>11.78</td>
-                                        <td>7.27</td>
-                                        <td>18.53</td>
-                                    </tr>
-                                    <tr>
-                                        <td>125</td>
-                                        <td>7.42</td>
-                                        <td>6.73</td>
-                                        <td>15.68</td>
-                                    </tr>
-                                    <tr>
-                                        <td>150</td>
-                                        <td>6.69</td>
-                                        <td>5.1</td>
-                                        <td>12.31</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="botones-irradiancia">
+                            <button class="model-button2" data-model="BIO60">BIO 60</button>
+                            <button class="model-button2" data-model="BIO300">BIO 300</button>
+                            <button class="model-button2" data-model="BIO600">BIO 600</button>
+                        </div>
+                        
+                        <div class="seccion_comparativo2">
+                                <table class="tabla_comparativa2 tabla_BIO60">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label class="titulo_panel2">Distancia (cm)</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">660nm</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">850nm</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">Total</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="atributo2 titulo2">1</td>
+                                            <td>51.92</td>
+                                            <td>39.6</td>
+                                            <td>46.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">5</td>
+                                            <td>46.98</td>
+                                            <td>37.54</td>
+                                            <td>43.79</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">10</td>
+                                            <td>42.18</td>
+                                            <td>31.68</td>
+                                            <td>37.96</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">20</td>
+                                            <td>33.74</td>
+                                            <td>26.47</td>
+                                            <td>36.67</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">30</td>
+                                            <td>27.2</td>
+                                            <td>21.59</td>
+                                            <td>34.98</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">40</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">50</td>
+                                            <td>22.85</td>
+                                            <td>15.62</td>
+                                            <td>31.74</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">60</td>
+                                            <td>17.16</td>
+                                            <td>12.69</td>
+                                            <td>30.06</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">70</td>
+                                            <td>17.74</td>
+                                            <td>11.93</td>
+                                            <td>24.88</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">80</td>
+                                            <td>16</td>
+                                            <td>11.5</td>
+                                            <td>23.58</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">90</td>
+                                            <td>13.38</td>
+                                            <td>9.76</td>
+                                            <td>22.28</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">100</td>
+                                            <td>11.78</td>
+                                            <td>7.27</td>
+                                            <td>18.53</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">125</td>
+                                            <td>7.42</td>
+                                            <td>6.73</td>
+                                            <td>15.68</td>
+                                        <tr>
+                                            <td class="atributo2 titulo2">150</td>
+                                            <td>6.69</td>
+                                            <td>5.1</td>
+                                            <td>12.31</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="tabla_comparativa tabla_BIO300">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label class="titulo_panel2">Distancia (cm)</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">660nm</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">850nm</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">Total</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="atributo2 titulo2">1</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">5</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">10</td>
+                                            <td>42.18</td>
+                                            <td>31.68</td>
+                                            <td>37.96</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">20</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">30</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">40</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">50</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">60</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">70</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">80</td>
+                                            <td>16</td>
+                                            <td>11.5</td>
+                                            <td>23.58</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">90</td>
+                                            <td>13.38</td>
+                                            <td>9.76</td>
+                                            <td>22.28</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2o">100</td>
+                                            <td>11.78</td>
+                                            <td>7.27</td>
+                                            <td>18.53</td>
+                                        </tr>                                  
+                                        <tr>
+                                            <td class="atributo2 titulo2">125</td>
+                                            <td>7.42</td>
+                                            <td>6.73</td>
+                                            <td>15.68</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">150</td>
+                                            <td>6.69</td>
+                                            <td>5.1</td>
+                                            <td>12.31</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="tabla_comparativa tabla_BIO600">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label class="titulo_panel2">Distancia (cm)</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">660nm</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">850nm</label>
+                                            </th>
+                                            <th>
+                                                <label class="titulo_panel2">Total</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="atributo titulo">1</td>
+                                            <td>51.92</td>
+                                            <td>39.6</td>
+                                            <td>46.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">5</td>
+                                            <td>46.98</td>
+                                            <td>37.54</td>
+                                            <td>43.79</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">10</td>
+                                            <td>42.18</td>
+                                            <td>31.68</td>
+                                            <td>37.96</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">20</td>
+                                            <td>33.74</td>
+                                            <td>26.47</td>
+                                            <td>36.67</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">30</td>
+                                            <td>27.2</td>
+                                            <td>21.59</td>
+                                            <td>34.98</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">40</td>
+                                            <td>25.45</td>
+                                            <td>19.2</td>
+                                            <td>32.91</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">50</td>
+                                            <td>22.85</td>
+                                            <td>15.62</td>
+                                            <td>31.74</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">60</td>
+                                            <td>17.16</td>
+                                            <td>12.69</td>
+                                            <td>30.06</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">70</td>
+                                            <td>17.74</td>
+                                            <td>11.93</td>
+                                            <td>24.88</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">80</td>
+                                            <td>16</td>
+                                            <td>11.5</td>
+                                            <td>23.58</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">90</td>
+                                            <td>13.38</td>
+                                            <td>9.76</td>
+                                            <td>22.28</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">100</td>
+                                            <td>11.78</td>
+                                            <td>7.27</td>
+                                            <td>18.53</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo titulo">125</td>
+                                            <td>7.42</td>
+                                            <td>6.73</td>
+                                            <td>15.68</td>
+                                        <tr>
+                                            <td class="atributo titulo">150</td>
+                                            <td>6.69</td>
+                                            <td>5.1</td>
+                                            <td>12.31</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                         </div>
                     </div>
                 </div>
@@ -471,19 +693,20 @@
     
     <footer>
         <div class="footer_container">
-            <a class="active" href="#"><img class="logo_foot" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+            <a class="active" href="index.html"><img class="logo_foot" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
             <ul class="redes_foot">
-                <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/instagram-8.png" alt=""></a></li>
-                <li class="btn_footer"><a href="#"><img class="tam_foot" src="./Copia de img_footer/whatsapp-3.png" alt=""></a></li>
+                <li class="btn_footer"><a href="https://www.instagram.com/biocrak_?igsh=MWRzbGgzdnZuZzZvbg==" target="_blank" rel="noopener noreferrer"><img class="tam_foot" src="./Copia de img_footer/instagram-8.png" alt="Botón Instagram"></a></li>
+                <li class="btn_footer"><a href="https://wa.me/5491168638508text=Hola!%20Queria%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer"><img class="tam_foot" src="./Copia de img_footer/whatsapp-3.png" alt="Botón Whatsapp"></a></li>
             </ul>
         </div>
     </footer>
-
+    
     <!-- ------------------------------ -->
     <!-- ----- script js -------------- -->
     <!-- ------------------------------ -->
     
     <script src="script3.js"></script>
+    <script src="script6.js"></script>
 </body>
 </html>
 

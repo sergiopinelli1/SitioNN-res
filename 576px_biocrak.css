@@ -432,6 +432,7 @@
     font-size: var(--font-size-xs);
     text-align: center;
     overflow-wrap: break-word;
+    font-weight: var(--font-weight-regular);
 }
 
 /* Ancho específico para la primera columna */
@@ -440,6 +441,7 @@
     font-weight: bold;
     text-align: left;
     width: 25%; /* Ancho específico para la columna de características */
+    font-weight: var(--font-weight-regular);
 }
 
 /* Asigna el mismo ancho a las columnas de los paneles */
@@ -469,7 +471,7 @@
 /* Estilo para las celdas con colspan de 3 */
 .tabla_comparativa td[colspan="3"] {
     text-align: center;
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 
 /* Estilo del botón de compra */

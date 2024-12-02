@@ -187,3 +187,90 @@
     border-radius: var(--border-radius-img-mov);
     height: var(--height-img-mov);
 } */
+
+
+
+<section class="seccion_comparativo">
+    <!-- Botón para mostrar/ocultar el cuadro -->
+    <input type="checkbox" id="toggleComparativo" class="toggle_input">
+    <label for="toggleComparativo" class="btn_toggle">Comparar paneles</label>
+
+    <!-- Tabla de comparación que se despliega -->
+    <div id="tabla_comparativo" class="tabla_oculta">
+        <table class="tabla_comparativa">
+            <thead>
+                <tr>
+                    <th class="celda_vacia"></th>
+                    <th>
+                        <label class="titulo_panel">BIO 60</label>
+                    </th>
+                    <th>
+                        <label class="titulo_panel">BIO 300</label>
+                    </th>
+                    <th>
+                        <label class="titulo_panel">BIO 600</label>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td class="atributo titulo">N longitudes de onda</td>
+                    <td colspan="3">5</td>
+                </tr> -->
+                <tr>
+                    <td class="atributo titulo">Cantidad de LEDs</td>
+                    <td>60</td>
+                    <td>300</td>
+                    <td>600</td>
+                </tr>
+                
+                <tr>
+                    <td class="atributo titulo">Tamaño</td>
+                    <td>60x20x20 cm</td>
+                    <td>100x20x20 cm</td>
+                    <td>200x20x20 cm</td>
+                </tr>
+                <tr>
+                    <td class="atributo titulo">Peso</td>
+                    <td>4 kgs</td>
+                    <td>10 kgs</td>
+                    <td>20 kgs</td>
+                </tr>
+                <tr>
+                    <td class="atributo titulo">Potencia</td>
+                    <td>180w</td>
+                    <td>260w</td>
+                    <td>260w</td>
+                </tr>
+                <tr>
+                    <td class="atributo titulo">Consumo</td>
+                    <td>A 110V: 1.6A / A 220V: 0.8A</td>
+                    <td>A 110V: 2.3A / A 220V: 1.2A</td>
+                    <td>A 110V: 2.3A / A 220V: 1.2A</td>
+                </tr>
+                <tr>
+                    <td class="atributo titulo">Longitudes de onda</td>
+                    <td colspan="3">660, 630, 810, 850 nm</td>
+                </tr>    
+                <tr>
+                    <td class="atributo titulo">Tª de trabajo</td>
+                    <td colspan="3">130 F / 55 C</td>
+                </tr>
+                <tr>
+                    <td class="atributo titulo">Garantía</td>
+                    <td colspan="3">2 Años</td>
+                </tr>
+                <tr>
+                    <td class="atributo titulo">Vida util LEDs</td>
+                    <td colspan="3">100,000 hrs</td>
+                </tr>
+                <tr>
+                    <td class="atributo titulo">Uso ideal</td>
+                    <td>Zona específica del cuerpo</td>
+                    <td>Medio y todo el cuerpo</td>
+                    <td>Todo el cuerpo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

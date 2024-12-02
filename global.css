@@ -423,7 +423,7 @@ body{
     }
 
     .item_navbar_list {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-mt);
         width: auto;
     }
 

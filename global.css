@@ -222,82 +222,235 @@ body{
 /* ------ nav ------------------- */
 /* ------------------------------ */
 
+/* Header */
+.header_head {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 .header_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* padding: 10px 20px; */
     padding: 1rem;
     background-color: black;
-    color: #fff;
+    color: var(--color-secondary);
     height: 8vh;
-    position: fixed;
     margin: 0;
     width: 100%;
     z-index: 10;
 }
 
-.logo{
+/* Logo */
+
+.link_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
     height: 2vh;
 }
 
-/* Ícono del menú hamburguesa */
+/* Menú Hamburguesa */
 .menu-label {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
-.icono_menu {
-    /* width: 1.9rem; */
-    height: 1.9rem;
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
-/* Ocultar el checkbox */
+.hamburger .line {
+    width: 22px;
+    height: 1.3px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Ocultar input de toggle */
 .menu-toggle {
     display: none;
 }
 
-/* Navbar (menu) oculto por defecto */
+.menu-toggle:checked + .menu-label .line:nth-child(1) {
+    transform: rotate(45deg) translateY(5px);
+}
+
+.menu-toggle:checked + .menu-label .line:nth-child(2) {
+    transform: rotate(-45deg) translateY(-5px);
+}
+
+/* Navbar */
 .navbar {
-    display: none;
-    position: fixed;
-    top: 0;
+    display: none; 
+    position: absolute;
+    top: 100%;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    flex-direction: column;
-    padding: 30px 40px;
+    width: 102%;
+    margin-top: -0.5px;
+    height: auto;
+    background: black;
+    padding: 0px;
+    z-index: 5;
+    transition: transform 0.5s ease;
 }
 
-/* Mostrar el menú cuando el checkbox está activado */
-.menu-toggle:checked + .navbar {
+/* Mostrar el menú cuando está seleccionado */
+.menu-toggle:checked ~ .navbar {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    transition: transform 0.5s ease;
 }
 
-/* Botón de cierre en el menú desplegable */
-.close-menu {
-    display: block;
-    width: 100%;
-    text-align: right;
-    font-size: 30px;
-    color: #fff;
-}
-
-/* Lista de navegación */
+/* Navbar List */
 .navbar_list {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    padding-top: 16px;
-    width: 100%;
+    gap: 40px;
+    align-items: start;
+    justify-content: space-around;
+    margin: 0;
+    padding: 30px 16px;
 }
 
 .item_navbar_list {
-    font-size: var(--font-size-mt);
-    font-weight: var(--font-weight-medium);
-    letter-spacing: var(--letter-space1);
-    color: #ffffff;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
 }
 
+.item_navbar_list, .item_navbar_list2, .submenu{
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-medium);
+}
+
+.submenu-toggle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.arrow {
+    height: 3vh;
+    margin-left: 10px;
+    transition: transform 0.5s ease;
+    margin: 0 auto;
+    margin-left: 10px;
+}
+
+.submenu-toggle.open .arrow {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    display: none;
+}
+
+.item_submenu {
+    padding: 0px 30px;
+    padding-top: 30px;
+    font-size: var(--font-size-md);
+}
+
+/* Mostrar submenús cuando el toggle está abierto */
+.submenu-toggle.open + .submenu {
+    display: block;
+}
+
+/* Hacer que el contenido debajo del submenú se desplace */
+.submenu {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.submenu-toggle.open + .submenu {
+    height: auto; /* Expandir el submenú */
+}
+
+.submenu-toggle:not(.open) + .submenu {
+    height: 0; /* Contraer el submenú */
+}
+
+/* Responsive Design */
+@media (min-width: 992px) {
+    .header_container{
+        position: fixed;
+        height: 7vh;
+    }
+
+    .logo{
+        height: 22px;
+    }
+
+    .navbar {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: fit-content;
+    }
+
+    .menu-label, .close-menu {
+        display: none; /* Ocultar ícono de menú ybotón de cierre en pantallas grandes */
+    }
+
+    .navbar_list {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+        padding: 0px;
+        width: auto;
+
+    }
+
+    .item_navbar_list {
+        font-size: var(--font-size-xs);
+        width: auto;
+    }
+
+    .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        border-radius: 0px 0px 10px 10px;
+        background-color: black;
+        width: 200%;
+        padding-bottom: 30px;
+        
+    }
+
+    /* .submenu-toggle:hover + .submenu,
+    .submenu:hover {
+        display: block; 
+    } */
+
+    .item_submenu {
+        padding: 0px 30px;
+        padding-top: 30px;
+        font-size: var(--font-size-xs);
+    }
+
+}
 
 /* ------------------------------------------- */
 /* -------- seccion como funciona ------------ */

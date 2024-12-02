@@ -332,41 +332,6 @@
         height: 100vh;
     }
 
-    .header_container{
-        position: fixed;
-        height: 7vh;
-    }
-
-    .logo{
-        height: 22px;
-    }
-
-    .navbar {
-        position: static;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        height: fit-content;
-        padding: 12px;
-    }
-
-    .menu-label, .close-menu {
-        display: none; /* Ocultar ícono de menú ybotón de cierre en pantallas grandes */
-    }
-
-    .navbar_list {
-        display: flex;
-        flex-direction: row; /* Organiza los elementos en fila */
-        gap: 40px; /* Espaciado entre los elementos */
-        align-items: center;
-        padding: 0px;
-        width: auto;
-    }
-
-    .item_navbar_list {
-        font-size: 20px;
-    }
-
     /* ------------ seccion hero ------------ */
 
     .hero_info{

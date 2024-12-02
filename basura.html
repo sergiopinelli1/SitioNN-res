@@ -274,3 +274,260 @@
         </table>
     </div>
 </section>
+
+
+
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    color: var(--color-secondary);
+    height: 8vh;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo{
+    height: 2vh;
+}
+
+/* Ícono del menú hamburguesa */
+.menu-label {
+    display: inline-block;
+}
+
+.icono_menu {
+    /* width: 1.9rem; */
+    height: 1.9rem;
+}
+
+/* Ocultar el checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Navbar (menu) oculto por defecto */
+.navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+
+/* Mostrar el menú cuando el checkbox está activado */
+.menu-toggle:checked + .navbar {
+    display: flex;
+}
+
+/* Botón de cierre en el menú desplegable */
+/* .close-menu {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 30px;
+    color: #fff;
+} */
+
+/* Lista de navegación */
+.navbar_list {
+    display: flex;
+    flex-direction: column;
+    /* gap: 100px; */
+    width: 100%;
+}
+
+.item_navbar_list {
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-space1);
+    color: #ffffff;
+}
+
+
+
+/* Header */
+.header_head {
+    background: black;
+    color: var(--color-secondary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 20px; */
+}
+
+/* Logo */
+
+.link_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 1rem;
+}
+
+/* Menú Hamburguesa */
+.menu-label {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hamburger .line {
+    width: 22px;
+    height: 1.3px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Ocultar input de toggle */
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked + .menu-label .line:nth-child(1) {
+    transform: rotate(45deg) translateY(5px);
+}
+
+.menu-toggle:checked + .menu-label .line:nth-child(2) {
+    transform: rotate(-45deg) translateY(-5px);
+}
+
+/* Navbar */
+.navbar {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 102%;
+    margin: -0.5px;
+    height: auto;
+    background: black;
+    /* flex-direction: column; */
+    padding: 0px;
+    z-index: 5;
+}
+
+/* Mostrar el menú cuando está seleccionado */
+.menu-toggle:checked ~ .navbar {
+    display: flex;
+}
+
+/* Navbar List */
+.navbar_list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin: 0;
+    padding: 30px 14px;
+}
+
+.item_navbar_list {
+    position: relative;
+    width: 100%;
+}
+
+.item_navbar_list, .submenu{
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-medium);
+}
+
+.arrow {
+    font-size: var(--font-size-xs);
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.submenu-toggle.open .arrow {
+    transform: rotate(180deg); /* Rotar la flecha hacia arriba */
+}
+
+.submenu {
+    display: none;
+}
+
+.item_submenu {
+    padding: 10px 30px;
+    font-size: var(--font-size-md);
+}
+
+/* Mostrar submenús cuando el toggle está abierto */
+.submenu-toggle.open + .submenu {
+    display: block;
+}
+
+/* Hacer que el contenido debajo del submenú se desplace */
+.submenu {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.submenu-toggle.open + .submenu {
+    height: auto; /* Expandir el submenú */
+}
+
+.submenu-toggle:not(.open) + .submenu {
+    height: 0; /* Contraer el submenú */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        position: static; /* Menú normal en pantallas grandes */
+        flex-direction: row;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .navbar_list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .item_navbar_list {
+        border: none;
+        padding: 0;
+    }
+
+    .submenu {
+        position: absolute;
+        top: 100%; /* Justo debajo del padre */
+        left: 0;
+        display: none;
+        background: #444;
+    }
+
+    .submenu-toggle:hover + .submenu,
+    .submenu:hover {
+        display: block; /* Mostrar submenú al pasar el mouse */
+    }
+}
+
+
+
+

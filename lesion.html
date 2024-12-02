@@ -23,27 +23,49 @@
     <!-- ------------------------ -->
     <!-- Header ----------------- -->
     <!-- ------------------------ -->
-
     <header class="header_head">
         <div class="header_container">
             <!-- Logo -->
-            <a class="active" href="index.html"><img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak"></a>
+            <a class="link_logo" href="#hero">
+                <img class="logo" src="./copia_de img_header/Captura de pantalla 2024-11-01 a la(s) 12.14.27.png" alt="Logo Biocrak">
+            </a>
     
-            <!-- Label y Input para el Menú Hamburguesa -->
-            <label for="menu-toggle" class="menu-label">
-                <img class="icono_menu" src="copia_de img_header/drag_handle_24dp_FFFFFF_FILL0_wght100_GRAD200_opsz20.png" alt="Icono de menú">
-            </label>
+            <!-- Menú Hamburguesa -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-label">
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </label>
     
-            <!-- Navegación con botón de cierre -->
+            <!-- Navegación -->
             <nav class="navbar">
-                <span class="close-menu" onclick="document.getElementById('menu-toggle').checked = false;">&times;</span>
                 <ul class="navbar_list">
-                    <li class="item_navbar_list"><a href="carrito.html">Productos</a></li>
-                    <li class="item_navbar_list"><a href="entrenamiento.html">Beneficios</a></li>
+                    <li class="item_navbar_list">
+                        <div class="submenu-toggle">
+                            <h5 class="item_navbar_list">Productos</h5>
+                            <img class="arrow" src="./img_biocrak/proximo.png" alt="Flecha de apertura">
+                        </div>
+                        <ul class="submenu">
+                            <li class="item_submenu"><a href="carrito.html?model=60">BIO 60</a></li>
+                            <li class="item_submenu"><a href="carrito.html?model=300">BIO 300</a></li>
+                            <li class="item_submenu"><a href="carrito.html?model=600">BIO 600</a></li>
+                        </ul>
+                    </li>
+                    <li class="item_navbar_list">
+                        <div class="submenu-toggle">
+                            <h5 class="item_navbar_list">Beneficios</h5>
+                            <img class="arrow" src="./img_biocrak/proximo.png" alt="Flecha de apertura">
+                        </div>
+                        <ul class="submenu">
+                            <li class="item_submenu"><a href="entrenmiento.html">Entrenamiento</a></li>
+                            <li class="item_submenu"><a href="lesion.html">Lesión</a></li>
+                            <li class="item_submenu"><a href="cuidado_personal.html">Cuidado personal</a></li>
+                        </ul>
+                    </li>
                     <li class="item_navbar_list"><a href="como_funciona.html">¿Cómo funciona?</a></li>
                     <li class="item_navbar_list"><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                    <!-- <li class="item_navbar_list"><a href="#contacto">Contacto</a></li> -->
                 </ul>
             </nav>
         </div>

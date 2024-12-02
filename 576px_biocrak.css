@@ -12,90 +12,6 @@
 /* ------ nav ----------- */
 /* ---------------------- */
 
-.header_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: black;
-    color: #fff;
-    height: 8vh;
-    position: fixed;
-    margin: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.logo{
-    height: 2vh;
-}
-
-/* Ícono del menú hamburguesa */
-.menu-label {
-    display: inline-block;
-}
-
-.icono_menu {
-    /* width: 1.9rem; */
-    height: 1.9rem;
-}
-
-/* Ocultar el checkbox */
-.menu-toggle {
-    display: none;
-}
-
-/* Navbar (menu) oculto por defecto */
-.navbar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    flex-direction: column;
-    padding: 30px 40px;
-}
-
-/* Mostrar el menú cuando el checkbox está activado */
-.menu-toggle:checked + .navbar {
-    display: flex;
-}
-
-/* Botón de cierre en el menú desplegable */
-.close-menu {
-    display: block;
-    width: 100%;
-    text-align: right;
-    font-size: 30px;
-    color: #fff;
-}
-
-/* Lista de navegación */
-.navbar_list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding-top: 16px;
-    width: 100%;
-}
-
-.item_navbar_list {
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-regular);
-    letter-spacing: var(--letter-space1);
-    color: #ffffff;
-}
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------ */
 /* -------- menu ---------------------------------------------------- */
 /* ------------------------------------------------------------------ */
@@ -315,7 +231,7 @@
     text-align: center;
 }
 
-.desk{
+.desk, .fuera, .out{
     display: none;
 }
 

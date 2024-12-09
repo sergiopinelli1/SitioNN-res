@@ -1,0 +1,100 @@
+@import url(global.css);
+
+.seccion_sol2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    gap: var(--gap-titulo-conjunto-section-3);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.titulo_seccion_sol {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+    width: 70%;
+}
+
+.conjunto_sol2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 94%;
+}
+
+.link_sol {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: var(--border-img);
+    height: var(--height-img-mov);
+    flex: 0 0 84%;
+    scroll-snap-align: start;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imagen de fondo con oscurecimiento */
+.imagen_sol {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.link_sol:hover .imagen_sol {
+    filter: brightness(0.8); /* Reduce el oscurecimiento al hacer hover */
+}
+
+/* Contenedor de información sobre la imagen */
+.item_sol {
+    display: flex;
+    position: absolute;
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 100%;
+    padding: 16px;
+    color: white;
+    text-align: left;
+    align-items: start;
+    justify-content: flex-start;
+    /* z-index: 1; */
+    flex-direction: column;
+    gap: 12px;
+}
+
+.texto_sol {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
+}
+
+.texto2_sol{
+    font-weight: var(--font-weight-medium);
+    font-size: 1.2em;
+}
+
+.btn_action_solid_sol {
+    display: inline;
+    width: fit-content;
+    font-size:var(--font-size-btn-mas-compra);
+    border: 0.8px solid white;
+    background-color: rgba(105, 105, 105, 0.491);
+    border-radius: var(--border-radius-btn-mas-compra);
+    padding: var(--padding-btn-mas-compra);
+}
+
+/* Ocultar barra de desplazamiento */
+.conjunto_sol::-webkit-scrollbar {
+    display: none;
+}
+
+.btn_action_solid_sol:hover{
+        background-color: transparent;
+}

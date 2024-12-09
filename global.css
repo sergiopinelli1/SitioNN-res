@@ -371,7 +371,7 @@ body{
 
 /* Mostrar submenús cuando el toggle está abierto */
 .submenu-toggle.open + .submenu {
-    display: block;
+    display: flex;
 }
 
 /* Hacer que el contenido debajo del submenú se desplace */
@@ -458,9 +458,8 @@ body{
 /* ------------------------------------------- */
 /* --------- preguntas frecuentes ------------ */
 /* ------------------------------------------- */
-
 .faq-section {
-    /* max-width: var(--max-width); */
+    /* max-width: va r(--max-width); */
     display: flex;
     flex-direction: column;
     padding-top: var(--section-padding);
@@ -469,6 +468,7 @@ body{
     padding-right: 10px;
     align-items: center;
     gap: var(--gap-titulo-conjunto-section-3);
+    
 }
 
 .titulo_faq{
@@ -476,16 +476,11 @@ body{
     font-weight: var(--font-weight-medium);
 }
 
-.titulo_faq2{
-    font-size: var(--font-size-mt);
-    font-weight: var(--font-weight-semibold);
-    width: 90%;
-}
-
 .conjunto_faq{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 98%;
+    align-items: center;
 }
 
 .faq_item{
@@ -494,9 +489,9 @@ body{
 
 .faq-question {
     cursor: pointer;
-    padding: 32px 6px;
+    padding: 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Coloca el texto y el icono a los lados */
     align-items: center;
     background-color: white;
     margin: 0 auto;
@@ -505,50 +500,57 @@ body{
 .faq{
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
-    width: 90%;
 }
   
+  /* Ocultar el checkbox */
 .faq-checkbox {
     display: none;
 }
   
+  /* Estilos para el icono "+" en FAQ */
 .plus_faq {
     color: black;
     transition: transform 0.3s;
     font-weight: var(--font-weight-medium);
 }
   
+  /* Rotación del ícono al abrir la pregunta */
 .faq-checkbox:checked + .faq-question .plus_faq {
     transform: rotate(45deg); /* Cambia de "+" a "x" al abrir */
 }
-
+  
+  /* Estilos para la respuesta en FAQ (oculta por defecto) */
 .faq-answer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
     max-height: 0;
     overflow: hidden;
     /* transition: max-height 0.3s ease; */
-    padding: 0px 8px;
+    padding: 0 34px;
     border-bottom: 0.6px solid rgb(0, 113, 227); /* Agregar borde debajo de la respuesta */
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
+    gap: 10px;
 }
 
+.faq-answer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.faq-answer ul li{
+    list-style: disc;
+}
+  
+  /* Mostrar respuesta cuando el checkbox está marcado */
 .faq-checkbox:checked + .faq-question + .faq-answer {
-    max-height: 100vh;
-    overflow: visible; 
+    max-height: fit-content; 
     padding-top: 10px;
     padding-bottom: 30px;
 }
-
-.container_table_faq{
-    width: 100%;
-    /* align-items: center; */
-}
-
-.titulo_faq2{
-    font-size: var(--font-size-mt);
-    font-weight: var(--font-weight-bold);
-    text-align: left;                                                                                                                                                       ;
-  }
   
   
 

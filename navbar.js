@@ -1,33 +1,38 @@
 // Agregar evento de clic a cada toggle del submenú
-document.querySelectorAll('.submenu-toggle').forEach(toggle => {
-    toggle.addEventListener('click', function () {
-        this.classList.toggle('open');
-        const submenu = this.nextElementSibling;
+// document.querySelectorAll('.submenu-toggle').forEach(toggle => {
+//     toggle.addEventListener('click', function () {
+//         this.classList.toggle('open');
+//         const submenu = this.nextElementSibling;
 
-        // Alternar visibilidad del submenú
-        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-    });
-});
+//         submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+//     });
+// });
 
+// Definir el breakpoint de pantallas grandes
+const mediaQuery = window.matchMedia('(max-width: 991px)'); 
 
-// Función para asegurar que el checkbox no afecte en pantallas grandes
-function resetMenuToggleOnLargeScreens() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
-    const mediaQuery = window.matchMedia('(min-width: 992px)');
-
-    if (menuToggle && mediaQuery.matches) {
-        menuToggle.checked = false; // Resetear el estado del checkbox
+// Función para habilitar o deshabilitar el evento
+function toggleSubmenuEvents(e) {
+    if (e.matches) {
+        // Pantallas pequeñas: Agregar evento
+        document.querySelectorAll('.submenu-toggle').forEach(toggle => {
+            toggle.addEventListener('click', handleToggle);
+        });
+    } else {
+        // Pantallas grandes: Remover evento
+        document.querySelectorAll('.submenu-toggle').forEach(toggle => {
+            toggle.removeEventListener('click', handleToggle);
+        });
     }
-
-    // Escuchar clics fuera del menú en pantallas grandes para desmarcar
-    document.addEventListener('click', (e) => {
-        if (mediaQuery.matches && !navbar.contains(e.target)) {
-            menuToggle.checked = false;
-        }
-    });
 }
 
-// Ejecutar al cargar y al cambiar el tamaño de la ventana
-resetMenuToggleOnLargeScreens();
-window.addEventListener('resize', resetMenuToggleOnLargeScreens);
+// Función de manejo del evento de clic
+function handleToggle() {
+    this.classList.toggle('open');
+    const submenu = this.nextElementSibling;
+    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+}
+
+// Registrar el evento inicial y escuchar cambios en el tamaño
+toggleSubmenuEvents(mediaQuery);
+mediaQuery.addListener(toggleSubmenuEvents);

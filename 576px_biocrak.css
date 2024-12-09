@@ -112,12 +112,17 @@
     width: 84%;
     text-align: center;
   }
+
+  .carousel-track img {
+    height: 8vh; 
+    object-fit: contain;
+  }
   
   /* Carrusel de imágenes */
   .carousel-track {
     display: flex;
     animation: slide 20s linear infinite alternate;
-    width: calc(8vh * 10); 
+    width: calc(10vh * 10); 
     gap: 4rem;
     padding: 0px 48px;
   }
@@ -185,7 +190,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     width: 100%;
-    gap: 16px;
+    gap: 8px;
 } 
 
 .conjunto_pro::-webkit-scrollbar {
@@ -208,7 +213,8 @@
 
 .imagen_pro {
     border-radius: var(--border-radius-img-mov);
-    height: var(--height-img-mov);
+    /* height: var(--height-img-mov); */
+    height: 46vh;
     object-fit: cover;
     /* width: var(--widht-img-mov); */
 }
@@ -247,6 +253,10 @@
     justify-content: center;
     align-items: center;
     gap: var(--gap-btn-mas-compra);
+}
+
+.gap{
+    gap: 0px;
 }
 
 .btn_action_solid {
@@ -325,75 +335,6 @@
     display: block; 
 }
 
-/* Estilos de la tabla */
-.tabla_comparativa {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    table-layout: fixed; /* Hace que cada columna tenga el mismo ancho */
-}
-
-/* Estilos de las celdas de la tabla */
-.tabla_comparativa th,
-.tabla_comparativa td {
-    padding: 0.75rem 0.3125rem;
-    font-size: var(--font-size-xs);
-    text-align: center;
-    overflow-wrap: break-word;
-    font-weight: var(--font-weight-regular);
-}
-
-/* Ancho específico para la primera columna */
-.tabla_comparativa .atributo {
-    font-size: var(--font-size-sm);
-    font-weight: bold;
-    text-align: left;
-    width: 25%; /* Ancho específico para la columna de características */
-    font-weight: var(--font-weight-regular);
-}
-
-/* Asigna el mismo ancho a las columnas de los paneles */
-.tabla_comparativa th:not(.atributo),
-.tabla_comparativa td:not(.atributo) {
-    width: 25%; /* El resto de las columnas comparten el mismo ancho */
-}
-
-/* Estilo de los títulos de los paneles */
-.titulo_panel {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: var(--color-apple);
-    display: block;
-    margin-top: 10px;
-}
-
-/* Alternar colores en las filas de la tabla */
-.tabla_comparativa tbody tr:nth-child(odd) {
-    background-color: #f5f5f5; /* Color gris claro */
-}
-
-.tabla_comparativa tbody tr:nth-child(even) {
-    background-color: white; /* Color blanco */
-}
-
-/* Estilo para las celdas con colspan de 3 */
-.tabla_comparativa td[colspan="3"] {
-    text-align: center;
-    /* font-weight: normal; */
-}
-
-/* Estilo del botón de compra */
-.btn_comprar {
-    border: 0.0625rem solid rgb(0, 113, 227);
-    background-color: rgb(0, 113, 227);
-    border-radius: 980px;
-    padding: 0.6875rem 1.375rem;
-    color: white;
-    font-size: 1.0625rem;
-    font-weight: var(--font-weight-light);
-    letter-spacing: -0.374px;
-}
-
 
 
 
@@ -439,7 +380,7 @@
     justify-content: flex-end;
     border-radius: var(--border-img);
     height: var(--height-img-mov);
-    flex: 0 0 70%;
+    flex: 0 0 84%;
     scroll-snap-align: start;
     overflow: hidden;
     text-decoration: none;
@@ -467,8 +408,9 @@
     width: 100%;
     padding: 16px;
     color: white;
-    text-align: center;
+    text-align: left;
     align-items: start;
+    justify-content: flex-start;
     /* z-index: 1; */
     flex-direction: column;
     gap: 12px;
@@ -528,7 +470,7 @@
     justify-content: center;
     align-items: center;
     width: 98%;
-    gap: var(--gap-titulo-conjunto-section-6);
+    gap: var(--gap-titulo-conjunto-section-3);
     max-width: 1000px;
 }
 
@@ -568,7 +510,7 @@
 
 .titulo_bottom_beneficios{
     font-size: var(--font-size-xltt);
-    margin-top: -80px;
+    margin-top: -44px;
     width: 94%;
     text-align: center;
 }
@@ -582,6 +524,10 @@
     max-width: var(--max-width-1);
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
+}
+
+.desk{
+    display: none;
 }
 
 
@@ -673,7 +619,6 @@
 /* ------------------------------------------- */
 
 .faq-section {
-    /* max-width: va r(--max-width); */
     display: flex;
     flex-direction: column;
     padding-top: var(--section-padding);
@@ -705,7 +650,7 @@
     cursor: pointer;
     padding: 32px;
     display: flex;
-    justify-content: space-between; /* Coloca el texto y el icono a los lados */
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     margin: 0 auto;
@@ -715,39 +660,34 @@
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
 }
-  
-  /* Ocultar el checkbox */
+
 .faq-checkbox {
     display: none;
 }
   
-  /* Estilos para el icono "+" en FAQ */
 .plus_faq {
     color: black;
     transition: transform 0.3s;
     font-weight: var(--font-weight-medium);
 }
   
-  /* Rotación del ícono al abrir la pregunta */
 .faq-checkbox:checked + .faq-question .plus_faq {
-    transform: rotate(45deg); /* Cambia de "+" a "x" al abrir */
+    transform: rotate(45deg); 
 }
-  
-  /* Estilos para la respuesta en FAQ (oculta por defecto) */
+
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    /* transition: max-height 0.3s ease; */
+  
     padding: 0 34px;
-    border-bottom: 0.6px solid rgb(0, 113, 227); /* Agregar borde debajo de la respuesta */
+    border-bottom: 0.6px solid rgb(0, 113, 227); 
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
   
 }
   
-  /* Mostrar respuesta cuando el checkbox está marcado */
 .faq-checkbox:checked + .faq-question + .faq-answer {
-    max-height: 200px; /* Ajusta la altura máxima según el contenido */
+    max-height: auto; 
     padding-top: 10px;
     padding-bottom: 30px;
 }

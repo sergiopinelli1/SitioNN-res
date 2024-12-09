@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: center;
     width: 92%;
-    /* padding: 100px 0px 0px 0px; */
     gap: 30px;
     margin: 0 auto;      
 }
@@ -88,7 +87,6 @@
 .historia_fun {
     padding-top: var(--section-padding);
     padding-bottom: 60px;
-    /* display: flex; */
 }
 
 .container_his_fun {
@@ -96,7 +94,6 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    /* width: 100%; */
     gap: 30px;
 }
 

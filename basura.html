@@ -531,3 +531,82 @@
 
 
 
+.faq-section {
+    /* max-width: va r(--max-width); */
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    gap: var(--gap-titulo-conjunto-section-3);
+    
+}
+
+.titulo_faq{
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-medium);
+}
+
+.conjunto_faq{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.faq_item{
+    display: flex;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between; /* Coloca el texto y el icono a los lados */
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.faq{
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-regular);
+}
+  
+  /* Ocultar el checkbox */
+.faq-checkbox {
+    display: none;
+}
+  
+  /* Estilos para el icono "+" en FAQ */
+.plus_faq {
+    color: black;
+    transition: transform 0.3s;
+    font-weight: var(--font-weight-medium);
+}
+  
+  /* Rotación del ícono al abrir la pregunta */
+.faq-checkbox:checked + .faq-question .plus_faq {
+    transform: rotate(45deg); /* Cambia de "+" a "x" al abrir */
+}
+  
+  /* Estilos para la respuesta en FAQ (oculta por defecto) */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    /* transition: max-height 0.3s ease; */
+    padding: 0 34px;
+    border-bottom: 0.6px solid rgb(0, 113, 227); /* Agregar borde debajo de la respuesta */
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-regular);
+  
+}
+  
+  /* Mostrar respuesta cuando el checkbox está marcado */
+.faq-checkbox:checked + .faq-question + .faq-answer {
+    max-height: auto; 
+    padding-top: 10px;
+    padding-bottom: 30px;
+}

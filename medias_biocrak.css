@@ -167,6 +167,12 @@
     /* ---------- seccion footer ------------------- */
 
      .footer_container{
+        max-width: var(---max-width-16);
+        gap: 40px;
+        width: 60vw;
+    }
+
+    .redes{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -175,7 +181,6 @@
         width: 60vw;
         margin: 0 auto;
         gap: 80px;
-        height: 140px;
     }
     
     .redes_foot{

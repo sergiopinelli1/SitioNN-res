@@ -708,7 +708,7 @@ body{
 
 footer{
     background-color: black;
-    height: fit-content;
+    /* height: fit-content;  */
     justify-content: center;
     align-items: center;
 }
@@ -719,11 +719,23 @@ footer{
     justify-content: center;
     align-items: center;
     max-width: var(---max-width-16);
-    width: 60vw;
+    width: 90%;
     margin: 0 auto;
     gap: 20px;
-    height: 140px;
+    height: fit-content;
+    padding: 30px 0px 30px 0px;
 }
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo_foot{
+    height: 20px;
+}
+
 
 .redes_foot{
     display: flex;
@@ -736,6 +748,7 @@ footer{
     height: 6vh;
 }
 
-.logo_foot{
-    height: 20px;
+.texto_res{
+    color: var(--color-secondary);
+    font-size: 12px;
 }

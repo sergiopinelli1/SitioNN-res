@@ -17,12 +17,12 @@ const models = {
             "5 Soporte pared",
             "6 Cables de conexión",
         ],
-        price: "$750.000 o U$S750",
+        price: "$850.000 o U$S800",
         images: [0, 1], // Índices de imágenes para BIO 60
     },
     "300": {
         title: "BIO 300",
-        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales en casa.",
+        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales en casa. Es apto para personas de todos los tamaños.",
         accessories: [
             "1 Panel de luz",
             "2 Pie de apoyo",
@@ -31,7 +31,7 @@ const models = {
             "5 Soporte pared",
             "6 Cables de conexión",
         ],
-        price: "$1.250.000 o U$S1250",
+        price: "$1.400.000 o U$S1300",
         images: [2, 3], // Índices de imágenes para BIO 300
     },
     "600": {
@@ -45,7 +45,7 @@ const models = {
             "5 Soporte pared",
             "6 Cables de conexión",
         ],
-        price: "$2.000.000 o U$S2000",
+        price: "$2.500.000 o U$S2400",
         images: [4, 5], // Índices de imágenes para BIO 600
     },
 };

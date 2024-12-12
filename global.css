@@ -361,12 +361,14 @@ body{
 
 .submenu {
     display: none;
+    white-space: nowrap;
 }
 
 .item_submenu {
     padding: 0px 30px;
     padding-top: 30px;
     font-size: var(--font-size-md);
+    white-space: nowrap;
 }
 
 /* Mostrar submenús cuando el toggle está abierto */
@@ -474,6 +476,13 @@ body{
 .titulo_faq{
     font-size: var(--font-size-xxl);
     font-weight: var(--font-weight-medium);
+}
+
+.titulo_faq2{
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-semibold);
+    text-align: left;
+    width: 97%;
 }
 
 .conjunto_faq{

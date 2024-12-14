@@ -297,7 +297,20 @@
         text-align: center;
         width: 15%;
         gap: 16px;
-        font-size: var(--font-size-mt);
+        font-size: var(--font-size-xs);
+    }
+
+    /* ------------------------------------------ */
+    /* ------- sobre nosotros ------------------- */
+    /* ------------------------------------------ */
+
+    .img_nos{
+        height: 50vh;
+        object-fit: cover;
+        border-radius: 20px;
+        width: 100%;
+        margin: 0 auto;
+        /* order: 1; */
     }
 
 }
@@ -746,6 +759,10 @@
         height: 46vh;
         width: 100%;
         border-radius: 20px;
+    }
+
+    .container_inv{
+        width: 80%;
     }
     
     .img_ben_mid{

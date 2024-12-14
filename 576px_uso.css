@@ -40,6 +40,7 @@
 .texto_hero2{
     color: var(--color-secondary);
     font-size: var(--font-size-lg);
+    line-height: 32px;
     font-weight: var(--font-weight-regular);
 }
 
@@ -155,8 +156,8 @@
 .container_inv{
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    width: 100%;
+    gap: 14px;
+    width: 96%;
 }
 
 .section {
@@ -165,6 +166,7 @@
     gap: 20px;
     align-items: start;
     justify-content: center;
+    padding-bottom: var(--section-padding);
 }
 
 .section ul li{
@@ -184,11 +186,29 @@
     text-transform: uppercase;
 }
 
+.section h5{
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-hei);
+    width: 92%;
+    color: rgb(230, 150, 0);
+}
+
+
 .texto_inv{
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-hei);
-    width: 92%;
+    width: 98%;
+}
+
+
+.texto_inv a{
+    color: rgb(121, 121, 121);
+}
+
+.texto_inv a:hover{
+    text-decoration: underline;
 }
 
 /* seccion facil y seguro de usar */

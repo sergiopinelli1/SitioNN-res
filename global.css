@@ -206,7 +206,7 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--font-family);
-    /* border: 1px solid rebeccapurple; */
+    border: 1px solid rebeccapurple;
 }
 
 a{
@@ -369,6 +369,10 @@ body{
     padding-top: 30px;
     font-size: var(--font-size-md);
     white-space: nowrap;
+}
+
+.item_submenu:hover{
+    text-decoration: underline;
 }
 
 /* Mostrar submenús cuando el toggle está abierto */

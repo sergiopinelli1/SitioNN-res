@@ -206,7 +206,7 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--font-family);
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
 }
 
 a{

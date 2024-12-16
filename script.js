@@ -5,24 +5,27 @@ let currentModel = '60';
 // Imágenes por modelo
 const modelImages = {
   '60': [
-    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png",
-    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.03.17.png"
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO60_persona_usandolo.png",
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO60_foto_limpia.png",
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO60_persona_usandolo.png"
   ],
   '300': [
-    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png",
-    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.35.26.png"
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO300_persona_usandolo.png",
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO300_foto_limpia.png",
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO300_persona_usandolo.png"
   ],
   '600': [
-    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png",
-    "./copia_img_productos/Captura de pantalla 2024-10-30 a la(s) 16.36.35.png"
-  ]
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO600_persona_usandolo.png",
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO600_foto_limpia.png",
+    "imgs_biocrak/imgs_carrito/img_carrusel/BIO600_soporte_pared.png"
+  ],
 };
 
 // Precios por modelo
 const modelPrices = {
-  '60': "$750.000 o U$S750",
-  '300': "$1.300.000 o U$S1300",
-  '600': "$2.500.000 o U$S2500"
+  '60': "$850.000 o U$S800",
+  '300': "$1.350.000 o U$S1300",
+  '600': "$2.450.000 o U$S2400"
 };
 
 // Cambiar modelo

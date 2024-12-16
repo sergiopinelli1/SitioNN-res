@@ -336,6 +336,7 @@ body{
 
 .item_navbar_list, .item_navbar_list2, .submenu{
     font-size: var(--font-size-mt);
+    /* font-size: 10px; */
     font-weight: var(--font-weight-medium);
 }
 
@@ -367,7 +368,7 @@ body{
 .item_submenu {
     padding: 0px 30px;
     padding-top: 30px;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-xs);
     white-space: nowrap;
 }
 

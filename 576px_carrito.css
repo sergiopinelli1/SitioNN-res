@@ -1,108 +1,4 @@
-@import url('global.css');
-
-:root {
-  --font-family: "Roboto", Arial;
-
-  --font-size-xs: 0.75rem;      /* 12px */
-  --font-size-sm: 0.875rem;     /* 14px */
-  --font-size-md: 1rem;         /* 16px */
-  --font-size-mt: 1.125rem;     /* 18px */
-  --font-size-lg: 1.25rem;      /* 20px */
-  --font-size-mlg: 1.375rem;    /* 22px */
-  --font-size-xl: 1.5rem;       /* 24px */
-  --font-size-xltt:1.7rem;
-  --font-size-xlt: 1.875rem;    /* 30px */
-  --font-size-xxl: 2rem;        /* 32px */
-  --font-size-xxxl: 2.5rem;     /* 40px */
-  --font-size-3xl: 3rem;        /* 48px */
-  --font-size-4xl: 3.5rem;      /* 56px */
-
-  --color-primary: black;
-  --color-secondary: white;
-  --color-three: rgb(0, 113, 227);
-  
-  --font-weight-thin: 100;
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-black: 900;
-
-  --border-radius-img-mov: 20px;
-
-  --height-img-mov: 40vh;
-
-  --nav-padding: 16px 32px;
-
-  --section-padding: 36px;
-  --section-padding_xs: 20px;
-
-  --section-padding-top-conoce-panel-ideal: 38px;
-
-  --gap-titulo-conjunto-section-3: 30px;
-  --gap-titulo-conjunto-section-6: 60px;   
-  --gap-titulo-conjunto-section-x: 40px;   
-  --gap-nav: 60px; 
-
-  --gap-logo-empresas: 120px;
-
-  --gap-item-img: 30px;
-
-  --gap-info-producto: 15px;
-
-  --gap-bottom-section: 30px;
-
-  --border-img: 20px;
-
-  --height-header: 66px;
-
-  --height-logo: 200px;
-
-  --gap-logo-empresas: 7.5rem;                     /* 120px to rem */
-  --gap-item-img: 1.875rem;                        /* 30px to rem */
-
-  --gap-info-producto: 0.9375rem;                  /* 15px to rem */
-  --gap-bottom-section: 1.875rem;                  /* 30px to rem */
-
-  --border-img: 20px;
-
-  --height-header: 4.125rem;                       /* 66px to rem */
-  --height-logo: 12.5rem;                          /* 200px to rem */
-
-  --gap-nav: 3.75rem;                              /* 60px to rem */
-
-  --back-header: black;
-
-  --back-apple: rgb(0, 113, 227);
-  --border-apple: 1px solid rgb(0, 113, 227);
-  --color-apple: rgb(0, 113, 227);
-  --back-trans-apple: rgb(5, 121, 237);
-  --color-btn-mas-info: rgb(0, 113, 227);
-  --color-btn-compra: white; 
-
-  --text-deco: underline;
-
-  --letter-space1: 0.1px;
-  --letter-space2: 0.2px;
-  --letter-space3: 0.3px;
-  --letter-space4: 0.4px;
-  --letter-space5: 0.5px;
-  --letter-space6: 0.6px;
-  --letter-space7: 0.7px;
-  --letter-space8: 0.8px;
-  --letter-space10: 0.10px;
-  --letter-space-1:-0.374px;
-
-  /* --gap-btn-mas-compra: 30px; */
-
-  --border-radius-btn-mas-compra: 980px;
-  --padding-btn-mas-compra: 11px 21px;
-  --font-size-btn-mas-compra: 17px;
-  --color-btn-compra: white; 
-
-  --gap-btn-mas-compra: 30px;     
-}
+@import url(global.css);
 
 /* ----------------------------------- */
 /* ------ seccion carrito ------------ */
@@ -182,8 +78,9 @@
 }
 
 .carousel-image {
-  max-width: 100%; 
-  width: 90%;
+  /* max-width: 100%;  */
+  width: 100%;
+  height: 100%;
   /* height: 100%; */
   border-radius: var(--border-img);
   object-fit: cover;

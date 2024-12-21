@@ -93,15 +93,15 @@
 }
 
 .carousel-mobile {
-  /* overflow-x: auto; */
+  overflow-x: auto;
   display: flex;
+  align-items: center;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  /* scroll-behavior: smooth;  */
-  /* -webkit-overflow-scrolling: touch; */
+  scroll-behavior: smooth;  
+  -webkit-overflow-scrolling: touch;
   width: 100%;
   height: 100%;
-  gap: 8px;
 }
 
 .carousel-mobile::-webkit-scrollbar {
@@ -109,13 +109,17 @@
 } 
 
 .carousel-image {
-  flex: 0 0 calc(100% + 8px); /* Ajustar el tamaño incluyendo el gap */
-  scroll-snap-align: center;
-  object-fit: cover;
+  flex: 0 0 100%; /* Ajustar el tamaño incluyendo el gap */
   width: 100%;
   height: 100%;
   scroll-snap-align: center;
   border-radius: 20px;
+  object-fit: cover;
+  padding-right: 4px;
+}
+
+.carousel-mobile > :last-child{
+  padding: 0px;
 }
 
 .puntos {

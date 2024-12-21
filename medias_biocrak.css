@@ -843,6 +843,10 @@
         object-fit: cover;
     } 
 
+    .puntos{
+        display: none !important;
+    }
+
 
     /* ----- seleccion de modelos ----------- */
 

@@ -822,6 +822,7 @@
     .container {
         flex-direction: row;
         align-items: start;
+        justify-content: space-between;
         width: 96%;
         margin-top: 100px;
         height: 73vh;   
@@ -829,9 +830,9 @@
 
     .container-carousel-mobile {
         flex-direction: row;
-        align-items: start;
-        width: 96%;
-        position: relative;
+        /* align-items: start; */
+        justify-content: center;
+        /* width: 96%; */
         width: 100%;
         height: 100%;
     }
@@ -862,7 +863,9 @@
     .details {
         display: flex;
         flex-direction: column;
+        justify-content: space-between !important;
         width: 76%;
+        height: 100%;
         gap: 34px;
     }   
 
@@ -920,7 +923,7 @@
     .item_fal{
         display: flex;
         /* flex-direction: column; */
-        /* align-items: start; */
+        align-items: start;
         /* width: 30%; */
         align-items: center;
         gap: 10px;

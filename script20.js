@@ -45,7 +45,7 @@ const models = {
     },
     "600": {
         title: "BIO 600",
-        description: "Es el panel más grande, diseñado para cubrir áreas completas del cuerpo, ideal para uso profesional o tratamientos intensivos. Es apto para personas de todos los tamaños.",
+        description: "Es el panel más grande, diseñado para cubrir áreas completas del cuerpo, ideal para uso profesional o tratamientos intensivos. Es apto para todos los tamaños.",
         accessories: [
             "1 Panel de luz",
             "2 Pie de apoyo",

@@ -149,6 +149,10 @@ function updateCarousel(imageIndexes) {
         restartAutoScroll();
     });
 
+       // Detener auto-scroll si el usuario interactúa con el carrusel
+       carouselContainer.addEventListener("mouseover", () => clearInterval(autoScrollInterval));
+       carouselContainer.addEventListener("mouseout", restartAutoScroll);
+
     startAutoScroll();
 }
 

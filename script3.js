@@ -3,7 +3,7 @@ const descriptionElement = document.querySelector(".texto_carrito1");
 const accessoriesList = document.querySelector(".lista_accesorie");
 const priceElement = document.getElementById("price");
 const modelButtons = document.querySelectorAll(".model-button");
-const carouselImages = document.querySelectorAll(".carousel-image");
+const carouselImages = document.querySelectorAll("slider-section");
 
 const models = {
     "60": {
@@ -18,7 +18,7 @@ const models = {
             "6 Cables de conexión",
         ],
         price: "$850.000 o U$S800",
-        images: [0, 1], // Índices de imágenes para BIO 60
+        section: [0, 1, 2], // Índices de imágenes para BIO 60
     },
     "300": {
         title: "BIO 300",
@@ -32,7 +32,7 @@ const models = {
             "6 Cables de conexión",
         ],
         price: "$1.400.000 o U$S1300",
-        images: [2, 3], // Índices de imágenes para BIO 300
+        section: [3, 4, 5], 
     },
     "600": {
         title: "BIO 600",
@@ -46,7 +46,7 @@ const models = {
             "6 Cables de conexión",
         ],
         price: "$2.500.000 o U$S2400",
-        images: [4, 5], // Índices de imágenes para BIO 600
+        section: [6, 7, 8], 
     },
 };
 
@@ -80,7 +80,7 @@ function changeModel(model) {
         button.classList.remove("selected");
     });
     document.querySelector(`.model-button[onclick="changeModel('${model}')"]`).classList.add("selected");
-  
+
 }
 
 // Configurar el botón seleccionado en la carga inicial
@@ -92,3 +92,55 @@ function setInitialModel(model) {
 const urlParams = new URLSearchParams(window.location.search);
 const initialModel = urlParams.get("model") || "60"; // Modelo predeterminado: BIO 60
 setInitialModel(initialModel);
+
+
+
+
+const btnLeft = document.querySelector(".btn-left"),
+      btnRight = document.querySelector(".btn-right"),
+      slider = document.querySelector("#slider"),
+      sliderSection = document.querySelectorAll(".slider-section");
+
+
+btnLeft.addEventListener("click", e => moveToLeft())
+btnRight.addEventListener("click", e => moveToRight())
+
+setInterval(() => {
+    moveToRight()
+}, 3000);
+
+
+let operacion = 0,
+    counter = 0,
+    widthImg = 100 / sliderSection.length;
+
+function moveToRight() {
+    if (counter >= sliderSection.length-1) {
+        counter = 0;
+        operacion = 0;
+        slider.style.transform = `translate(-${operacion}%)`;
+        slider.style.transition = "none";
+        return;
+    } 
+    counter++;
+    operacion = operacion + widthImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition = "all ease .6s"
+    
+}  
+
+function moveToLeft() {
+    counter--;
+    if (counter < 0 ) {
+        counter = sliderSection.length-1;
+        operacion = widthImg * (sliderSection.length-1)
+        slider.style.transform = `translate(-${operacion}%)`;
+        slider.style.transition = "none";
+        return;
+    } 
+    operacion = operacion - widthImg;
+    slider.style.transform = `translate(-${operacion}%)`;
+    slider.style.transition = "all ease .6s"
+    
+    
+}  

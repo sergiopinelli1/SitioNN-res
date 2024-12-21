@@ -722,7 +722,7 @@ body{
 
 footer{
     background-color: black;
-    /* height: fit-content;  */
+    height: fit-content; 
     justify-content: center;
     align-items: center;
 }
@@ -732,7 +732,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: var(---max-width-16);
+    max-width: 1000px;
     width: 90%;
     margin: 0 auto;
     gap: 20px;
@@ -749,7 +749,6 @@ footer{
 .logo_foot{
     height: 20px;
 }
-
 
 .redes_foot{
     display: flex;

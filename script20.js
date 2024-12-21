@@ -1,0 +1,214 @@
+// Variables para elementos del DOM
+const titleElement = document.querySelector(".title_carrito");
+const descriptionElement = document.querySelector(".texto_carrito1");
+const accessoriesList = document.querySelector(".lista_accesorie");
+const priceElement = document.getElementById("price");
+const modelButtons = document.querySelectorAll(".model-button");
+const carouselImages = document.querySelectorAll(".carousel-image");
+const carouselContainer = document.querySelector(".carousel-mobile");
+const puntosContainer = document.querySelector(".puntos");
+const btnLeft = document.querySelector(".btn-left");
+const btnRight = document.querySelector(".btn-right");
+
+let autoScrollInterval;
+let autoScrollTimeout;
+
+// Modelos y configuración
+const models = {
+    "60": {
+        title: "BIO 60",
+        description: "Es el panel más pequeño, pensado para usar en zonas específicas del cuerpo como terapia facial, lesiones, entre otros. Es apto para personas de todos los tamaños.",
+        accessories: [
+            "1 Panel de luz",
+            "2 Pie de apoyo",
+            "3 Control remoto",
+            "4 Gafas con filtro de luz",
+            "5 Soporte pared",
+            "6 Cables de conexión",
+        ],
+        price: "$850.000 o U$S800",
+        images: [0, 1, 2],
+    },
+    "300": {
+        title: "BIO 300",
+        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales en casa. Es apto para personas de todos los tamaños.",
+        accessories: [
+            "1 Panel de luz",
+            "2 Pie de apoyo",
+            "3 Control remoto",
+            "4 Gafas con filtro de luz",
+            "5 Soporte pared",
+            "6 Cables de conexión",
+        ],
+        price: "$1.400.000 o U$S1300",
+        images: [3, 4, 5],
+    },
+    "600": {
+        title: "BIO 600",
+        description: "Es el panel más grande, diseñado para cubrir áreas completas del cuerpo, ideal para uso profesional o tratamientos intensivos. Es apto para personas de todos los tamaños.",
+        accessories: [
+            "1 Panel de luz",
+            "2 Pie de apoyo",
+            "3 Control remoto",
+            "4 Gafas con filtro de luz",
+            "5 Soporte pared",
+            "6 Cables de conexión",
+        ],
+        price: "$2.500.000 o U$S2400",
+        images: [6, 7, 8],
+    },
+};
+
+// Cambiar el modelo al seleccionar un botón
+function changeModel(model) {
+    const selectedModel = models[model];
+
+    // Cambiar el título y descripción
+    titleElement.textContent = selectedModel.title;
+    descriptionElement.textContent = selectedModel.description;
+
+    // Actualizar accesorios
+    accessoriesList.innerHTML = selectedModel.accessories
+        .map((item) => `<li class=\"item_accesorie\"><span>${item.split(" ")[0]}</span>${item.substring(2)}</li>`)
+        .join("");
+
+    // Cambiar el precio
+    priceElement.textContent = selectedModel.price;
+
+    // Actualizar el carrusel
+    updateCarousel(selectedModel.images);
+
+    // Asegurar que el primer punto esté activo
+    const puntos = document.querySelectorAll(".punto");
+    puntos.forEach((punto, index) => {
+        punto.classList.toggle("activo", index === 0);
+    });
+
+    // Cambiar el estado visual del botón seleccionado
+    modelButtons.forEach((button) => {
+        button.classList.remove("selected");
+    });
+    document.querySelector(`.model-button[onclick="changeModel('${model}')"]`).classList.add("selected");
+
+    // Reiniciar el carrusel a la primera imagen del nuevo modelo
+    carouselContainer.scrollTo({ left: 0, behavior: "smooth" });
+
+}
+
+// Actualizar el carrusel y los puntos
+function updateCarousel(imageIndexes) {
+    carouselContainer.innerHTML = ""; // Limpiar el carrusel
+    puntosContainer.innerHTML = ""; // Limpiar los puntos
+
+    imageIndexes.forEach((index, i) => {
+        // Agregar imágenes al carrusel
+        const img = carouselImages[index].cloneNode(true);
+        img.classList.add("active");
+        carouselContainer.appendChild(img);
+
+        // Crear puntos para el carrusel
+        const punto = document.createElement("li");
+        punto.classList.add("punto");
+        if (i === 0) punto.classList.add("activo");
+
+        // Agregar funcionalidad al punto
+        punto.addEventListener("click", () => {
+            if (window.innerWidth <= 992) {
+                const scrollAmount = i * carouselContainer.offsetWidth;
+                carouselContainer.scrollTo({ left: scrollAmount, behavior: "smooth" });
+
+                // Actualizar estado visual de los puntos
+                document.querySelectorAll(".punto").forEach((p) => p.classList.remove("activo"));
+                punto.classList.add("activo");
+
+                restartAutoScroll();
+            }
+        });
+
+        puntosContainer.appendChild(punto);
+    });
+
+    // Configurar scroll-snap para el carrusel
+    carouselContainer.style.display = "flex";
+    carouselContainer.style.overflowX = "scroll";
+    carouselContainer.style.scrollSnapType = "x mandatory";
+
+    // Listener para el scroll del carrusel
+    carouselContainer.addEventListener("scroll", () => {
+        const scrollPosition = carouselContainer.scrollLeft;
+        const containerWidth = carouselContainer.offsetWidth;
+
+        // Determinar el índice de la imagen visible
+        const visibleIndex = Math.round(scrollPosition / containerWidth);
+
+        // Actualizar estado activo de los puntos
+        document.querySelectorAll(".punto").forEach((punto, index) => {
+            punto.classList.toggle("activo", index === visibleIndex);
+        });
+
+        restartAutoScroll();
+    });
+
+    startAutoScroll();
+}
+
+// Función para las flechas del carrusel
+function scrollCarousel(direction) {
+    const containerWidth = carouselContainer.offsetWidth;
+    const scrollPosition = carouselContainer.scrollLeft;
+    const maxScroll = carouselContainer.scrollWidth - containerWidth;
+
+    if (direction === 1 && scrollPosition >= maxScroll) {
+        // Si estamos en la última imagen, volver al inicio
+        carouselContainer.scrollTo({ left: 0, behavior: "smooth" });
+    } else if (direction === -1 && scrollPosition === 0) {
+        // Si estamos en la primera imagen, ir al final
+        carouselContainer.scrollTo({ left: maxScroll, behavior: "smooth" });
+    } else {
+        // Scroll normal
+        carouselContainer.scrollBy({ left: direction * containerWidth, behavior: "smooth" });
+    }
+
+    restartAutoScroll();
+}
+
+// Configurar auto-scroll del carrusel
+function startAutoScroll() {
+    clearInterval(autoScrollInterval);
+    autoScrollInterval = setInterval(() => {
+        // Desplazamiento suave con scrollTo
+        const containerWidth = carouselContainer.offsetWidth;
+        carouselContainer.scrollBy({ left: containerWidth, behavior: "smooth" });
+    }, 10000);
+}
+
+function restartAutoScroll() {
+    clearTimeout(autoScrollTimeout);
+    autoScrollTimeout = setTimeout(startAutoScroll, 10000);
+}
+
+// Habilitar/deshabilitar flechas y puntos según el ancho de la pantalla
+function adjustVisibility() {
+    if (window.innerWidth > 992) {
+        btnLeft.style.display = "block";
+        btnRight.style.display = "block";
+    } else {
+        btnLeft.style.display = "none";
+        btnRight.style.display = "none";
+    }
+
+    puntosContainer.style.display = window.innerWidth > 992 ? "none" : "block";
+}
+
+// Ajustar visibilidad al cargar la página y al redimensionar
+window.addEventListener("resize", adjustVisibility);
+adjustVisibility();
+
+// Listeners para las flechas
+btnLeft.addEventListener("click", () => scrollCarousel(-1));
+btnRight.addEventListener("click", () => scrollCarousel(1));
+
+// Configurar el modelo inicial
+const urlParams = new URLSearchParams(window.location.search);
+const initialModel = urlParams.get("model") || "60";
+changeModel(initialModel);

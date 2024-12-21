@@ -22,73 +22,29 @@
   margin-top: 80px;
 }
 
+
+/* carrusel mobile puntos scroll solo */
+
 /* .carousel {
-  position: relative;
-  width: 86%;
-  height: 56vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.carousel-image {
-  position: absolute;
-  display: none;
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  height: 100%;
-  width: 100%;
-}
-
-.carousel-image.active {
-  display: block;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  transform: translateY(-50%);
-  font-size: 20px;
-  z-index: 10;
-  background-color: transparent;
-}
-
-.carousel-btn.prev {
-  left: 10px;
-}
-
-.carousel-btn.next {
-  right: 10px;
-} */
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
   gap: 5px; 
   width: 92%;
-}
-
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+} 
 .carousel-image {
-  /* max-width: 100%;  */
+  max-width: 100%; 
   width: 100%;
   height: 100%;
-  /* height: 100%; */
+  height: 100%;
   border-radius: var(--border-img);
   object-fit: cover;
-}
+  scroll-snap-align: center;
+} 
 
 .carousel::-webkit-scrollbar {
   height: 8px; 
-} 
+}  
 
 .carousel::-webkit-scrollbar-track {
   background: white;
@@ -96,18 +52,21 @@
 }
 
 .carousel::-webkit-scrollbar-thumb {
-  background-color: #007bff; /* Color del scroll (thumb) */
-  border-radius: 5px; /* Bordes redondeados */
-  /* border: 2px solid #f1f1f1;  */
+  background-color: #007bff;
+  border-radius: 5px; 
   color: white;
   background-color: white;
 }
 
 .carousel::-webkit-scrollbar-thumb:hover {
-  background-color: #0056b3; /* Color del scroll al pasar el mouse */
+  background-color: #0056b3; 
+} 
+
+.prev, .next{
+  display: none;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .carousel {
       overflow: hidden; 
       justify-content: center;
@@ -119,6 +78,142 @@
       display: block; /
   }
 } */
+
+
+/* carrusel mobile puntos interactivos */
+
+.container-carousel-mobile {
+  position: relative;
+  overflow: hidden;
+  height: 40vh;
+  width: 90%;
+  /* overflow-x: auto;
+  scroll-snap-type: x mandatory; */
+  scroll-behavior: smooth; /* Transición suave al hacer scroll */
+}
+
+.carousel-mobile {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  /* scroll-behavior: smooth;  */
+  /* -webkit-overflow-scrolling: touch; */
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+}
+
+.carousel-mobile::-webkit-scrollbar {
+  height: 0px; 
+} 
+
+.carousel-image {
+  flex: 0 0 calc(100% - 8.4px); /* Ajustar el tamaño incluyendo el gap */
+  scroll-snap-align: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  border-radius: 20px;
+}
+
+.puntos {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.punto.activo {
+  background-color: black;
+}
+
+
+/* carrusel desk flechas interactivas */
+
+
+/* .carousel-mobile {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-image {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  width: 100%;
+  height: auto;
+}
+
+.puntos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.punto.activo {
+  background-color: #555;
+} */
+
+.btn-left, .btn-right {
+  display: flex;
+  position: absolute;
+  top: 46%;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  transform: translate(0,-50%);
+  height: 40px;
+  width: 40px;
+}
+
+.btn-left img, .btn-right img{
+  height: 100%;
+  width: 100%;
+}
+
+.btn-left {
+  left: 16px;
+  transform: rotate(90deg);
+}
+
+.btn-right {
+  right: 16px;
+  transform: rotate(-90deg);
+}
+
+.btn-left img:hover, .btn-right img:hover {
+  filter: brightness(0.5);
+  transition: filter 0.2s ease;
+}
+
 
 
 /* ------------ Detalles -------------- */
@@ -149,16 +244,16 @@
 }
 
 /* Para una transición suave */
-.carousel-image {
+/* .carousel-image {
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
-
+} */
+/* 
 .carousel-image.active {
   display: block;
   opacity: 1;
-}
+} */
 
 /* ----- seleccion de modelos ----------- */
 
@@ -192,6 +287,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
+  /* border: 1px solid black; */
 }
 
 .model-button {
@@ -203,6 +299,7 @@
 .model-button.selected {
   background-color: #007bff;
   color: white;
+  /* background-color: black; */
 }
 
 /* .model-button:hover {
@@ -464,3 +561,4 @@
   background-color: #007bff; /* Cambia este color por el que prefieras */
   color: white
 }
+

@@ -368,7 +368,7 @@ body{
 .item_submenu {
     padding: 0px 30px;
     padding-top: 30px;
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-mt);
     white-space: nowrap;
 }
 

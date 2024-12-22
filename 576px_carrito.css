@@ -85,7 +85,7 @@
 .container-carousel-mobile {
   position: relative;
   overflow: hidden;
-  height: 60vh;
+  height: 50vh;
   width: 90%;
   /* overflow-x: auto;
   scroll-snap-type: x mandatory; */
@@ -136,8 +136,8 @@
 }
 
 .punto {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   background-color: gray;
   border-radius: 50%;
   cursor: pointer;

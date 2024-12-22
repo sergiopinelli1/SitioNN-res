@@ -134,7 +134,7 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%); /* Asegura que los puntos estén centrados */
-  gap: 10px; /* Ajusta el espaciado entre los puntos si es necesario */
+  gap: 15px; /* Ajusta el espaciado entre los puntos si es necesario */
   flex-direction: row !important; /* Asegura que los puntos estén en fila */
   justify-content: center; /* Centra los puntos en el contenedor */
   margin-top: 10px;

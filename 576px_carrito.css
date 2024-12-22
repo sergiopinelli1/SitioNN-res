@@ -85,7 +85,7 @@
 .container-carousel-mobile {
   position: relative;
   overflow: hidden;
-  height: 40vh;
+  height: 60vh;
   width: 90%;
   /* overflow-x: auto;
   scroll-snap-type: x mandatory; */

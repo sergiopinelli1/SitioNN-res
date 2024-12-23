@@ -156,26 +156,26 @@ function updateCarousel(imageIndexes) {
     startAutoScroll();
 }
 
-// Función para las flechas del carrusel
 function scrollCarousel(direction) {
     const containerWidth = carouselContainer.offsetWidth;
-    const scrollPosition = carouselContainer.scrollLeft;
-    const maxScroll = carouselContainer.scrollWidth - containerWidth;
+    const currentScroll = Math.round(carouselContainer.scrollLeft / containerWidth) * containerWidth;
+    const maxScroll = Math.floor(carouselContainer.scrollWidth / containerWidth - 1) * containerWidth;
 
-    if (direction === 1 && scrollPosition >= maxScroll) {
+    let targetScroll;
+    if (direction === 1 && currentScroll >= maxScroll) {
         // Si estamos en la última imagen, volver al inicio
-        carouselContainer.scrollTo({ left: 0, behavior: "smooth" });
-    } else if (direction === -1 && scrollPosition === 0) {
+        targetScroll = 0;
+    } else if (direction === -1 && currentScroll <= 0) {
         // Si estamos en la primera imagen, ir al final
-        carouselContainer.scrollTo({ left: maxScroll, behavior: "smooth" });
+        targetScroll = maxScroll;
     } else {
         // Scroll normal
-        carouselContainer.scrollBy({ left: direction * containerWidth, behavior: "smooth" });
+        targetScroll = currentScroll + direction * containerWidth;
     }
 
+    carouselContainer.scrollTo({ left: targetScroll, behavior: "smooth" });
     restartAutoScroll();
 }
-
 // Configurar auto-scroll del carrusel
 function startAutoScroll() {
     clearInterval(autoScrollInterval);

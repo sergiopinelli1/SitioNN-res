@@ -1013,7 +1013,7 @@
         color: white;
         font-size: var(--font-size-xs);
         font-weight: var(--font-weight-regular);
-        margin-bottom: -120px;
+        margin-bottom: -80px;
         gap: 10px;
     }
 
@@ -1060,7 +1060,6 @@
         margin-top: 30%;
     }
 }
-
 
 
 @media (min-width: 1900px){

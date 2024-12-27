@@ -156,7 +156,7 @@
 .container_inv{
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 8px;
     width: 96%;
 }
 
@@ -167,11 +167,6 @@
     align-items: start;
     justify-content: center;
     padding-bottom: var(--section-padding);
-}
-
-.section ul li{
-    list-style: inside;
-    margin: 0px 0px 0px 30px;
 }
 
 .titulo_inv{
@@ -192,6 +187,17 @@
     line-height: var(--line-hei);
     width: 92%;
     color: rgb(230, 150, 0);
+}
+
+.section ul{
+    line-height: var(--line-hei);
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-regular);
+}
+
+.section ul li{
+    list-style: disc;
+    margin-left: 30px;
 }
 
 

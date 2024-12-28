@@ -309,9 +309,9 @@
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    width: 98%;
-    gap: 8px;
-    /* overflow: hidden;  */
+    /* width: 98%; */
+    width: 100%;
+    gap: 4px;
 } 
 
 .conjunto_pro::-webkit-scrollbar {
@@ -320,8 +320,15 @@
 
 .link_pro {
     display: flex;
-    /* flex: 0 0 84%; */
 }
+
+.link_pro:first-child{
+    margin-left: 8px;
+}
+
+/* .link_pro:last-child{
+    margin-right: 20px;
+} */
 
 /* overflow-x: auto; */
 /* scroll-snap-type: x mandatory; */
@@ -344,7 +351,7 @@
     /* height: var(--height-img-mov); */
     height: 46vh;
     object-fit: cover;
-    width: 100%;
+    width: 98%;
     /* width: var(--widht-img-mov); */
 }
 
@@ -483,6 +490,7 @@
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     gap: var(--gap-titulo-conjunto-section-3);
+    background-color: transparent;
 }
 
 .titulo_seccion_sol {
@@ -497,8 +505,9 @@
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 16px;
-    width: 98%;
+    gap: 8px;
+    /* width: 98%; */
+    background-color: transparent;
 }
 
 .link_sol {
@@ -517,17 +526,20 @@
     height: 40vh; 
 }
 
+
 /* Imagen de fondo con oscurecimiento */
 .imagen_sol {
-    width: 100%;
+    width: 96%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
+    border-radius: var(--border-img);
 }
 
 .link_sol:hover .imagen_sol {
     filter: brightness(0.8); /* Reduce el oscurecimiento al hacer hover */
 }
+
 
 /* Contenedor de información sobre la imagen */
 .item_sol {

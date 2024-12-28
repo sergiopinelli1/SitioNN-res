@@ -311,8 +311,9 @@
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    width: 98%;
+    width: 100%;
     gap: 8px;
+    overflow: hidden; 
 } 
 
 .conjunto_pro::-webkit-scrollbar {
@@ -321,12 +322,20 @@
 
 .link_pro {
     display: flex;
+    flex: 0 0 84%;
+    margin: 0px 5px;
 }
+
+/* overflow-x: auto; */
+/* scroll-snap-type: x mandatory; */
+/* scroll-snap-align: start; */
+/* overflow: hidden;  */
+
 
 .item_pro {
     display: flex;
     flex: unset;
-    scroll-snap-align: unset;
+    scroll-snap-align: start;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -491,7 +500,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
-    width: 94%;
+    width: 100%;
 }
 
 .link_sol {
@@ -507,6 +516,7 @@
     overflow: hidden;
     text-decoration: none;
     color: inherit;
+    margin: 0px 5px;
 }
 
 /* Imagen de fondo con oscurecimiento */

@@ -517,6 +517,7 @@
     overflow: hidden;
     text-decoration: none;
     color: inherit;
+    height: 46vh;
 }
 
 /* Imagen de fondo con oscurecimiento */

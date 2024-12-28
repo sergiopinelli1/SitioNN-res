@@ -241,7 +241,7 @@
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 22px;
+    gap: 16px;
     width: 98%;
 }
 
@@ -252,7 +252,7 @@
     align-items: center;
     justify-content: center;
     height: 70vh;
-    flex: 0 0 90%;
+    flex: 0 0 84%;
     scroll-snap-align: start;
     overflow: hidden;
 }

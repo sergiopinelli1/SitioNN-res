@@ -283,8 +283,8 @@
     gap: var(--gap-titulo-conjunto-section-3);
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
 }
 
 .top_pro{
@@ -311,7 +311,7 @@
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    width: 100%;
+    width: 98%;
     gap: 8px;
 } 
 

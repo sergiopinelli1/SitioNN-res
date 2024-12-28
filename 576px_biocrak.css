@@ -322,7 +322,7 @@
 
 .link_pro {
     display: flex;
-    flex: 0 0 84%;
+    /* flex: 0 0 84%; */
 }
 
 /* overflow-x: auto; */
@@ -333,7 +333,7 @@
 
 .item_pro {
     display: flex;
-    /* flex: unset; */
+    flex: 0 0 84%;
     scroll-snap-align: start;
     flex-direction: column;
     align-items: center;

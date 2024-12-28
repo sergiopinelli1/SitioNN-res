@@ -346,10 +346,10 @@
     /* height: var(--height-img-mov); */
     height: 50vh;
     object-fit: cover;
-    width: 98%;
+    width: 100%;
     /* width: var(--widht-img-mov); */
-    /* margin-left: 5px; */
-    /* margin-right: 5px; */
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .info_imagen_pro {

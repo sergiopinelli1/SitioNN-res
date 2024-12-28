@@ -333,7 +333,7 @@
 
 .item_pro {
     display: flex;
-    flex: 0 0 70%;
+    flex: 0 0 84%;
     scroll-snap-align: start;
     flex-direction: column;
     align-items: center;
@@ -344,7 +344,7 @@
 .imagen_pro {
     border-radius: var(--border-radius-img-mov);
     /* height: var(--height-img-mov); */
-    height: 46vh;
+    height: 50vh;
     object-fit: cover;
     width: 98%;
     /* width: var(--widht-img-mov); */
@@ -519,15 +519,19 @@
     text-decoration: none;
     color: inherit;
     height: 46vh;
+    margin-left: 10px;
+    margin-right: 10px;
     
 }
 
 /* Imagen de fondo con oscurecimiento */
 .imagen_sol {
-    width: 98%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .link_sol:hover .imagen_sol {

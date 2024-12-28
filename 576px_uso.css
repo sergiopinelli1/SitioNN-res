@@ -224,7 +224,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 10px 0px 10px;
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     gap: var(--gap-titulo-conjunto-section-3);
@@ -243,6 +242,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 22px;
+    width: 98%;
 }
 
 .item_sol2 {

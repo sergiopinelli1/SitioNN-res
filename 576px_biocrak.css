@@ -323,8 +323,6 @@
 .link_pro {
     display: flex;
     flex: 0 0 84%;
-    margin-left: 8px;
-    margin-right: 8px;
 }
 
 /* overflow-x: auto; */
@@ -335,8 +333,8 @@
 
 .item_pro {
     display: flex;
-    flex: unset;
-    scroll-snap-align: unset;
+    /* flex: unset; */
+    scroll-snap-align: start;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -349,6 +347,8 @@
     height: 46vh;
     object-fit: cover;
     /* width: var(--widht-img-mov); */
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .info_imagen_pro {
@@ -527,6 +527,8 @@
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .link_sol:hover .imagen_sol {

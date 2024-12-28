@@ -346,9 +346,10 @@
     /* height: var(--height-img-mov); */
     height: 50vh;
     object-fit: cover;
+    width: 98%;
     /* width: var(--widht-img-mov); */
-    margin-left: 5px;
-    margin-right: 5px;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
 }
 
 .info_imagen_pro {
@@ -518,16 +519,15 @@
     text-decoration: none;
     color: inherit;
     height: 46vh;
+    
 }
 
 /* Imagen de fondo con oscurecimiento */
 .imagen_sol {
-    width: 100%;
+    width: 98%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .link_sol:hover .imagen_sol {

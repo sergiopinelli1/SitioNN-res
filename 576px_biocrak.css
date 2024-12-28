@@ -514,7 +514,7 @@
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    height: 46vh; 
+    height: 40vh; 
 }
 
 /* Imagen de fondo con oscurecimiento */
@@ -616,7 +616,8 @@
 .titulo_beneficios{
     font-size: var(--font-size-xxxl);
     font-weight: 150;
-    max-width: var(---max-width-16);
+    /* max-width: var(---max-width-16); */
+    max-width: var(--max-width-1);
 }
 
 .subtitulo_beneficios{
@@ -708,6 +709,7 @@
 
 .mid_fun{
     width: 90%;
+    height: 35vh;
     border-radius: 20px;
     max-width: var(--max-width-1);
 }

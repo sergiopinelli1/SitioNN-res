@@ -548,6 +548,7 @@
 
     .item_pro{
         gap: 12px;
+        flex: 0 0 84%;
     }
 
     .imagen_pro{

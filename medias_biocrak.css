@@ -548,7 +548,8 @@
 
     .item_pro{
         gap: 12px;
-        flex: 0 0 84%;
+        flex: unset;
+        scroll-snap-align: unset;
     }
 
     .imagen_pro{

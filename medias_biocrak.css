@@ -938,6 +938,10 @@
     .icono_ben_carrito{
         height: 50px;
     }
+
+    .section{
+        gap: 1px;
+    }
 }
 
 

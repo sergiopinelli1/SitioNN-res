@@ -763,6 +763,9 @@
         gap: 2px;
     }
 
+    .section{
+        gap: 6px;
+    }
     
     .img_ben_mid{
         display: none;
@@ -939,9 +942,6 @@
         height: 50px;
     }
 
-    .section{
-        gap: 1px;
-    }
 }
 
 

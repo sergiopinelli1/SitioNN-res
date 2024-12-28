@@ -156,6 +156,12 @@
         font-weight: var(--font-weight-regular);
         width: 80%;
     }
+
+    /* ---------- seccion productos --------------- */
+
+    .item_pro {
+        flex: 0 0 74%;
+    }
     
     /* ---------- seccion beneficios --------------- */
 

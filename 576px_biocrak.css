@@ -309,7 +309,7 @@
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    width: 99%;
+    width: 98%;
     gap: 8px;
     /* overflow: hidden;  */
 } 
@@ -498,7 +498,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
-    width: 99%;
+    width: 98%;
 }
 
 .link_sol {

@@ -313,7 +313,7 @@
     scroll-snap-type: x mandatory;
     width: 100%;
     gap: 8px;
-    overflow: hidden; 
+    /* overflow: hidden;  */
 } 
 
 .conjunto_pro::-webkit-scrollbar {

@@ -333,7 +333,7 @@
 
 .item_pro {
     display: flex;
-    flex: 0 0 55%;
+    flex: 0 0 50%;
     scroll-snap-align: start;
     flex-direction: column;
     align-items: center;
@@ -344,7 +344,7 @@
 .imagen_pro {
     border-radius: var(--border-radius-img-mov);
     /* height: var(--height-img-mov); */
-    height: 50vh;
+    height: 46vh;
     object-fit: cover;
     width: 98%;
     /* width: var(--widht-img-mov); */

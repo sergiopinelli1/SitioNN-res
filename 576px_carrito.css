@@ -121,7 +121,6 @@
   scroll-snap-align: center;
   border-radius: 20px;
   object-fit: cover;
-  padding-right: 4px;
 }
 
 .carousel-mobile > :last-child{

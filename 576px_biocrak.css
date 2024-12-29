@@ -124,6 +124,8 @@
     position: relative;
     height: var(--slider-hei);
     overflow: hidden;
+    /* overflow-x: hidden; */
+    transition: overflow 0.3s ease;
     mask-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
@@ -132,8 +134,12 @@
       rgba(0, 0, 0, 0)
     );
 
-    overflow-x: auto;
+    /* overflow-x: auto; */
   }
+
+/* .wrapper:hover, .wrapper:focus-within {
+    overflow-x: auto; 
+ } */
   
   @keyframes scrollLeft {
     to {
@@ -320,6 +326,7 @@
 
 .link_pro {
     display: flex;
+    width: 100%;
 }
 
 .link_pro:first-child{
@@ -367,6 +374,8 @@
 .texto_pro{
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .texto2_pro{

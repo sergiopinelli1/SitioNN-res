@@ -135,6 +135,18 @@
     /* ---- pagina inicio -------------------- */
     /* --------------------------------------- */
 
+
+    /* ---------- seccion navbar --------------- */
+
+    .header_container{
+        position: fixed;
+        height: 5vh;
+    }
+
+    .logo{
+        height: 20px;
+    }
+
     /* ---------- seccion hero --------------- */
    
     
@@ -157,11 +169,6 @@
         width: 80%;
     }
 
-    /* ---------- seccion productos --------------- */
-
-    .item_pro {
-        flex: 0 0 74%;
-    }
     
     /* ---------- seccion beneficios --------------- */
 
@@ -532,19 +539,16 @@
     /* ---------- Seccion productos ------------ */
 
    .seccion_productos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-titulo-conjunto-section-6);
-    padding: 40px 10px 60px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap-titulo-conjunto-section-6);
+        padding: 40px 0px 60px 0px;
     }
-    
 
     .conjunto_pro{
-        display: flex;
         max-width: var(---max-width-16);
-        width: 100%;
         gap: 10px;
         align-items: center;
         justify-content: center;
@@ -552,16 +556,19 @@
         scroll-snap-type: unset;
         height: 100%;
         padding: 0px;
-
+        margin: 0px;
+        width: 98%;
     }
 
     .link_pro:first-child{
-        margin-left: unset;
+        margin-left: 0px !important;
     }
 
     .link_pro{
         flex-direction: column;
         gap: var(--gap-info-producto);
+        margin: 0px;
+        padding: 0px;
     }
 
     .item_pro{
@@ -572,8 +579,12 @@
 
     .imagen_pro{
         border-radius: var(--border-img);
-        height: 60vh;
+        height: 56vh;
         width: 100%;
+    }
+
+    .link_pro {
+        width: unset;
     }
 
     .info_imagen_pro{

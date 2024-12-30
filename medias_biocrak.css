@@ -563,11 +563,11 @@
 
     .nombre_pro2{
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 
     .cont{
-        width: 80%;
+        width: 90%;
         flex-direction: row;
     }
 
@@ -624,6 +624,10 @@
     .texto2_sol{
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-md);
+    }
+
+    .noti{
+        display: none;
     }
 
     /* alternativa soluciones */

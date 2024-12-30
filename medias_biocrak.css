@@ -555,8 +555,20 @@
         font-size: 18px;
     }
 
+    /* alternativa dos productos */
+
     .pro2{
-        width: 48%;
+        width: 49%;
+    }
+
+    .nombre_pro2{
+        width: 100%;
+        text-align: left;
+    }
+
+    .cont{
+        width: 80%;
+        flex-direction: row;
     }
 
     /* ----- seccion tabla comparativa ---------- */
@@ -613,6 +625,13 @@
         font-weight: var(--font-weight-medium);
         font-size: var(--font-size-md);
     }
+
+    /* alternativa soluciones */
+
+    .conjunto_sol3{
+        flex-direction: row;
+    }
+
     
     
     /* ---------- Seccion beneficios ------------- */

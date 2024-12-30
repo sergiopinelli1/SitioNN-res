@@ -281,212 +281,6 @@
 /* ------- seccion productos --------- */
 /* ----------------------------------- */
 
-/* .seccion_productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-titulo-conjunto-section-3);
-    padding-top: var(--section-padding);
-    padding-bottom: var(--section-padding);
-    height: fit-content;
-} */
-
-/* .top_pro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: var(--gap-titulo-conjunto-section-3);
-}
-
-.titulo_seccion_pro {
-    font-size: var(--font-size-xxl);
-    font-weight: var(--font-weight-medium);
-}
-
-.subtitulo_seccion_pro {
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-light);
-    text-align: center;
-} */
-
-/* .conjunto_pro {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    gap: 4px;
-}  */
-
-/* .conjunto_pro::-webkit-scrollbar {
-    display: none;
-}  */
-
-/* .link_pro {
-    display: flex;
-    width: 100%;
-}
-
-.link_pro:first-child{
-    margin-left: 8px;
-} */
-
-/* .link_pro:last-child{
-    margin-right: 20px;
-} */
-
-
-/* .item_pro {
-    display: flex;
-    flex: 0 0 84%;
-    scroll-snap-align: start;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-} */
-
-/* .imagen_pro {
-    border-radius: var(--border-radius-img-mov);
-
-    height: 46vh;
-    object-fit: cover;
-    width: 98%;
-
-} */
-
-/* .info_imagen_pro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-info-producto);
-    width: 100%;
-    text-align: center;
-}
-
-.desk, .fuera, .out{
-    display: none;
-}
-
-.texto_pro{
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-    width: fit-content;
-    margin: 0 auto;
-}
-
-.texto2_pro{
-    font-size: var(--font-size-mt);
-    font-weight: var(--font-weight-medium);
-}
-
-.texto3_pro{
-    font-size: var(--font-size-mt);
-    font-weight: var(--font-weight-light);
-}
-
-.btn_action{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-btn-mas-compra);
-}
-
-.gap{
-    gap: 0px;
-}
-
-.btn_action_solid {
-    border: var(--border-apple);
-    background-color: var(--back-apple);
-    border-radius: var(--border-radius-btn-mas-compra);
-    padding: var(--padding-btn-mas-compra);
-    color: var(--color-btn-compra);
-    font-size: var(--font-size-btn-mas-compra);
-    font-weight: var(--font-weight-light);
-    letter-spacing: var(--letter-space-1);
-}
-
-.btn_action_solid:hover {
-    background-color: var(--back-trans-apple);
-}
-
-.btn_action_trans {
-    color: var(--color-apple);
-    font-size: var(--font-size-btn-mas-compra);
-    font-weight: var(--font-weight-light);
-    letter-spacing: var(--letter-space-1);
-}
-
-.btn_action_trans:hover {
-    text-decoration: var(--text-deco);
-} */
-
-
-
-
-
-
-/* -------------------------------------------- */
-/* ----- seccion comparar paneles ------------- */
-/* -------------------------------------------- */
-
-.seccion_comparativo {
-    text-align: center;
-    padding: 0px 10px;
-    padding-top: var(--section-padding_xs);
-    padding-bottom: var(--section-padding);
-    align-items: center;
-    justify-content: center;
-}
-
-/* Ocultar el input de checkbox */
-.toggle_input {
-    display: none;
-}
-
-/* Estilo del botón para mostrar/ocultar la tabla */
-.btn_toggle {
-    display: inline-block;
-    padding: 1.25rem 1.875rem;
-    background-color: white;
-    color: black;
-    border-radius: var(--border-radius-btn-mas-compra);
-    font-size: var(--font-size-lg);
-    border: 0.125rem solid black;
-    font-weight: var(--font-weight-regular);
-    letter-spacing: var(--letter-space-1);
-}
-
-.btn_toggle:hover {
-    background-color: #dfdfdf;
-}
-
-/* Tabla oculta por defecto, se muestra cuando el checkbox está activado */
-.tabla_oculta {
-    display: none;
-    padding-top: 20px;
-}
-
-.toggle_input:checked + .btn_toggle + .tabla_oculta {
-    display: block; 
-}
-
-
-
-
-
-
-
-
-/* --------------------------------------------- */
-/* ----------- seccion_soluciones -------------- */
-/* --------------------------------------------- */
-
-
 .seccion_productos {
     display: flex;
     flex-direction: column;
@@ -620,6 +414,100 @@
 }
 
 
+/* alternativa dos productos */
+
+.info_imagen_pro2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: left;
+    /* gap: 20px; */
+    width: 98%;
+    line-height: 20px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    overflow-x: unset;
+    scroll-snap-type: unset;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.pro2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: var(--border-img); */
+    /* height: 100%; */
+    flex: unset;
+    scroll-snap-align: unset;
+    width: 98%;
+    gap: 12px;
+}
+
+.nombre_pro2{
+    width: 96%;
+    text-align: left;
+}
+
+.btn2{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+/* -------------------------------------------- */
+/* ----- seccion comparar paneles ------------- */
+/* -------------------------------------------- */
+
+.seccion_comparativo {
+    text-align: center;
+    padding: 0px 10px;
+    padding-top: var(--section-padding_xs);
+    padding-bottom: var(--section-padding);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ocultar el input de checkbox */
+.toggle_input {
+    display: none;
+}
+
+/* Estilo del botón para mostrar/ocultar la tabla */
+.btn_toggle {
+    display: inline-block;
+    padding: 1.25rem 1.875rem;
+    background-color: white;
+    color: black;
+    border-radius: var(--border-radius-btn-mas-compra);
+    font-size: var(--font-size-lg);
+    border: 0.125rem solid black;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-space-1);
+}
+
+.btn_toggle:hover {
+    background-color: #dfdfdf;
+}
+
+/* Tabla oculta por defecto, se muestra cuando el checkbox está activado */
+.tabla_oculta {
+    display: none;
+    padding-top: 20px;
+}
+
+.toggle_input:checked + .btn_toggle + .tabla_oculta {
+    display: block; 
+}
 
 
 
@@ -628,8 +516,9 @@
 
 
 
-
-
+/* --------------------------------------------- */
+/* ----------- seccion_soluciones -------------- */
+/* --------------------------------------------- */
 
 #seccion_sol {
     display: flex;
@@ -656,7 +545,6 @@
     scroll-snap-type: x mandatory;
     gap: 8px;
     /* width: 98%; */
-    background-color: transparent;
 }
 
 .link_sol {
@@ -733,6 +621,22 @@
 .btn_action_solid_sol:hover{
         background-color: transparent;
 }
+
+/* alternativa dos soluciones */
+
+.conjunto_sol3{
+    flex-direction: column;
+    display: flex;
+    overflow-x: unset;
+    scroll-snap-type: unset;
+    gap: 8px;
+}
+
+.link_sol3{
+    height: 20vh;
+}
+
+
 
 
 

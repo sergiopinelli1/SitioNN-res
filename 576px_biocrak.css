@@ -564,6 +564,7 @@
     text-align: center;
     gap: var(--gap-info-producto);
     width: 68%;
+    line-height: 20px;
 }
 
 .desk, .fuera, .out{

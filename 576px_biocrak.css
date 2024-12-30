@@ -563,7 +563,7 @@
     align-items: center;
     text-align: center;
     gap: var(--gap-info-producto);
-    width: 68%;
+    width: 66%;
     line-height: 20px;
 }
 

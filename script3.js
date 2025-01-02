@@ -90,7 +90,8 @@ function setInitialModel(model) {
 
 // Detectar el modelo desde el parámetro de la URL
 const urlParams = new URLSearchParams(window.location.search);
-const initialModel = urlParams.get("model") || "60"; // Modelo predeterminado: BIO 60
+//const initialModel = urlParams.get("model") || "60"; // Modelo predeterminado: BIO 60
+const initialModel = urlParams.get("model") || "300";
 setInitialModel(initialModel);
 
 

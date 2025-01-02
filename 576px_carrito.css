@@ -283,7 +283,8 @@
 }
 
 .model-button {
-  border: var(--border-apple);
+  /* border: var(--border-apple); */
+  border: 1px solid black;
   background-color: white;
   border-radius: var(--border-radius-btn-mas-compra);
   padding: var(--padding-btn-mas-compra);
@@ -304,8 +305,9 @@
 }
 
 .model-button.selected {
-  background-color: #007bff;
-  color: white;
+  /* background-color: #007bff; */
+  background-color: rgba(0, 0, 0, 0.141);
+  /* color: white; */
   /* background-color: black; */
 }
 
@@ -550,7 +552,8 @@
 }
 
 .model-button2 {
-  border: var(--border-apple);
+  /* border: var(--border-apple); */
+  border: 1px solid black;
   background-color: white;
   border-radius: var(--border-radius-btn-mas-compra);
   padding: var(--padding-btn-mas-compra);
@@ -565,7 +568,9 @@
 
 
 .model-button2.selected {
-  background-color: #007bff; /* Cambia este color por el que prefieras */
-  color: white
+  /* background-color: #007bff;  */
+  /* color: white */
+
+  background-color: rgba(0, 0, 0, 0.141);
 }
 

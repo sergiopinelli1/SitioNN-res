@@ -721,7 +721,7 @@
     /* ---------- seccion wave -------------- */
 
     .container_wave{
-        gap: 50px;
+        gap: 30px;
         max-width: var(--max-width8); 
     }
 

@@ -200,7 +200,7 @@
 
 .sub_wave{
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: var(--font-size-mlg);
     font-weight: var(--font-weight-bold);
 }
@@ -220,7 +220,7 @@
     align-items: start;
     text-align: left;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
     line-height: var(--line-hei);
 }
 
@@ -243,7 +243,7 @@
 }
 
 .titulo_item_wave{
-    font-size: var(--font-size-mlg);
+    font-size: var(--font-size-mt);
     font-weight: var(--font-weight-bold);
 }
 

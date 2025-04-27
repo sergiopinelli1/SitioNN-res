@@ -15,32 +15,30 @@ let autoScrollTimeout;
 
 // Modelos y configuración
 const models = {
-    "60": {
-        title: "BIO 60",
-        description: "Es el panel más pequeño, pensado para usar en zonas específicas del cuerpo como terapia facial, lesiones, entre otros. Es apto para personas de todos los tamaños.",
-        accessories: [
-            "1 Panel de luz",
-            "2 Pie de apoyo",
-            "3 Control remoto",
-            "4 Gafas con filtro de luz",
-            "5 Soporte pared",
-            "6 Cables de conexión",
-        ],
-        price: "$850.000 o U$S800",
-        images: [0, 1, 2],
-    },
+    // "60": {
+    //     title: "BIO 60",
+    //     description: "Es el panel más pequeño, pensado para usar en zonas específicas del cuerpo como terapia facial, lesiones, entre otros. Es apto para personas de todos los tamaños.",
+    //     accessories: [
+    //         "1 Panel de luz",
+    //         "2 Pie de apoyo",
+    //         "3 Gafas con filtro de luz",
+    //         "4 Soporte pared",
+    //         "5 Cables de conexión",
+    //     ],
+    //     price: "$850.000 o U$S800",
+    //     images: [0, 1, 2],
+    // },
     "300": {
         title: "BIO 300",
-        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales en casa. Es apto para personas de todos los tamaños.",
+        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales. Es apto para personas de todos los tamaños.",
         accessories: [
             "1 Panel de luz",
             "2 Pie de apoyo",
-            "3 Control remoto",
-            "4 Gafas con filtro de luz",
-            "5 Soporte pared",
-            "6 Cables de conexión",
+            "3 Gafas con filtro de luz",
+            "4 Soporte pared",
+            "5 Cables de conexión",
         ],
-        price: "$1.400.000 o U$S1300",
+        price: "$1.600.000 o U$S1350",
         images: [3, 4, 5],
     },
     "600": {
@@ -49,12 +47,11 @@ const models = {
         accessories: [
             "1 Panel de luz",
             "2 Pie de apoyo",
-            "3 Control remoto",
-            "4 Gafas con filtro de luz",
-            "5 Soporte pared",
-            "6 Cables de conexión",
+            "3 Gafas con filtro de luz",
+            "4 Soporte pared",
+            "5 Cables de conexión",
         ],
-        price: "$2.500.000 o U$S2400",
+        price: "$3.200.000 o U$S2700",
         images: [6, 7, 8],
     },
 };
@@ -214,5 +211,6 @@ btnRight.addEventListener("click", () => scrollCarousel(1));
 
 // Configurar el modelo inicial
 const urlParams = new URLSearchParams(window.location.search);
-const initialModel = urlParams.get("model") || "60";
+// const initialModel = urlParams.get("model") || "60";
+const initialModel = urlParams.get("model") || "300";
 changeModel(initialModel);

@@ -201,8 +201,8 @@ document.addEventListener("DOMContentLoaded", function () {
           <thead>
             <tr>
               <th>Distancia (cm)</th>
-              <th>660nm</th>
-              <th>850nm</th>
+              <th>Espectro Rojo</th>
+              <th>Espectro NIR</th>
               <th>Total</th>
             </tr>
           </thead>

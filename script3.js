@@ -21,7 +21,7 @@ const models = {
     },
     "300": {
         title: "BIO 300",
-        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales en casa. Es apto para personas de todos los tamaños.",
+        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales. Es apto para personas de todos los tamaños.",
         accessories: [
             "1 Panel de luz",
             "2 Pie de apoyo",

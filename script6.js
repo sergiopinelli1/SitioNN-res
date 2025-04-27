@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Configuración inicial: seleccionar BIO60 por defecto
     modelButtons.forEach((button) => button.classList.remove("selected"));
-    const defaultButton = document.querySelector(`.model-button2[data-model="BIO60"]`);
+    const defaultButton = document.querySelector(`.model-button2[data-model="BIO300"]`);
     if (defaultButton) {
       defaultButton.classList.add("selected");
       updateTable("BIO60");

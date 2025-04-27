@@ -29,7 +29,7 @@ const models = {
             "4 Soporte pared",
             "5 Cables de conexión",
         ],
-        price: "$1.400.000 o U$S1300",
+        price: "$1.600.000 o U$S1350",
         section: [3, 4, 5], 
     },
     "600": {
@@ -42,7 +42,7 @@ const models = {
             "4 Soporte pared",
             "5 Cables de conexión",
         ],
-        price: "$2.500.000 o U$S2400",
+        price: "$3.200.000 o U$S2700",
         section: [6, 7, 8], 
     },
 };

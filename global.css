@@ -628,14 +628,15 @@ body{
 /* Asigna el mismo ancho a las columnas de los paneles */
 .tabla_comparativa th:not(.atributo),
 .tabla_comparativa td:not(.atributo) {
-    width: 25%; /* El resto de las columnas comparten el mismo ancho */
+    width: 50%; /* El resto de las columnas comparten el mismo ancho */
 }
 
 /* Estilo de los títulos de los paneles */
 .titulo_panel {
     font-size: 1.5em;
     font-weight: bold;
-    color: var(--color-apple);
+    /* color: var(--color-apple); */
+    color: rgb(255, 102, 0);
     display: block;
     margin-top: 10px;
 }

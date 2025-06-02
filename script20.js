@@ -38,7 +38,7 @@ const models = {
             "4 Soporte pared",
             "5 Cables de conexión",
         ],
-        price: "$1.600.000 o U$S1350",
+        // price: "$1.600.000 o U$S1350",
         images: [3, 4, 5],
     },
     "600": {
@@ -51,7 +51,7 @@ const models = {
             "4 Soporte pared",
             "5 Cables de conexión",
         ],
-        price: "$3.200.000 o U$S2700",
+        // price: "$3.200.000 o U$S2700",
         images: [6, 7, 8],
     },
     "SoporteBIO": {
@@ -60,7 +60,7 @@ const models = {
         accessories: [
             "1 Soporte para panel de luz",
         ],
-        price: "$300000 o U$S250",
+        // price: "$300000 o U$S250",
         images: [6, 7, 8],
     },
 };

@@ -30,7 +30,7 @@ const models = {
     // },
     "300": {
         title: "BIO 300",
-        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales. Es apto para personas de todos los tamaños. Apto solo uso indoor.",
+        description: "Es un panel mediano, ideal para zonas más amplias del cuerpo y para tratamientos generales. Es apto para personas de todos los tamaños. Apto interior.",
         accessories: [
             "1 Panel de luz",
             "2 Pie de apoyo",
@@ -43,7 +43,7 @@ const models = {
     },
     "600": {
         title: "BIO 600",
-        description: "Es el panel más grande, diseñado para cubrir áreas completas del cuerpo, ideal para uso profesional o tratamientos intensivos. Es apto para todos los tamaños. Apto solo uso indoor",
+        description: "Es el panel más grande, diseñado para cubrir áreas completas del cuerpo, ideal para uso profesional o tratamientos intensivos. Es apto para todos los tamaños. Apto uso interior.",
         accessories: [
             "1 Panel de luz",
             "2 Pie de apoyo",
@@ -55,12 +55,13 @@ const models = {
         images: [6, 7, 8],
     },
     "SoporteBIO": {
-        title: "Soporte BIO",
-        description: "Es un soporte para darle posiciones tanto al panel BIO 300 como al panel BIO 600. Con el se pueden poner tanto los paneles de forma horizontal como en forma vertical.",
+        title: "Soporte PRO",
+        description: "Es un soporte de piso para utilizar el modelo BIO 600 y poder usarlo en diferentes espacios. Se puede utilizar tanto con ruedas como sin ruedas.",
         accessories: [
             "1 Soporte para panel de luz",
+            "2 Herramientas instalación"
         ],
-        price: "$300000 o U$S250",
+        price: "$150000 o U$S120",
         images: [6, 7, 8],
     },
 };

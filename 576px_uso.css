@@ -4,7 +4,7 @@
     position: relative;
     display: flex;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.926) 100%), 
-                url('imgs_biocrak/imgs_entrenamiento_page/img_hero_entrenamiento/uso_acostado_oscuro_cuerpo_medio.jpg'); 
+                url('imgs_biocrak/about.png'); 
     background-size: cover;         
     background-position: center;    
     background-repeat: no-repeat;   
@@ -140,7 +140,7 @@
 
 .imagen_fondo {
     display: none;
-    background: url("./imgs_biocrak/imgs_entrenamiento_page/img_inv_entrenamiento/BIO300_persona_usandolo.png") no-repeat center center fixed;
+    background: url("./imgs_biocrak/aDSC_02981.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 46vh;
     width: 100%;
@@ -262,7 +262,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.3);
+    filter: brightness(0.35);
     border-radius: var(--border-img);
 }
 

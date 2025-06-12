@@ -1,4 +1,4 @@
- @import url(global.css);
+@import url(global.css);
 
 /* ------------------------------------------------------------------ */
 /* -------- body ---------------------------------------------------- */
@@ -14,12 +14,22 @@
 
 #hero {
     display: flex;
-    background-image: url('imgs_biocrak/imgs_index/img_hero_inicio/imagen_hero_inicio.png'); /* Cambia la ruta por la ubicación de tu imagen */
-    background-size: cover;         /* Ajusta la imagen para cubrir todo el área de la sección */
-    background-position: center;    /* Centra la imagen */
-    background-repeat: no-repeat;   /* Evita que la imagen se repita */
+    background-image: url('imgs_biocrak/aSC_0296.JPG'); 
+    background-size: cover;         
+    background-position: center;   
+    background-repeat: no-repeat;   
     height: 94vh;                  
 }
+
+/* #hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 94vh;
+    overflow: hidden;
+} */
+
 
 .hero_info{
     display: flex;
@@ -31,6 +41,7 @@
     padding-left: 20px;
     padding-right: 20px;
     justify-content: space-between;
+    top: 100px;
     margin: 0 auto;
     width: 100%;
 }
@@ -38,13 +49,15 @@
 .conjunto_texto_hero{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    /* gap: 32px; */
+    gap: 10px;
     align-items: start;
 }
 
 .titulo_hero{
     color: var(--color-secondary);
-    font-size: var(--font-size-xlt);
+    /* font-size: var(--font-size-xlt); */
+    font-size: var(--font-size-xl);
     font-weight: var(--font-weight-medium);
 }
 
@@ -73,6 +86,20 @@
     font-weight: var(--font-weight-light);
     letter-spacing: var(--letter-space-1);
 }
+
+/* .hero_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.hero_info {
+    position: relative;
+    z-index: 1;
+} */
 
 /* .btn_hero:hover{
     background-color: var(--back-trans-apple);

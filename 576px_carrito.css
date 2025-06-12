@@ -248,6 +248,7 @@
   font-size: var(--font-size-mt);
   font-weight: var(--font-weight-regular);
   width: 98%;
+  height: 100px; 
 }
 
 /* Para una transición suave */

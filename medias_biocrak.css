@@ -886,6 +886,17 @@
         width: 100%;
     }
 
+    .texto_carrito1{
+        font-size: var(--font-size-mt);
+        font-weight: var(--font-weight-regular);
+        width: 98%;
+        height: 60px; 
+    }
+
+    .lista_accesorie{
+        height: 45px;
+    }
+
     /* ------------ Detalles -------------- */
 
     

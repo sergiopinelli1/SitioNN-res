@@ -332,6 +332,14 @@
         /* order: 1; */
     }
 
+    /* ------------------------------------------ */
+    /* ------- carrito -------------------------- */
+    /* ------------------------------------------ */
+
+    .fondo-blanco{
+        object-fit: contain;
+    }
+
 }
 
 
@@ -870,12 +878,7 @@
         height: 100%; 
         width: 100%;
         border-radius: 20px;
-        object-fit: cover; 
     } 
-
-    .fondo-blanco{
-        object-fit: contain;
-    }
 
     .puntos{
         display: none !important;

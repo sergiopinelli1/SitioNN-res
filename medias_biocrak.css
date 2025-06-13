@@ -304,6 +304,7 @@
         justify-content: space-around;
         padding: 34px 10px;
         border: 1px solid #e4e1fc;
+        /* border: 1px solid #0000001b; */
         box-shadow: 4px 4px 8px rgba(60, 76, 116, 0.16); 
         border-radius: 10px; 
         width: 100%;

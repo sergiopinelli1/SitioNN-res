@@ -38,7 +38,7 @@ const models = {
             "4 Soporte pared",
             "5 Cables de conexión",
         ],
-        price: "$1.600.000 o U$S1350",
+        price: "$1.700.000 o U$S1400",
         images: [3, 4, 5],
     },
     "600": {

@@ -39,7 +39,7 @@ const models = {
             "5 Cables de conexión",
         ],
         price: "$1.700.000 o U$S1400",
-        images: [3, 4, 5],
+        images: [0, 1, 2],
     },
     "600": {
         title: "BIO 600",
@@ -52,7 +52,7 @@ const models = {
             "5 Cables de conexión",
         ],
         price: "$3.200.000 o U$S2750",
-        images: [6, 7, 8],
+        images: [3, 4, 5],
     },
     "SoporteBIO": {
         title: "Soporte PRO",

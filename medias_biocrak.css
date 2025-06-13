@@ -873,8 +873,8 @@
         object-fit: cover; 
     } 
 
-    {
-
+    .fondo-blanco{
+        object-fit: contain;
     }
 
     .puntos{

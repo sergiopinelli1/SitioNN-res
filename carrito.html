@@ -177,8 +177,12 @@
     <!-- -------------------------------- -->
 
     <section class="seccion_comparativo">
+        <!-- Botón para mostrar/ocultar el cuadro -->
+        <input type="checkbox" id="toggleComparativo" class="toggle_input">
+        <label for="toggleComparativo" class="btn_toggle">Comparar paneles</label>
+    
+        <!-- Tabla de comparación que se despliega -->
         <div id="tabla_comparativo" class="tabla_oculta">
-            <h4 class="titulo_carac">Caracteristicas Tecnicas</h4>
             <table class="tabla_comparativa">
                 <thead>
                     <tr>
@@ -209,26 +213,30 @@
                     <tr>
                         <td class="atributo titulo">Tamaño</td>
                         <!-- <td>60x20x20cm</td> -->
-                        <td>100x20x20cm</td>
-                        <td>200x20x20cm</td>
+                        <td>92x30x6.35cm</td>
+                        <td>184x30x6.35cm</td>
                     </tr>
                     <tr>
                         <td class="atributo titulo">Peso</td>
                         <!-- <td>4 kgs</td> -->
-                        <td>10 kgs</td>
-                        <td>20 kgs</td>
+                        <td>10.5 kg</td>
+                        <td>21 kg</td>
                     </tr>
                     <tr>
                         <td class="atributo titulo">Potencia</td>
                         <!-- <td>180w</td> -->
-                        <td>260w</td>
-                        <td>420w</td>
+                        <td>1500W</td>
+                        <td>3000W</td>
+                    </tr>
+                    <tr>
+                        <td class="atributo titulo">Angulo LED</td>
+                        <td colspan="3">30 grados</td>
                     </tr>
                     <tr>
                         <td class="atributo titulo">Consumo</td>
                         <!-- <td>110V:1.6A/ 220V:0.8A</td> -->
-                        <td>110V:2.3A/ 220V:1.2A</td>
-                        <td>110V:2.3A/ 220V:1.2A</td>
+                        <td colspan="3">10-240V 50/60Hz</td>
+                        <!-- <td>10-240V 50/60Hz</td> -->
                     </tr>
                     <tr>
                         <td class="atributo titulo">Longitudes de onda</td>
@@ -236,7 +244,7 @@
                     </tr>    
                     <tr>
                         <td class="atributo titulo">Tª de trabajo</td>
-                        <td colspan="3">130 F / 55 C</td>
+                        <td colspan="3">0 / 40 C</td>
                     </tr>
                     <tr>
                         <td class="atributo titulo">Garantía</td>
@@ -244,7 +252,7 @@
                     </tr>
                     <tr>
                         <td class="atributo titulo">EMF</td>
-                        <td colspan="3">0.0 µT</td>
+                        <td colspan="3">0.0 µT a 15 centímetros</td>
                     </tr>
                     <tr>
                         <td class="atributo titulo">Flicker</td>
@@ -257,19 +265,19 @@
                     <tr>
                         <td class="atributo titulo">Uso ideal</td>
                         <!-- <td>Zona específica</td> -->
-                        <td>Medio o todo el cuerpo</td>
+                        <td>Medio a todo cuerpo</td>
                         <td>Todo el cuerpo</td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td class="atributo titulo">Precio</td>
-                        <!-- <td>U$S 750</td> -->
-                        <td>U$S 1300</td>
-                        <td>U$S 2500</td>
-                    </tr>
+                        <td>U$S 1400</td>
+                        <td>U$S 2750</td>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
     </section>
+    
 
 
         <!-- -------------------------------- -->
@@ -307,7 +315,7 @@
                         </div>
                         
                         <div class="seccion_comparativo2">
-                                <table class="tabla_comparativa2 tabla_BIO60">
+                                <!-- <table class="tabla_comparativa2 tabla_BIO60">
                                     <thead>
                                         <tr>
                                             <th>
@@ -327,81 +335,81 @@
                                     <tbody>
                                         <tr>
                                             <td class="atributo2 titulo2">1</td>
-                                            <td>51.92</td>
-                                            <td>39.6</td>
-                                            <td>46.64</td>
+                                            <td>71</td>
+                                            <td>88</td>
+                                            <td>98</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">5</td>
-                                            <td>46.98</td>
-                                            <td>37.54</td>
-                                            <td>43.79</td>
+                                            <td>67</td>
+                                            <td>81</td>
+                                            <td>90</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">10</td>
-                                            <td>42.18</td>
-                                            <td>31.68</td>
-                                            <td>37.96</td>
+                                            <td>64</td>
+                                            <td>77</td>
+                                            <td>82</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">20</td>
-                                            <td>33.74</td>
-                                            <td>26.47</td>
-                                            <td>36.67</td>
+                                            <td>45</td>
+                                            <td>70</td>
+                                            <td>79</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">30</td>
-                                            <td>27.2</td>
-                                            <td>21.59</td>
-                                            <td>34.98</td>
+                                            <td>32</td>
+                                            <td>64</td>
+                                            <td>76</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">40</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
+                                            <td>28</td>
+                                            <td>57</td>
+                                            <td>71</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">50</td>
-                                            <td>22.85</td>
-                                            <td>15.62</td>
-                                            <td>31.74</td>
+                                            <td>25</td>
+                                            <td>49</td>
+                                            <td>65</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">60</td>
-                                            <td>17.16</td>
-                                            <td>12.69</td>
-                                            <td>30.06</td>
+                                            <td>20</td>
+                                            <td>45</td>
+                                            <td>59</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">70</td>
-                                            <td>17.74</td>
-                                            <td>11.93</td>
-                                            <td>24.88</td>
+                                            <td>18</td>
+                                            <td>39</td>
+                                            <td>56</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">80</td>
-                                            <td>16</td>
-                                            <td>11.5</td>
-                                            <td>23.58</td>
+                                            <td>17</td>
+                                            <td>34</td>
+                                            <td>49</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">90</td>
-                                            <td>13.38</td>
-                                            <td>9.76</td>
-                                            <td>22.28</td>
+                                            <td>16</td>
+                                            <td>29</td>
+                                            <td>44</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">100</td>
-                                            <td>11.78</td>
-                                            <td>7.27</td>
-                                            <td>18.53</td>
+                                            <td>15</td>
+                                            <td>26</td>
+                                            <td>41</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">125</td>
-                                            <td>7.42</td>
-                                            <td>6.73</td>
-                                            <td>15.68</td>
+                                            <td>13</td>
+                                            <td>23</td>
+                                            <td>35</td>
                                         <tr>
                                             <td class="atributo2 titulo2">150</td>
                                             <td>6.69</td>
@@ -409,7 +417,7 @@
                                             <td>12.31</td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </table> -->
                                 <table class="tabla_comparativa tabla_BIO300">
                                     <thead>
                                         <tr>
@@ -430,80 +438,83 @@
                                     <tbody>
                                         <tr>
                                             <td class="atributo2 titulo2">1</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
-                                        </tr>
+                                            <td>71</td>
+                                            <td>88</td>
+                                            <td>98</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">5</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
-                                        </tr>
+                                            <td>67</td>
+                                            <td>81</td>
+                                            <td>90</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">10</td>
-                                            <td>42.18</td>
-                                            <td>31.68</td>
-                                            <td>37.96</td>
+                                            <td>64</td>
+                                            <td>77</td>
+                                            <td>82</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">20</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
+                                            <td>45</td>
+                                            <td>70</td>
+                                            <td>79</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">30</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
-                                        </tr>
+                                            <td>32</td>
+                                            <td>64</td>
+                                            <td>76</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">40</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
+                                            <td>28</td>
+                                            <td>57</td>
+                                            <td>71</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">50</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
+                                            <td>25</td>
+                                            <td>49</td>
+                                            <td>65</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">60</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
+                                            <td>20</td>
+                                            <td>45</td>
+                                            <td>59</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">70</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
+                                            <td>18</td>
+                                            <td>39</td>
+                                            <td>56</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">80</td>
-                                            <td>16</td>
-                                            <td>11.5</td>
-                                            <td>23.58</td>
+                                            <td>17</td>
+                                            <td>34</td>
+                                            <td>49</td>
                                         </tr>
                                         <tr>
                                             <td class="atributo2 titulo2">90</td>
-                                            <td>13.38</td>
-                                            <td>9.76</td>
-                                            <td>22.28</td>
+                                            <td>16</td>
+                                            <td>29</td>
+                                            <td>44</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo2 titulo2o">100</td>
-                                            <td>11.78</td>
-                                            <td>7.27</td>
-                                            <td>18.53</td>
-                                        </tr>                                  
+                                            <td class="atributo2 titulo2">100</td>
+                                            <td>15</td>
+                                            <td>26</td>
+                                            <td>41</td>
+                                        </tr>
                                         <tr>
+                                            <td class="atributo2 titulo2">110</td>
+                                            <td>13</td>
+                                            <td>23</td>
+                                            <td>35</td>
+                                        <tr>               
+                                        <!-- <tr>
                                             <td class="atributo2 titulo2">125</td>
                                             <td>7.42</td>
                                             <td>6.73</td>
@@ -514,7 +525,7 @@
                                             <td>6.69</td>
                                             <td>5.1</td>
                                             <td>12.31</td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                                 <table class="tabla_comparativa tabla_BIO600">
@@ -536,77 +547,82 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="atributo titulo">1</td>
-                                            <td>51.92</td>
-                                            <td>39.6</td>
-                                            <td>46.64</td>
+                                            <td class="atributo2 titulo2">1</td>
+                                            <td>71</td>
+                                            <td>88</td>
+                                            <td>98</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">5</td>
-                                            <td>46.98</td>
-                                            <td>37.54</td>
-                                            <td>43.79</td>
+                                            <td class="atributo2 titulo2">5</td>
+                                            <td>67</td>
+                                            <td>81</td>
+                                            <td>90</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">10</td>
-                                            <td>42.18</td>
-                                            <td>31.68</td>
-                                            <td>37.96</td>
+                                            <td class="atributo2 titulo2">10</td>
+                                            <td>64</td>
+                                            <td>77</td>
+                                            <td>82</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">20</td>
-                                            <td>33.74</td>
-                                            <td>26.47</td>
-                                            <td>36.67</td>
+                                            <td class="atributo2 titulo2">20</td>
+                                            <td>45</td>
+                                            <td>70</td>
+                                            <td>79</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">30</td>
-                                            <td>27.2</td>
-                                            <td>21.59</td>
-                                            <td>34.98</td>
+                                            <td class="atributo2 titulo2">30</td>
+                                            <td>32</td>
+                                            <td>64</td>
+                                            <td>76</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">40</td>
-                                            <td>25.45</td>
-                                            <td>19.2</td>
-                                            <td>32.91</td>
+                                            <td class="atributo2 titulo2">40</td>
+                                            <td>28</td>
+                                            <td>57</td>
+                                            <td>71</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">50</td>
-                                            <td>22.85</td>
-                                            <td>15.62</td>
-                                            <td>31.74</td>
+                                            <td class="atributo2 titulo2">50</td>
+                                            <td>25</td>
+                                            <td>49</td>
+                                            <td>65</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">60</td>
-                                            <td>17.16</td>
-                                            <td>12.69</td>
-                                            <td>30.06</td>
+                                            <td class="atributo2 titulo2">60</td>
+                                            <td>20</td>
+                                            <td>45</td>
+                                            <td>59</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">70</td>
-                                            <td>17.74</td>
-                                            <td>11.93</td>
-                                            <td>24.88</td>
+                                            <td class="atributo2 titulo2">70</td>
+                                            <td>18</td>
+                                            <td>39</td>
+                                            <td>56</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">80</td>
+                                            <td class="atributo2 titulo2">80</td>
+                                            <td>17</td>
+                                            <td>34</td>
+                                            <td>49</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="atributo2 titulo2">90</td>
                                             <td>16</td>
-                                            <td>11.5</td>
-                                            <td>23.58</td>
+                                            <td>29</td>
+                                            <td>44</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">90</td>
-                                            <td>13.38</td>
-                                            <td>9.76</td>
-                                            <td>22.28</td>
+                                            <td class="atributo2 titulo2">100</td>
+                                            <td>15</td>
+                                            <td>26</td>
+                                            <td>41</td>
                                         </tr>
                                         <tr>
-                                            <td class="atributo titulo">100</td>
-                                            <td>11.78</td>
-                                            <td>7.27</td>
-                                            <td>18.53</td>
-                                        </tr>
+                                            <td class="atributo2 titulo2">110</td>
+                                            <td>13</td>
+                                            <td>23</td>
+                                            <td>35</td>
                                         <tr>
                                             <td class="atributo titulo">125</td>
                                             <td>7.42</td>
@@ -627,7 +643,7 @@
                 <div class="faq-item">
                     <input type="checkbox" class="faq-checkbox" id="faq9">
                     <label for="faq9" class="faq-question">
-                    <span class="faq">¿Que es la energia de luz total y como se relaciona con la irradiacion?</span>
+                    <span class="faq">¿Que es la energia de luz total y como se relaciona con la irradiancia?</span>
                     <span class="plus_faq">+</span>
                     </label>
                     <div class="faq-answer">
@@ -671,6 +687,7 @@
 
             <h2 class="titulo_faq">Preguntas frecuentes</h2>
 
+   
             <article class="conjunto_faq">
                 <div class="faq-item">
                     <input type="checkbox" class="faq-checkbox" id="faq1">
@@ -681,9 +698,9 @@
                     <div class="faq-answer">
                         <p>La principal diferencia entre los paneles es la cantidad de LEDs en cada uno. Al aumentar el tamaño, se incrementa la cobertura, el rendimiento y los resultados. Todos los modelos BIO son adecuados para cualquier aplicación. La elección del modelo depende de tus necesidades y nivel de rendimiento deseado.</p>
                         <ul>
-                            <li>El modelo BIO 60 es ideal para tratar lesiones localizadas o tratamientos estéticos en el rostro.</li>
-                            <li>El modelo BIO 300 es apto para tratar todo el cuerpo, obteniendo todos los beneficios de la luz roja, incluyendo lo mencionado del BIO 60.</li>
-                            <li>El modelo BIO 600 es ideal para tratar todo el cuerpo de manera profesional, incluyendo los beneficios de los otros dos modelos.</li>
+                            <!-- <li>El modelo BIO 60 es ideal para tratar lesiones localizadas o tratamientos estéticos en el rostro.</li> -->
+                            <li>El modelo BIO 300 es apto para tratar zonas amplias del cuerpo, obteniendo los beneficios de la luz roja.</li>
+                            <li>El modelo BIO 600 es ideal para tratar todo el cuerpo de manera profesional, incluyendo los beneficios y resultados del modelo BIO 300 pero con mayor eficiencia.</li>
                             </ul>
                         </div>                        
                     </div>
@@ -695,9 +712,11 @@
                         <span class="plus_faq">+</span>
                         </label>
                         <div class="faq-answer">
-                            <p>El tiempo de uso depende fundamentalmente del objetivo deseado y del tamaño del panel. Como regla general, recomendamos sesiones de 10 a 20 minutos por área de tratamiento, a una distancia de alrededor de 20 a 35 centímetros para tejidos profundos, o de 40 a 60 centímetros para terapia facial superficial, con la piel descubierta. Se sugiere tratar un máximo de 2-3 áreas por día. Recomendamos usar la terapia de luz al menos 3 a 5 veces por semana para obtener resultados óptimos. Comienza con dosis bajas al principio, es decir, menos tiempo y mayor distancia del panel, para luego realizar tratamientos más prolongados y cercanos al panel. Esto ayuda a evaluar la tolerancia a la luz y evitar el estrés en las células.</p>
+                            <p>El tiempo de uso depende fundamentalmente del objetivo deseado y del tamaño del panel. Como regla general, recomendamos sesiones de 10 a 20 minutos por área de tratamiento, a una distancia de alrededor de 20 a 35 centímetros para tejidos profundos, o de 40 a 60 centímetros para terapia facial superficial, con la piel descubierta. Se sugiere tratar un máximo de 2-3 áreas por día. Recomendamos usar la terapia de luz al menos 3 a 5 veces por semana para obtener resultados óptimos. Comenzá con dosis bajas al principio, es decir, menos tiempo y mayor distancia del panel, para luego realizar tratamientos más prolongados y cercanos al panel. Esto ayuda a evaluar la tolerancia a la luz y evitar el estrés en las células.</p>
                         
-                            <p><strong>Dosis para comenzar:</strong> 3 minutos al día, a una distancia de 40 a 60 centímetros por área de tratamiento. Por ejemplo, con el modelo BIO 300 o BIO 600, realiza dos sesiones; una mirando hacia el panel y otra de espaldas a este. Con el modelo BIO 60, aplica el tratamiento en las áreas específicas deseadas.</p>
+                            <p><strong>Dosis para comenzar:</strong> 3 minutos al día, a una distancia de 40 a 60 centímetros por área de tratamiento. Por ejemplo, con el modelo BIO 300 o BIO 600, realiza dos sesiones; una mirando hacia el panel y otra de espaldas a este.</p>
+
+                            <!-- Con el modelo BIO 60, aplica el tratamiento en las áreas específicas deseadas. -->
                         </div>
                     </div>  
                 
@@ -708,7 +727,9 @@
                         <span class="plus_faq">+</span>
                         </label>
                         <div class="faq-answer">
-                            <p>Sí. Los paneles ocupan un espacio mínimo y tienen una pantalla de control intuitiva que te permite configurar y guardar seis modos específicos de luz para los tratamientos que desees realizar. Estos modos estarán preestablecidos por nosotros, basándonos en la literatura científica. Asimismo, dispones de total libertad para cambiarlos. Además, cuentas con un control para manejar el panel.</p>
+                            <p>Sí. Tienen una pantalla tactil fácil de usar que te permite configurar un modo - tiempo, espectro y potencia de la luz - a tu necesidad. Tambien incluyen seis modos preestablecidos por nosotros para evitar la configuracion manual.
+                            Además, los paneles cuentan con un soporte de piso que te da la libertad de usarlo en diferentes espacios. Y con un soporte de pared que te permite ocupar un espacio minimo.
+                            </p>
                         </div>                        
                     </div>
 
@@ -725,7 +746,7 @@
                             <p><strong>Precauciones:</strong></p> 
                             <ul>
                                 <li>Los paneles incluyen gafas con filtro de luz. Debes usarlas cuando la luz emitida por el panel te encandile (como cuando miras al sol). Si estás utilizando un modo con la luz a baja potencia, no es necesario usarlas.</li>
-                                <li>Recomendamos precaución si tienes condiciones anómalas en la piel, como hiperpigmentación. Por favor, consulta con tu médico sobre el uso de la terapia de luz en estas áreas, ya que el espectro infrarrojo podría agravar dicha condición.</li>
+                                <li>Recomendamos precaución si tenes alguna condicion pre existente. Por favor, consulta con tu médico sobre el uso de la terapia de luz.</li>
                             </ul>
                         </div>                        
                     </div>
@@ -737,23 +758,26 @@
                         <span class="plus_faq">+</span>
                         </label>
                         <div class="faq-answer">
-                            <p>No. Por ejemplo, el modelo BIO 300 consume entre 750 W y 1050 W, lo que equivale al consumo de un microondas o un calefactor portátil funcionando a potencia media. Además, el uso se limita a sesiones de 10-20 minutos diarios, por lo que el impacto en el consumo es pequeño.</p>
+                            <p>No. Por ejemplo, el modelo BIO 300 consume entre 750 W y 1050 W, lo que equivale al consumo de un microondas o un calefactor portátil funcionando a potencia media. Su uso se limita a sesiones de 10-20 minutos diarios, por lo que el impacto en el consumo es minimo.</p>
                         </div>                        
                     </div>
 
                     <div class="faq-item">
                         <input type="checkbox" class="faq-checkbox" id="faq6">
                         <label for="faq6" class="faq-question">
-                        <span class="faq">¿Producen ruido cuando están encendidos?</span>
+                            <span class="faq">¿Producen ruido cuando están encendidos?</span>
+
                         <span class="plus_faq">+</span>
                         </label>
                         <div class="faq-answer">
-                            <p>Los paneles cuentan con ventiladores (coolers) internos. Estos son necesarios para regular la temperatura del panel y prolongar su vida útil. El ruido es audible si estás en la misma habitación, pero es bajo. Además, recuerda que el panel permanece encendido solo durante las sesiones, y no requiere un preencendido.</p>
+                            <p>Los paneles cuentan con ventiladores (coolers) internos. Estos son necesarios para regular la temperatura del panel y prolongar su vida útil. El ruido es casi inperceptible estando incluso en la misma habitación. Además, recorda que el panel solo esta encendido y funcionando solo durante las sesiones, y no requiere un preencendido.</p>
                         </div>
                         
                     </div>
                 </div>
             </article>
+        </section>
+
         </section>
 
     <!-- ------------------------------ -->

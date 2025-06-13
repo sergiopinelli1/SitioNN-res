@@ -56,7 +56,7 @@ const models = {
     },
     "SoporteBIO": {
         title: "Soporte PRO",
-        description: "Es un soporte de piso para utilizar el modelo BIO 600 y usarlo en diferentes espacios. Se puede utilizar tanto con ruedas como sin ruedas.",
+        description: "Es un soporte de piso para utilizar el modelo BIO 600 en diferentes espacios. Se puede utilizar tanto con ruedas como sin ruedas.",
         accessories: [
             "1 Soporte para panel de luz",
             "2 Herramientas instalación"

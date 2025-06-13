@@ -194,18 +194,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>23</td>
                 <td>35</td>
             </tr>
-            // <tr>             
-            //   <td>125</td>
-            //   <td>7.42</td>
-            //   <td>6.73</td>
-            //   <td>15.68</td>
-            // </tr>
-            // <tr>
-            //   <td>150</td>
-            //   <td>6.69</td>
-            //   <td>5.1</td>
-            //   <td>12.31</td>
-            // </tr>
         </tbody>
         </table>`,
       BIO600: `
@@ -297,18 +285,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>23</td>
                 <td>35</td>
             </tr>
-            // <tr>             
-            //   <td>125</td>
-            //   <td>7.42</td>
-            //   <td>6.73</td>
-            //   <td>15.68</td>
-            // </tr>
-            // <tr>
-            //   <td>150</td>
-            //   <td>6.69</td>
-            //   <td>5.1</td>
-            //   <td>12.31</td>
-            // </tr>
         </tbody>
         </table>`,
     };

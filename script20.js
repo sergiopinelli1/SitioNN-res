@@ -61,7 +61,7 @@ const models = {
             "1 Soporte para panel de luz",
             "2 Herramientas instalación"
         ],
-        price: "$150000 o U$S120",
+        price: "$160000 o U$S130",
         images: [6, 7, 8],
     },
 };

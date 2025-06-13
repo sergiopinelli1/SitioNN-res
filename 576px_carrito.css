@@ -155,7 +155,7 @@
 .punto {
   width: 8px;
   height: 8px;
-  background-color: rgba(255, 255, 255, 0.282);
+  background-color: rgba(83, 83, 83, 0.532);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -163,7 +163,7 @@
 
 .punto.activo {
   /* background-color: black; */
-  background-color: rgba(255, 255, 255, 0.774);
+  background-color: rgba(27, 27, 27, 0.721);
 }
 .btn-left, .btn-right {
   display: flex;
@@ -171,7 +171,7 @@
   top: 46%;
   padding: 5px;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.732);
+  color: rgba(22, 21, 21, 0.732) !important;
   transform: translate(0,-50%);
   height: 40px;
   width: 40px;

@@ -802,7 +802,7 @@
 
 .mid_fun{
     width: 90%;
-    height: 36vh;
+    height: 30vh;
     border-radius: 20px;
     max-width: var(--max-width-1);
 }

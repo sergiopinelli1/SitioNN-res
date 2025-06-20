@@ -23,7 +23,7 @@ const models = {
       "4 Soporte pared",
       "5 Cables de conexión",
     ],
-    price: "$1.700.000 o U$S1400",
+    price: "U$S1400",
     images: [
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/2.png", fondoBlanco: true },
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/3.png", fondoBlanco: true },
@@ -45,7 +45,7 @@ const models = {
       "4 Soporte pared",
       "5 Cables de conexión",
     ],
-    price: "$3.100.000 o U$S2600",
+    price: "U$S2600",
     images: [
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/1.png", fondoBlanco: true },
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/5.png", fondoBlanco: true },

@@ -23,7 +23,7 @@ const models = {
       "4 Soporte pared",
       "5 Cables de conexión",
     ],
-    price: "U$S1400 Precio lanzamiento",
+    price: "U$S1400    Precio lanzamiento",
     images: [
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/2.png", fondoBlanco: true },
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/3.png", fondoBlanco: true },
@@ -45,7 +45,7 @@ const models = {
       "4 Soporte pared",
       "5 Cables de conexión",
     ],
-    price: "U$S2600 Precio lanzamiento",
+    price: "U$S2600    Precio lanzamiento",
     images: [
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/1.png", fondoBlanco: true },
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/5.png", fondoBlanco: true },
@@ -62,7 +62,7 @@ const models = {
       "1 Soporte para panel de luz",
       "2 Herramientas instalación"
     ],
-    price: "$160.000 o U$S130",
+    price: "U$S130",
     images: [
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/8.png", fondoBlanco: false },
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/11.png", fondoBlanco: false }

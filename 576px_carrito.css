@@ -401,6 +401,11 @@
   font-weight: var(--font-weight-semibold);
 }
 
+.tipo_de_precio{
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
 .add-to-cart{
   border: var(--border-apple);
   background-color: var(--color-apple);

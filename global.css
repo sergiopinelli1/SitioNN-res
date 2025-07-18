@@ -765,4 +765,5 @@ footer{
 .texto_res{
     color: var(--color-secondary);
     font-size: 12px;
+    text-align: justify;
 }

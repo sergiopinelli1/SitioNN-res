@@ -45,7 +45,7 @@ const models = {
       "4 Soporte pared",
       "5 Cables de conexión",
     ],
-    price: "U$S 2820",
+    price: "U$S 2800",
     images: [
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/1.png", fondoBlanco: true },
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/5.png", fondoBlanco: true },

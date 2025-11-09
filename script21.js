@@ -52,7 +52,7 @@ const models = {
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/6.png", fondoBlanco: true },
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/10.png", fondoBlanco: false },
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/11.png", fondoBlanco: false },
-    //   { src: "imgs_biocrak/imgs_carrito/img_carrusel/111.png", fondoBlanco: false }
+      { src: "imgs_biocrak/imgs_carrito/img_carrusel/paneles_con_soportePRO", fondoBlanco: false }
     ]
   },
   "SoporteBIO": {

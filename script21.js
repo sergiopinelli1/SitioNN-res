@@ -65,7 +65,7 @@ const models = {
     price: "U$S 140",
     images: [
       { src: "imgs_biocrak/imgs_carrito/img_carrusel/8.png", fondoBlanco: false }
-      // { src: "imgs_biocrak/imgs_carrito/img_carrusel/11.png", fondoBlanco: false }
+      { src: "imgs_biocrak/imgs_carrito/img_carrusel/paneles_con_soportePRO", fondoBlanco: false }
     ]
   }
 };

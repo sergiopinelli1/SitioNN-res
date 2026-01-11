@@ -59,7 +59,7 @@
     font-weight: var(--font-weight-regular);
 }
 
-.caja_blanca{
+/* .caja_blanca{
     position: absolute; 
     bottom: -1px; 
     left: 0;
@@ -68,7 +68,7 @@
     border-radius: 100px 100px 0px 0px;
     background-color: var(--color-secondary);
     z-index: 1; 
-}
+} */
 
 .lista_ben, .experimenta2{
     display: none;

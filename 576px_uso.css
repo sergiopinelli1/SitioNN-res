@@ -153,7 +153,7 @@
     gap: 38px;
 }
 
-.imagen_fondo {
+.imagen_fondo{
     display: none;
     background: url("./imgs_biocrak/imgs_entrenamiento_page/alejo_mirando_panel.jpg") no-repeat center center fixed;
     background-size: cover;

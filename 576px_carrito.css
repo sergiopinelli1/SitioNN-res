@@ -17,10 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
-  /* gap: 30px; */
   gap: 15px;
-  margin-top: 80px;
+  margin-top: 62px;
 }
 
 
@@ -80,17 +78,169 @@
   }
 } */
 
+/* ===== FIX ANCHO REAL EN MÓVIL ===== */
+.seccion_carrito .container{
+  width: 100%;
+  max-width: 1200px;     /* opcional: si querés limitar en desktop */
+  /* padding: 0 16px;       */
+  align-items: stretch;  
+}
+
+.seccion_carrito .container-carousel-mobile{
+  width: 100%;
+}
+
+.container-carousel-mobile{
+  width: 100%;
+  overflow: hidden;
+}
+
+/* viewport: define SIEMPRE una altura útil en móvil */
+.container-carousel-mobile .carousel-viewport{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff;
+
+  /* en móvil: altura estable */
+  /* height: clamp(240px, 70vw, 520px) !important;   */
+  height: 60vh;
+}
+
+/* carrusel */
+.container-carousel-mobile .carousel-mobile{
+  display: flex;
+  width: 100%;
+  height: 100% !important;          
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  touch-action: pan-x;
+}
+.container-carousel-mobile .carousel-mobile::-webkit-scrollbar{ display:none; }
+
+/* imagen dentro del carrusel (lo hardcodeamos para que nadie lo rompa) */
+.container-carousel-mobile .carousel-mobile > img.carousel-image{
+  flex: 0 0 100%;
+  width: 100% !important;
+  height: 100% !important;            /* <- clave */
+  max-width: none !important;         /* <- clave contra reglas globales */
+  max-height: none !important;        /* <- clave */
+  min-height: 100% !important;        /* <- clave */
+  display: block !important;
+
+  object-fit: contain !important;     /* no recorta */
+  object-position: center !important;
+
+  background: #fff;
+  scroll-snap-align: start;
+}
+
+/* si usás fondo blanco por slide */
+.container-carousel-mobile .carousel-mobile > img.carousel-image.fondo-blanco{
+  background: #fff;
+}
+
+/* opcional: si querés algunas imágenes “full” recortando */
+.container-carousel-mobile .carousel-mobile > img.carousel-image.cover{
+  object-fit: cover!important;
+  width: 100%;
+}
+
+/* flechas */
+.container-carousel-mobile .btn-left,
+.container-carousel-mobile .btn-right{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0,0,0,.35);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container-carousel-mobile .btn-left{ left: 12px; }
+.container-carousel-mobile .btn-right{ right: 12px; }
+
+.container-carousel-mobile .btn-left img,
+.container-carousel-mobile .btn-right img{
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.container-carousel-mobile .btn-left img{ transform: rotate(90deg); }
+.container-carousel-mobile .btn-right img{ transform: rotate(-90deg); }
+
+/* miniaturas */
+.container-carousel-mobile .thumbs-wrap{
+  margin-top: 12px;
+  width: 100%;
+}
+
+.container-carousel-mobile .thumbs{
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 2px 0 8px;
+}
+.container-carousel-mobile .thumbs::-webkit-scrollbar{ display:none; }
+
+.container-carousel-mobile .thumb{
+  flex: 0 0 auto;
+  width: 78px;
+  height: 58px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f3f3f3;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.container-carousel-mobile .thumb img{
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  display: block;
+  object-fit: cover;
+}
+
+.container-carousel-mobile .thumb.activo{
+  border-color: rgba(0,0,0,.25);
+}
+
+/* responsive */
+@media (min-width: 768px){
+  .container-carousel-mobile .carousel-viewport{
+    height: clamp(320px, 36vw, 560px) !important;
+    border-radius: 22px;
+  }
+  .container-carousel-mobile .thumb{
+    width: 92px;
+    height: 68px;
+  }
+}
 
 /* carrusel mobile puntos interactivos */
 
-.container-carousel-mobile {
+/* .container-carousel-mobile {
   position: relative;
   overflow: hidden;
   height: 60vh;
   width: 90%;
-  /* overflow-x: auto;
-  scroll-snap-type: x mandatory; */
-  scroll-behavior: smooth; /* Transición suave al hacer scroll */
+  scroll-behavior: smooth; 
 }
 
 .carousel-mobile {
@@ -102,18 +252,18 @@
   -webkit-overflow-scrolling: touch;
   width: 100%;
   height: 96%;
-  overflow-x: hidden; /* Oculta visualmente el scroll */
+  overflow-x: hidden; 
   gap: 4px;
 
 }
 
 .carousel-mobile::-webkit-scrollbar {
   height: 0px; 
-  display: none; /* Oculta el scroll en navegadores basados en WebKit */
+  display: none;
 } 
 
 .carousel-mobile {
-  scrollbar-width: none; /* Oculta el scroll en Firefox */
+  scrollbar-width: none;
 }
 
 .carousel-image {
@@ -134,11 +284,10 @@
   position: absolute;
   bottom: 1px;
   left: 50%;
-  transform: translateX(-50%); /* Asegura que los puntos estén centrados */
-  gap: 12px; /* Ajusta el espaciado entre los puntos si es necesario */
-  flex-direction: row !important; /* Asegura que los puntos estén en fila */
-  justify-content: center; /* Centra los puntos en el contenedor */
-  margin-top: 10px;
+  transform: translateX(-50%); 
+  gap: 12px; 
+  flex-direction: row !important; 
+  justify-content: center; 
   width: fit-content;
 }
 
@@ -152,7 +301,6 @@
 }
 
 .punto.activo {
-  /* background-color: black; */
   background-color: rgba(27, 27, 27, 0.721);
 }
 .btn-left, .btn-right {
@@ -185,7 +333,7 @@
 .btn-left img:hover, .btn-right img:hover {
   filter: brightness(0.5);
   transition: filter 0.2s ease;
-}
+} */
 
 /* carrusel desk flechas interactivas */
 
@@ -236,7 +384,7 @@
 .conjunto_titulo_carrito{
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 34px;
   text-align: left;
 }
 
@@ -249,6 +397,7 @@
   font-size: var(--font-size-mt);
   font-weight: var(--font-weight-regular);
   width: 98%;
+  margin-top: -8px;
   height: 100px; 
 }
 
@@ -392,13 +541,21 @@
 
 .price-section {
   display: flex;
-  gap: 20px;
+  gap: 34px;
   flex-direction: column;
   font-size: var(--font-size-mt);
 }
 
+.sub-price-section{
+  display: flex;
+  align-items: center;
+  gap: 34px;
+
+}
+
 .price{
   font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xl);
 }
 
 .tipo_de_precio{
@@ -487,6 +644,112 @@
 .icono_ben_carrito{
   height: 50px;
 }
+
+
+/* ✅ Estilo Mobile tipo tarjeta (igual a la imagen) */
+.trust_card{
+  padding-top: var(se);
+}
+
+.container_fal{
+  width: 90%;
+  max-width: 560px;
+  margin: 0 auto;
+  /* background: #f3f4f6; */
+  background-color: black;
+  border-radius: 18px;
+  padding: 18px 16px;
+}
+
+.trust_head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.trust_title{
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 0;
+  /* color: #111; */
+  color: white;
+}
+
+.trust_badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #dfeee0;
+  color: #1f7a31;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.trust_badge_icon{
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(31,122,49,.18);
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* Grilla 2 columnas (mobile) */
+.trust_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 18px;
+  padding-top: 6px;
+}
+
+.trust_item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trust_icon{
+  width: 28px;
+  height: 28px;
+  /* color: #111; */
+  color: white;
+  flex: 0 0 auto;
+}
+
+.trust_text{
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: white;
+}
+
+/* Muy chico: 1 columna */
+@media (max-width: 360px){
+  .trust_grid{ grid-template-columns: 1fr; }
+  .trust_title{ font-size: 22px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------------------------- */

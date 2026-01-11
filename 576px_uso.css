@@ -1,18 +1,5 @@
 @import url(global.css);
 
-.hero_uso2 {
-    position: relative;
-    display: flex;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.926) 100%), 
-                url('imgs_biocrak/imgs_entrenamiento_page/alejo_panel_2.jpg');  */
-    background-size: cover;         
-    background-position: center;    
-    background-repeat: no-repeat;   
-    height: 107vh;
-    align-items: center;
-    justify-content: center;
-}
-
 .hero_entrenamiento{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.926) 100%), 
     url('imgs_biocrak/imgs_entrenamiento_page/alejo_panel_2.jpg'); 
@@ -26,6 +13,19 @@
 .hero_lesion{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.926) 100%), 
     url('imgs_biocrak/imgs_entrenamiento_page/alejo_panel_2.jpg'); 
+}
+
+.hero_uso2 {
+    position: relative;
+    display: flex;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.926) 100%), 
+                url('imgs_biocrak/imgs_entrenamiento_page/alejo_panel_2.jpg');  */
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    height: 107vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .container_uso2{

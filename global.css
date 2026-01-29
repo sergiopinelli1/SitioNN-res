@@ -543,7 +543,7 @@ body{
     overflow: hidden;
     /* transition: max-height 0.3s ease; */
     padding: 0 34px;
-    border-bottom: 0.6px solid rgb(0, 113, 227); /* Agregar borde debajo de la respuesta */
+    border-bottom: 0.65px solid rgb(0, 113, 227); /* Agregar borde debajo de la respuesta */
     font-size: var(--font-size-mt);
     font-weight: var(--font-weight-regular);
     gap: 10px;
@@ -745,6 +745,8 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo_foot{

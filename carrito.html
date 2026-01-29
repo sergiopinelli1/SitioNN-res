@@ -85,7 +85,7 @@
     <section class="seccion_carrito">
         <div class="container">
             <div class="container-carousel-mobile">
-                <!-- <div class="carousel-mobile">
+                <div class="carousel-mobile">
                     <img src="imgs_biocrak/imgs_carrito/img_carrusel/BIO60_persona_usandolo.png" class="carousel-image" alt="BIO 60 Image 1">
                     <img src="imgs_biocrak/imgs_carrito/img_carrusel/BIO60_foto_limpia.png" class="carousel-image" alt="BIO 60 Image 2">
                     <img src="imgs_biocrak/imgs_carrito/img_carrusel/BIO60_persona_usandolo.png" class="carousel-image" alt="BIO 60 Image 3">
@@ -122,13 +122,13 @@
 
                 <div class="btn-left" aria-label="Anterior"><img src="imgs_biocrak/imgs_header/flecha-hacia-abajo.png" alt=""></div>
                 <div class="btn-right" aria-label="Siguiente"><img src="imgs_biocrak/imgs_header/flecha-hacia-abajo.png" alt=""></div>
-            </div>  -->
+            </div> 
 
             <!-- VIEWPORT principal -->
-            <div class="carousel-viewport">
+            <!-- <div class="carousel-viewport">
                 <div class="carousel-mobile" aria-label="Galería de imágenes">
-                <!-- JS inyecta las imágenes acá -->
-                </div>
+                JS inyecta las imágenes acá
+                </div> -->
 
                 <!-- <button class="btn-left" type="button" aria-label="Anterior">
                 <img src="imgs_biocrak/imgs_header/flecha-hacia-abajo.png" alt="">
@@ -137,13 +137,6 @@
                 <button class="btn-right" type="button" aria-label="Siguiente">
                 <img src="imgs_biocrak/imgs_header/flecha-hacia-abajo.png" alt="">
                 </button> -->
-            </div>
-
-            <!-- MINIATURAS -->
-            <div class="thumbs-wrap" aria-label="Miniaturas">
-                <div class="thumbs">
-            
-                </div>
             </div>
                 
             <div class="details">
@@ -155,7 +148,7 @@
 
                     <div class="price-section">
                         <div class="sub-price-section">
-                            <div class="price" id="price">U$S1400 Precio lanzamiento</div>
+                            <div class="price" id="price">U$S1400</div>
                             <span class="trust_badge" aria-label="En stock">
                             <span class="trust_badge_icon" aria-hidden="true">✓</span>En stock</span>
                         </div>
@@ -389,7 +382,12 @@
                     <span class="plus_faq">+</span>
                     </label>
                     <div class="faq-answer">
-                        <p>La irradiancia, también conocida como densidad de potencia, es la medida de la cantidad de energía luminosa que incide sobre una superficie determinada. En el contexto de la terapia de luz roja, se expresa comúnmente en mW/cm². Esta terapia es eficaz dentro de un rango específico de irradiancia: si la luz es insuficiente, los efectos no se alcanzan o no son óptimos, y si es excesiva, los efectos pueden disminuir. Los dispositivos de terapia de luz de alta calidad están diseñados para proporcionar la cantidad adecuada de energía luminosa en un tiempo de tratamiento razonable.</p>
+                        <p>La irradiancia es la cantidad de energía luminosa que llega a tu cuerpo por unidad de superficie.
+                            En terapia de luz roja se mide en mW/cm² y define qué tan “intensa” es la luz que realmente recibe el tejido.
+                            No alcanza con que un panel tenga muchos LEDs: lo importante es cuánta energía efectiva llega al cuerpo a la distancia de uso.
+                            Si la irradiancia es demasiado baja, la luz no estimula correctamente las células.
+                            Si es demasiado alta, los beneficios pueden disminuir debido a un fenómeno conocido como respuesta bifásica (más no siempre es mejor).
+                            Por eso, una terapia eficaz se basa en una irradiancia adecuada aplicada durante el tiempo correcto, no en potencia bruta sin control.</p>
                     </div>
                         
                 </div>
@@ -740,16 +738,43 @@
                     <span class="plus_faq">+</span>
                     </label>
                     <div class="faq-answer">
-                        <p>La energía de luz total se refiere a la cantidad total de energía lumínica que se aplica a una superficie durante un tratamiento. Esta energía depende de varios factores, entre los que se incluyen la irradiancia, el tiempo de exposición y el área de tratamiento. La irradiancia, a su vez, mide la cantidad de energía que incide sobre una unidad de área (generalmente expresada en miliwatts por centímetro cuadrado, mW/cm²) y puede variar según la distancia a la fuente de luz.</p>
-
-                        <p>La relación entre la energía de luz total y la irradiancia es fundamental en terapias como la de luz roja o infrarroja cercana. Para que un tratamiento sea efectivo, se necesita un nivel adecuado de irradiancia durante un período específico. Por ejemplo, se considera que para tratar el cuerpo de manera eficaz con terapia de luz roja o infrarroja cercana, una dosis total de varios cientos de miles de julios es apropiada​</p>
-                  
-                            
-                        <p>Además, la irradiancia puede cambiar dependiendo de la proximidad de la fuente de luz: cuanto más cerca estés del dispositivo, mayor será la irradiancia. Esto hace que el cálculo de la dosis total, que es la irradiancia multiplicada por el tiempo de tratamiento, sea crucial para obtener los beneficios deseados sin exceder límites seguros​.
-                        
-                        <p>En general, se recomienda que la irradiancia esté en un rango de entre 25 mW/cm² y 100 mW/cm² para asegurar una aplicación segura y efectiva de la terapia​</p>
-                        
-                        <p>Es importante tener en cuenta tanto la irradiancia como el tiempo de tratamiento para maximizar los beneficios de la terapia de luz y evitar efectos secundarios no deseados.</p>
+                        <p>
+                            La <strong>energía de luz total</strong> (también llamada <strong>dosis</strong>) es la cantidad total de energía que el cuerpo recibe durante una sesión.
+                          </p>
+                          
+                          <p>
+                            Esta dosis depende de tres factores principales:
+                          </p>
+                          
+                          <ul>
+                            <li><strong>Irradiancia</strong> (mW/cm²)</li>
+                            <li><strong>Tiempo de exposición</strong></li>
+                            <li><strong>Área tratada</strong></li>
+                          </ul>
+                          
+                          <p>
+                            En términos simples:
+                          </p>
+                          
+                          <p>
+                            <strong>Dosis = irradiancia × tiempo</strong>
+                          </p>
+                          
+                          <p>
+                            Por ejemplo, una irradiancia moderada aplicada durante más tiempo puede generar el mismo efecto terapéutico que una irradiancia más alta durante menos tiempo.
+                          </p>
+                          
+                          <p>
+                            En terapia de luz roja e infrarroja cercana, los mejores resultados se obtienen dentro de un <strong>rango óptimo de irradiancia</strong>, generalmente entre <strong>25 y 100 mW/cm²</strong>, ajustando el tiempo de sesión según el objetivo del tratamiento.
+                          </p>
+                          
+                          <p>
+                            Esto permite estimular procesos celulares como la <strong>producción de ATP</strong>, la <strong>recuperación muscular</strong> y la <strong>regeneración tisular</strong>, sin sobreestimular los tejidos.
+                          </p>
+                          
+                          <p>
+                            Por eso, una terapia bien diseñada no busca <em>la máxima potencia</em>, sino <strong>la dosis correcta</strong>.
+                          </p>                          
                     </div>
                 </div>
 
